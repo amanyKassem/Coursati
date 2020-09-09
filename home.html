@@ -25,7 +25,8 @@
 <!-- Start Loading Page -->
 
 <div class="layer-preloader">
-    <div class="lds-dual-ring"></div>
+    <!--<div class="lds-dual-ring"></div>-->
+    <img src="img/logoo.png" alt="Coursati logo">
 </div>
 
 <!-- End Loading Page -->
@@ -80,6 +81,16 @@
                 <!--<a href="#">-->
                     <!--<i class="fas fa-chevron-right"></i>-->
                 <!--</a>-->
+            </a>
+
+            <a href="#" class="catLink mr-18 d-md-none">
+                <i class="fas fa-bell mr-1"></i>
+                <span>Notifications</span>
+            </a>
+
+            <a href="#" class="catLink mr-18 d-md-none">
+                <i class="fas fa-heart mr-1"></i>
+                <span>Wishlist</span>
             </a>
 
             <a href="#" class="catLink mr-18">
@@ -137,9 +148,9 @@
 <!--end header-->
 
 <!--start categories-->
-<div class="bgGray">
+<div class="bgGray d-none d-md-flex">
     <div class="container">
-        <ul class="categoriesLinks d-none d-md-flex">
+        <ul class="categoriesLinks">
             <li class="active">
                 <a href="#">Development</a>
             </li>
@@ -187,7 +198,7 @@
 
         <!--start slider bg-->
         <div class="sliderBg">
-            <div class="sliderText">
+            <div class="sliderText d-none d-md-block">
                 <p class="titleText">Learn more <span>for less</span></p>
                 <p class="blackText">
                     With courses from $10.99, there’s no limit to what you can learn.
@@ -203,9 +214,9 @@
         <!--start my courses-->
         <div class="myCourses">
 
-            <div class="d-flex flex-row align-items-center justify-content-between">
+            <div class="d-flex flex-row flex-wrap align-items-center justify-content-between">
 
-                <div class="d-flex flex-row align-items-center">
+                <div class="hi d-flex flex-row align-items-center">
                     <img src="img/hi.png" class="hiImg" alt="hi">
                     <div class="d-flex flex-column welcome">
                         <p>Welcome back, Amany</p>
@@ -213,7 +224,7 @@
                     </div>
                 </div>
 
-                <div class=" d-flex flex-row align-items-center">
+                <div class=" d-flex flex-wrap flex-row align-items-center">
                     <a href="#" class=" courserBlock d-flex flex-row align-items-center mr-18">
                         <div class="courseImg">
                             <img src="img/girl.jpg" alt="course image">
@@ -252,7 +263,7 @@
 
         <!--start recommended courses-->
         <div class="recommended">
-            <p class="title">Recommended courses</p>
+            <h2 class="title">Recommended courses</h2>
             <p class="desc">The highest visited coursed lately</p>
 
             <div class="d-flex align-items-center justify-content-between">
@@ -288,7 +299,7 @@
 
             <div class="tab-content" id="pills-tabContent">
                 <div class="tab-pane fade show active" id="pills-Business" role="tabpanel" aria-labelledby="pills-Business-tab">
-                    <div class="d-flex justify-content-between align-items-center">
+                    <div class="d-flex justify-content-between align-items-center flex-wrap">
 
                         <a href="#" class="course">
                             <div class="imgBlock">
@@ -377,7 +388,7 @@
                     </div>
                 </div>
                 <div class="tab-pane fade" id="pills-Design" role="tabpanel" aria-labelledby="pills-Design-tab">
-                    <div class="d-flex justify-content-between align-items-center">
+                    <div class="d-flex justify-content-between align-items-center flex-wrap">
 
                         <a href="#" class="course">
                             <div class="imgBlock">
@@ -466,7 +477,7 @@
                     </div>
                 </div>
                 <div class="tab-pane fade" id="pills-Photography" role="tabpanel" aria-labelledby="pills-Photography-tab">
-                    <div class="d-flex justify-content-between align-items-center">
+                    <div class="d-flex justify-content-between align-items-center flex-wrap">
 
                         <a href="#" class="course">
                             <div class="imgBlock">
@@ -555,7 +566,7 @@
                     </div>
                 </div>
                 <div class="tab-pane fade" id="pills-Development" role="tabpanel" aria-labelledby="pills-Development-tab">
-                    <div class="d-flex justify-content-between align-items-center">
+                    <div class="d-flex justify-content-between align-items-center flex-wrap">
 
                         <a href="#" class="course">
                             <div class="imgBlock">
@@ -644,7 +655,7 @@
                     </div>
                 </div>
                 <div class="tab-pane fade" id="pills-Marketing" role="tabpanel" aria-labelledby="pills-Marketing-tab">
-                    <div class="d-flex justify-content-between align-items-center">
+                    <div class="d-flex justify-content-between align-items-center flex-wrap">
 
                         <a href="#" class="course">
                             <div class="imgBlock">
@@ -733,7 +744,7 @@
                     </div>
                 </div>
                 <div class="tab-pane fade" id="pills-IT" role="tabpanel" aria-labelledby="pills-IT-tab">
-                    <div class="d-flex justify-content-between align-items-center">
+                    <div class="d-flex justify-content-between align-items-center flex-wrap">
 
                         <a href="#" class="course">
                             <div class="imgBlock">
@@ -822,7 +833,7 @@
                     </div>
                 </div>
                 <div class="tab-pane fade" id="pills-persDev" role="tabpanel" aria-labelledby="pills-persDev-tab">
-                    <div class="d-flex justify-content-between align-items-center">
+                    <div class="d-flex justify-content-between align-items-center flex-wrap">
 
                         <a href="#" class="course">
                             <div class="imgBlock">
@@ -917,7 +928,7 @@
 
         <!--start courses by map-->
         <div class="mapCourses">
-            <p class="title">Courses by map</p>
+            <h2 class="title">Courses by map</h2>
             <p class="desc">Course that may be near you</p>
             <div class="d-flex justify-content-between mt-20 positionR">
 
@@ -1033,7 +1044,7 @@
 
         <!--start learn next-->
         <div class="learnNext">
-            <p class="title">What to learn next</p>
+            <h2 class="title">What to learn next</h2>
             <p class="desc">Because you viewed <a href="#">“Learn to Draw Pretty Faces for Comic Books”</a></p>
 
             <div id="owl-demo1" class="owl-carousel">
@@ -1177,7 +1188,7 @@
 
         <!--start top courses-->
         <div class="learnNext">
-            <p class="title">Top courses in Web Design</p>
+            <h2 class="title">Top courses in Web Design</h2>
             <p class="desc">Because you viewed <a href="#">“Learn to Draw Pretty Faces for Comic Books”</a></p>
 
             <div id="owl-demo2" class="owl-carousel" >
@@ -1321,7 +1332,7 @@
 
         <!--start Suggestion-->
         <div class="learnNext">
-            <p class="title">Suggestion courses in Web Design</p>
+            <h2 class="title">Suggestion courses in Web Design</h2>
             <p class="desc">Because you viewed <a href="#">“Learn to Draw Pretty Faces for Comic Books”</a></p>
 
             <div id="owl-demo3" class="owl-carousel" >
@@ -1474,9 +1485,9 @@
     <!--start register-->
     <div class="container">
         <div class="register d-flex flex-row align-items-center">
-            <img src="img/vector.png" alt="boy">
+            <img src="img/vector.png" class="d-none d-lg-block" alt="boy">
             <div class="regText">
-                <p class="title">Register now as a trainer</p>
+                <h2 class="title">Register now as a trainer</h2>
                 <p class="desc">Become a teacher and help 2500+ students with you knowledge and experience.</p>
             </div>
             <a href="#" class="orangeBtn">Register now</a>
@@ -1484,7 +1495,7 @@
     </div>
     <!--end register-->
 
-    <hr class="hr" />
+    <hr class="customHr" />
 
     <!--start links-->
     <div class="container">
@@ -1511,7 +1522,7 @@
     </div>
     <!--end links-->
 
-    <hr class="hr" />
+    <hr class="customHr" />
 
     <!--start footer-->
     <div class="container">

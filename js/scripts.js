@@ -63,7 +63,10 @@ $(document).ready(function () {
                 // center: false
             },
             992: {
-                items: 6,
+                items: 5,
+            },
+            1200: {
+                items: 6
             }
         }
     });

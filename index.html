@@ -25,14 +25,15 @@
 <!-- Start Loading Page -->
 
 <div class="layer-preloader">
-    <div class="lds-dual-ring"></div>
+    <!--<div class="lds-dual-ring"></div>-->
+    <img src="img/logoo.png" alt="Coursati logo">
 </div>
 
 <!-- End Loading Page -->
 
 <!--  Start Header  -->
 
-<header>
+<header class="loginHeader">
     <div class="container">
 
         <div class="menuBar d-flex d-md-none justify-content-between align-items-center">
@@ -123,8 +124,8 @@
     <div class="container">
 
         <!--start slider bg-->
-        <div class="sliderBg guestBg">
-            <div class="sliderText">
+        <div class="sliderBg guestBg d-none d-md-block">
+            <div class="sliderText ">
                 <p class="titleText">Learn more <span>for less</span></p>
                 <p class="blackText">
                     With courses from $10.99, there’s no limit to what you can learn.
@@ -164,7 +165,7 @@
 
         <!--start selection courses-->
         <div class="recommended">
-            <p class="title">Great selection of courses</p>
+            <h2 class="title">Great selection of courses</h2>
             <p class="desc">Based on audience interest and rating</p>
 
             <div class="d-flex align-items-center justify-content-between">
@@ -200,7 +201,7 @@
 
             <div class="tab-content" id="pills-tabContent">
                 <div class="tab-pane fade show active" id="pills-Business" role="tabpanel" aria-labelledby="pills-Business-tab">
-                    <div class="d-flex justify-content-between align-items-center">
+                    <div class="d-flex justify-content-between align-items-center flex-wrap">
 
                         <a href="#" class="course">
                             <div class="imgBlock">
@@ -289,7 +290,7 @@
                     </div>
                 </div>
                 <div class="tab-pane fade" id="pills-Design" role="tabpanel" aria-labelledby="pills-Design-tab">
-                    <div class="d-flex justify-content-between align-items-center">
+                    <div class="d-flex justify-content-between align-items-center flex-wrap">
 
                         <a href="#" class="course">
                             <div class="imgBlock">
@@ -378,7 +379,7 @@
                     </div>
                 </div>
                 <div class="tab-pane fade" id="pills-Photography" role="tabpanel" aria-labelledby="pills-Photography-tab">
-                    <div class="d-flex justify-content-between align-items-center">
+                    <div class="d-flex justify-content-between align-items-center flex-wrap">
 
                         <a href="#" class="course">
                             <div class="imgBlock">
@@ -467,7 +468,7 @@
                     </div>
                 </div>
                 <div class="tab-pane fade" id="pills-Development" role="tabpanel" aria-labelledby="pills-Development-tab">
-                    <div class="d-flex justify-content-between align-items-center">
+                    <div class="d-flex justify-content-between align-items-center flex-wrap">
 
                         <a href="#" class="course">
                             <div class="imgBlock">
@@ -556,7 +557,7 @@
                     </div>
                 </div>
                 <div class="tab-pane fade" id="pills-Marketing" role="tabpanel" aria-labelledby="pills-Marketing-tab">
-                    <div class="d-flex justify-content-between align-items-center">
+                    <div class="d-flex justify-content-between align-items-center flex-wrap">
 
                         <a href="#" class="course">
                             <div class="imgBlock">
@@ -645,7 +646,7 @@
                     </div>
                 </div>
                 <div class="tab-pane fade" id="pills-IT" role="tabpanel" aria-labelledby="pills-IT-tab">
-                    <div class="d-flex justify-content-between align-items-center">
+                    <div class="d-flex justify-content-between align-items-center flex-wrap">
 
                         <a href="#" class="course">
                             <div class="imgBlock">
@@ -734,7 +735,7 @@
                     </div>
                 </div>
                 <div class="tab-pane fade" id="pills-persDev" role="tabpanel" aria-labelledby="pills-persDev-tab">
-                    <div class="d-flex justify-content-between align-items-center">
+                    <div class="d-flex justify-content-between align-items-center flex-wrap">
 
                         <a href="#" class="course">
                             <div class="imgBlock">
@@ -829,7 +830,7 @@
 
         <!--start Visitors viewing-->
         <div class="learnNext">
-            <p class="title">Visitors are viewing</p>
+            <h class="title">Visitors are viewing</h>
             <p class="desc">Course that our regular visitors are interested in</p>
 
             <div id="owl-demo1" class="owl-carousel">
@@ -978,8 +979,8 @@
 
 <!--start personalization-->
 <div class="personalization">
-    <p class="title">Get personalized recommendations</p>
-    <p class="desc">Get personalized recommendations</p>
+    <h2 class="title">Get personalized recommendations</h2>
+    <p class="desc">Answer a few questions for your top picks</p>
     <a href="#" class="orangeBtn">Get started</a>
 </div>
 <!--end personalization-->
@@ -987,9 +988,92 @@
 <!--start lightGrayBg-->
 <div class=" lightGrayBg">
     <div class="container">
+
+        <!--start top categories-->
+        <div class="topCat">
+            <h2 class="title">Top categories</h2>
+            <p class="desc">Categories that we recommend visiting</p>
+
+            <div class="categories">
+
+                <a class="cat d-inline-flex flex-column justify-content-center">
+                    <img src="img/data_icon.png" alt="category">
+                    <h4>Development</h4>
+                    <div><span>1,567</span> Courses&Tutorials</div>
+                </a>
+
+                <a class="cat d-inline-flex flex-column justify-content-center">
+                    <img src="img/logical_icon.png" alt="category">
+                    <h4>Self Development</h4>
+                    <div><span>1,567</span> Courses&Tutorials</div>
+                </a>
+
+                <a class="cat d-inline-flex flex-column justify-content-center">
+                    <img src="img/managment_icon.png" alt="category">
+                    <h4>Content managment</h4>
+                    <div><span>1,567</span> Courses&Tutorials</div>
+                </a>
+
+                <a class="cat d-inline-flex flex-column justify-content-center">
+                    <img src="img/data_icon.png" alt="category">
+                    <h4>Development</h4>
+                    <div><span>1,567</span> Courses&Tutorials</div>
+                </a>
+
+                <a class="cat d-inline-flex flex-column justify-content-center">
+                    <img src="img/logical_icon.png" alt="category">
+                    <h4>Self Development</h4>
+                    <div><span>1,567</span> Courses&Tutorials</div>
+                </a>
+
+                <a class="cat d-inline-flex flex-column justify-content-center">
+                    <img src="img/managment_icon.png" alt="category">
+                    <h4>Content managment</h4>
+                    <div><span>1,567</span> Courses&Tutorials</div>
+                </a>
+
+                <a class="cat d-inline-flex flex-column justify-content-center">
+                    <img src="img/data_icon.png" alt="category">
+                    <h4>Development</h4>
+                    <div><span>1,567</span> Courses&Tutorials</div>
+                </a>
+
+                <a class="cat d-inline-flex flex-column justify-content-center">
+                    <img src="img/logical_icon.png" alt="category">
+                    <h4>Self Development</h4>
+                    <div><span>1,567</span> Courses&Tutorials</div>
+                </a>
+
+                <a class="cat d-inline-flex flex-column justify-content-center">
+                    <img src="img/managment_icon.png" alt="category">
+                    <h4>Content managment</h4>
+                    <div><span>1,567</span> Courses&Tutorials</div>
+                </a>
+
+                <a class="cat d-inline-flex flex-column justify-content-center">
+                    <img src="img/data_icon.png" alt="category">
+                    <h4>Development</h4>
+                    <div><span>1,567</span> Courses&Tutorials</div>
+                </a>
+
+                <a class="cat d-inline-flex flex-column justify-content-center">
+                    <img src="img/logical_icon.png" alt="category">
+                    <h4>Self Development</h4>
+                    <div><span>1,567</span> Courses&Tutorials</div>
+                </a>
+
+                <a class="cat viewAll d-inline-flex flex-column justify-content-center">
+                    <i class="fas fa-arrow-right"></i>
+                    <h4>View all categories</h4>
+                </a>
+            </div>
+
+        </div>
+        <!--end top categories-->
+
         <!--start courses by map-->
         <div class="mapCourses">
-            <p class="title">Courses by map</p>
+            <h2 class="title">Courses by map</h2>
             <p class="desc">Course that may be near you</p>
             <div class="d-flex justify-content-between mt-20 positionR">
 
@@ -1102,6 +1186,123 @@
             </div>
         </div>
         <!--end courses by map-->
+
+        <!--start Institutes and centrals-->
+
+        <div class="institutesContainer">
+            <h2 class="title">Institutes and centrals</h2>
+            <p class="desc">Locations that provide courses</p>
+
+            <div class="institutes">
+                <a href="#" class=" courserBlock d-flex flex-row align-items-center">
+                    <div class="courseImg">
+                        <img src="img/girl.jpg" alt="course image">
+                    </div>
+                    <div class="d-flex flex-column courseText">
+                        <p>The Complete team work Course</p>
+                        <p>Amany kassem, <span>Riyadh</span></p>
+                        <div class=" startsBlock d-flex flex-row align-items-center">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span><span>5</span>(12,460)</span>
+                        </div>
+                        <div class="info d-flex flex-row align-items-center">
+                            <div><img src="img/calender.png" alt="calender"> 9-7-2021</div>
+                            <div><img src="img/time.png" alt="calender"> 3000 hours</div>
+                            <div><img src="img/users.png" alt="calender"> 58 subscribed</div>
+                        </div>
+                        <div class="price"><sup>$</sup>10.00<span><sup>$</sup>25.00</span></div>
+
+                    </div>
+                </a>
+                <a href="#" class=" courserBlock d-flex flex-row align-items-center">
+                    <div class="courseImg">
+                        <img src="img/girl.jpg" alt="course image">
+                    </div>
+                    <div class="d-flex flex-column courseText">
+                        <p>The Complete team work Course</p>
+                        <p>Amany kassem, <span>Riyadh</span></p>
+                        <div class=" startsBlock d-flex flex-row align-items-center">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span><span>5</span>(12,460)</span>
+                        </div>
+                        <div class="info d-flex flex-row align-items-center">
+                            <div><img src="img/calender.png" alt="calender"> 9-7-2021</div>
+                            <div><img src="img/time.png" alt="calender"> 3000 hours</div>
+                            <div><img src="img/users.png" alt="calender"> 58 subscribed</div>
+                        </div>
+                        <div class="price"><sup>$</sup>10.00<span><sup>$</sup>25.00</span></div>
+
+                    </div>
+                </a>
+                <a href="#" class=" courserBlock d-flex flex-row align-items-center">
+                    <div class="courseImg">
+                        <img src="img/girl.jpg" alt="course image">
+                    </div>
+                    <div class="d-flex flex-column courseText">
+                        <p>The Complete team work Course</p>
+                        <p>Amany kassem, <span>Riyadh</span></p>
+                        <div class=" startsBlock d-flex flex-row align-items-center">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span><span>5</span>(12,460)</span>
+                        </div>
+                        <div class="info d-flex flex-row align-items-center">
+                            <div><img src="img/calender.png" alt="calender"> 9-7-2021</div>
+                            <div><img src="img/time.png" alt="calender"> 3000 hours</div>
+                            <div><img src="img/users.png" alt="calender"> 58 subscribed</div>
+                        </div>
+                        <div class="price"><sup>$</sup>10.00<span><sup>$</sup>25.00</span></div>
+
+                    </div>
+                </a>
+                <a href="#" class=" courserBlock d-flex flex-row align-items-center">
+                    <div class="courseImg">
+                        <img src="img/girl.jpg" alt="course image">
+                    </div>
+                    <div class="d-flex flex-column courseText">
+                        <p>The Complete team work Course</p>
+                        <p>Amany kassem, <span>Riyadh</span></p>
+                        <div class=" startsBlock d-flex flex-row align-items-center">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span><span>5</span>(12,460)</span>
+                        </div>
+                        <div class="info d-flex flex-row align-items-center">
+                            <div><img src="img/calender.png" alt="calender"> 9-7-2021</div>
+                            <div><img src="img/time.png" alt="calender"> 3000 hours</div>
+                            <div><img src="img/users.png" alt="calender"> 58 subscribed</div>
+                        </div>
+                        <div class="price"><sup>$</sup>10.00<span><sup>$</sup>25.00</span></div>
+
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!--end Institutes and centrals-->
+
     </div>
 </div>
 <!--end lightGrayBg-->
@@ -1112,9 +1313,9 @@
     <!--start register-->
     <div class="container">
         <div class="register d-flex flex-row align-items-center">
-            <img src="img/vector.png" alt="boy">
+            <img src="img/vector.png" class="d-none d-lg-block" alt="boy">
             <div class="regText">
-                <p class="title">Register now as a trainer</p>
+                <h2 class="title">Register now as a trainer</h2>
                 <p class="desc">Become a teacher and help 2500+ students with you knowledge and experience.</p>
             </div>
             <a href="#" class="orangeBtn">Register now</a>
@@ -1122,7 +1323,7 @@
     </div>
     <!--end register-->
 
-    <hr class="hr" />
+    <hr class="customHr" />
     
     <!--start links-->
     <div class="container">
@@ -1149,7 +1350,7 @@
     </div>
     <!--end links-->
 
-    <hr class="hr" />
+    <hr class="customHr" />
 
     <!--start footer-->
     <div class="container">
