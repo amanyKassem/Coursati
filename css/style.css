@@ -8,6 +8,9 @@
   text-decoration: none;
   outline: none; }
 
+.modal {
+  overflow-y: auto; }
+
 a, button {
   transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
@@ -47,8 +50,8 @@ p {
 .mr-18 {
   margin-right: 18px; }
 
-.mr-28 {
-  margin-right: 28px; }
+.mr-27 {
+  margin-right: 27px; }
 
 .mt-20 {
   margin-top: 20px; }
@@ -303,7 +306,6 @@ header {
   width: 100%;
   z-index: 2;
   height: 60px;
-  overflow: hidden;
   display: flex;
   top: 0;
   align-items: center;
@@ -334,9 +336,93 @@ header {
     width: 85px; }
   header .catLink {
     color: #100f10;
-    font-size: 14px; }
+    font-size: 14px;
+    position: relative; }
+    header .catLink ul {
+      visibility: hidden;
+      opacity: 0;
+      margin: 0;
+      padding: 0;
+      width: 215px;
+      position: absolute;
+      left: 0px;
+      background: #fff;
+      z-index: 99;
+      transform: translate(0, 20px);
+      transition: all 0.2s ease-out; }
+      header .catLink ul:after {
+        bottom: 100%;
+        left: 20%;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+        border-color: rgba(255, 255, 255, 0);
+        border-bottom-color: #fff;
+        border-width: 6px;
+        margin-left: -6px; }
+      header .catLink ul li {
+        display: block;
+        float: none;
+        background: none;
+        margin: 0 0 10px;
+        padding: 0;
+        -webkit-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out; }
+        header .catLink ul li:last-child {
+          margin: 0; }
+        header .catLink ul li a {
+          font-size: 12px;
+          font-weight: normal;
+          display: flex;
+          color: #100f10;
+          align-items: center;
+          justify-content: space-between;
+          text-transform: capitalize; }
+          header .catLink ul li a:hover {
+            font-weight: bold; }
+          header .catLink ul li a img {
+            width: 15px;
+            height: 15px;
+            margin-right: 10px; }
+        header .catLink ul li:hover > a {
+          font-weight: bold; }
+        header .catLink ul li:hover > ul {
+          visibility: visible;
+          opacity: 1;
+          transform: translate(45px, 0); }
+      header .catLink ul.sub-menu {
+        box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 10px; }
+        header .catLink ul.sub-menu ul {
+          left: 169px;
+          top: 0px;
+          visibility: hidden;
+          opacity: 0;
+          transform: translate(45px, 20px);
+          transition: all 0.2s ease-out;
+          box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+          background-color: #fafafa;
+          padding: 20px;
+          border-radius: 10px; }
+          header .catLink ul.sub-menu ul:after {
+            content: none; }
+          header .catLink ul.sub-menu ul:hover {
+            visibility: visible;
+            opacity: 1;
+            transform: translate(45px, 0); }
     header .catLink:hover {
-      color: #ff7600; }
+      font-weight: bold;
+      cursor: pointer; }
+      header .catLink:hover .sub-menu {
+        visibility: visible;
+        opacity: 1;
+        transform: translate(0, 12px); }
     header .catLink span {
       text-transform: capitalize; }
   header .auth {
@@ -400,6 +486,145 @@ header {
     width: 18px; }
 
 /* end header */
+/* start Modal */
+#loginModal .modal-content, #signUpModal .modal-content {
+  padding: 25px; }
+  #loginModal .modal-content .modal-header, #signUpModal .modal-content .modal-header {
+    padding: 0 0 20px; }
+    #loginModal .modal-content .modal-header .close img, #signUpModal .modal-content .modal-header .close img {
+      height: 27px;
+      width: 27px; }
+    #loginModal .modal-content .modal-header h5, #signUpModal .modal-content .modal-header h5 {
+      color: #100f10;
+      font-weight: bold;
+      font-size: 20px; }
+  #loginModal .modal-content .modal-body, #signUpModal .modal-content .modal-body {
+    padding: 20px 0 0; }
+    #loginModal .modal-content .modal-body form, #signUpModal .modal-content .modal-body form {
+      margin-bottom: 20px; }
+      #loginModal .modal-content .modal-body form .fullName .form-group, #signUpModal .modal-content .modal-body form .fullName .form-group {
+        width: 49%;
+        margin-bottom: 1rem !important; }
+      #loginModal .modal-content .modal-body form .form-group .form-control, #signUpModal .modal-content .modal-body form .form-group .form-control {
+        border-radius: 7px;
+        height: 45px;
+        font-size: 14px;
+        border: 1px solid #d6d6d6; }
+        #loginModal .modal-content .modal-body form .form-group .form-control:focus, #signUpModal .modal-content .modal-body form .form-group .form-control:focus {
+          background-color: #fff;
+          outline: 0;
+          box-shadow: none;
+          border: 1px solid #d6d6d6; }
+      #loginModal .modal-content .modal-body form .form-group:last-child, #signUpModal .modal-content .modal-body form .form-group:last-child {
+        margin-bottom: 20px; }
+      #loginModal .modal-content .modal-body form .orangeBtn, #signUpModal .modal-content .modal-body form .orangeBtn {
+        font-size: 13px;
+        padding: 8px; }
+      #loginModal .modal-content .modal-body form .forget, #signUpModal .modal-content .modal-body form .forget {
+        font-size: 14px;
+        -webkit-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out; }
+        #loginModal .modal-content .modal-body form .forget:hover, #signUpModal .modal-content .modal-body form .forget:hover {
+          text-decoration: underline; }
+      #loginModal .modal-content .modal-body form .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn), #signUpModal .modal-content .modal-body form .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+        width: 100%;
+        border-radius: 7px;
+        height: 45px;
+        font-size: 14px; }
+        #loginModal .modal-content .modal-body form .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) > .dropdown-toggle.bs-placeholder, #loginModal .modal-content .modal-body form .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) > .dropdown-toggle.bs-placeholder:active, #loginModal .modal-content .modal-body form .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) > .dropdown-toggle.bs-placeholder:focus,
+        #loginModal .modal-content .modal-body form .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) > .dropdown-toggle.bs-placeholder:hover, #signUpModal .modal-content .modal-body form .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) > .dropdown-toggle.bs-placeholder, #signUpModal .modal-content .modal-body form .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) > .dropdown-toggle.bs-placeholder:active, #signUpModal .modal-content .modal-body form .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) > .dropdown-toggle.bs-placeholder:focus,
+        #signUpModal .modal-content .modal-body form .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) > .dropdown-toggle.bs-placeholder:hover {
+          background: #fff;
+          color: #1c1b1c;
+          font-size: 14px;
+          height: 100%;
+          border: 1px solid #d6d6d6;
+          box-shadow: none;
+          outline: 0 !important; }
+          #loginModal .modal-content .modal-body form .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) > .dropdown-toggle.bs-placeholder .filter-option-inner, #loginModal .modal-content .modal-body form .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) > .dropdown-toggle.bs-placeholder:active .filter-option-inner, #loginModal .modal-content .modal-body form .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) > .dropdown-toggle.bs-placeholder:focus .filter-option-inner,
+          #loginModal .modal-content .modal-body form .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) > .dropdown-toggle.bs-placeholder:hover .filter-option-inner, #signUpModal .modal-content .modal-body form .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) > .dropdown-toggle.bs-placeholder .filter-option-inner, #signUpModal .modal-content .modal-body form .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) > .dropdown-toggle.bs-placeholder:active .filter-option-inner, #signUpModal .modal-content .modal-body form .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) > .dropdown-toggle.bs-placeholder:focus .filter-option-inner,
+          #signUpModal .modal-content .modal-body form .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) > .dropdown-toggle.bs-placeholder:hover .filter-option-inner {
+            height: 100%;
+            align-items: center;
+            display: flex; }
+        #loginModal .modal-content .modal-body form .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) .dropdown-menu, #signUpModal .modal-content .modal-body form .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) .dropdown-menu {
+          padding: 0; }
+          #loginModal .modal-content .modal-body form .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) .dropdown-menu li, #signUpModal .modal-content .modal-body form .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) .dropdown-menu li {
+            border-bottom: 1px solid #d6d6d6; }
+            #loginModal .modal-content .modal-body form .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) .dropdown-menu li:last-child, #signUpModal .modal-content .modal-body form .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) .dropdown-menu li:last-child {
+              border: 0; }
+            #loginModal .modal-content .modal-body form .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) .dropdown-menu li a, #signUpModal .modal-content .modal-body form .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) .dropdown-menu li a {
+              padding: 10px; }
+              #loginModal .modal-content .modal-body form .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) .dropdown-menu li a span, #signUpModal .modal-content .modal-body form .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) .dropdown-menu li a span {
+                font-weight: normal; }
+    #loginModal .modal-content .modal-body a, #signUpModal .modal-content .modal-body a {
+      color: #100f10;
+      font-size: 13px; }
+      #loginModal .modal-content .modal-body a span, #signUpModal .modal-content .modal-body a span {
+        font-weight: bold;
+        margin-left: 5px; }
+    #loginModal .modal-content .modal-body .blackText, #signUpModal .modal-content .modal-body .blackText {
+      font-size: 14px;
+      color: #100f10;
+      font-weight: bold;
+      text-align: center;
+      margin: 20px 0; }
+    #loginModal .modal-content .modal-body .socialBtns, #signUpModal .modal-content .modal-body .socialBtns {
+      margin-bottom: 25px; }
+      #loginModal .modal-content .modal-body .socialBtns .orangeBtn, #signUpModal .modal-content .modal-body .socialBtns .orangeBtn {
+        min-width: unset;
+        width: 140px;
+        color: #fff;
+        padding: 8px;
+        border: 0; }
+        #loginModal .modal-content .modal-body .socialBtns .orangeBtn img, #signUpModal .modal-content .modal-body .socialBtns .orangeBtn img {
+          width: 15px;
+          height: 15px;
+          margin-right: 5px; }
+        #loginModal .modal-content .modal-body .socialBtns .orangeBtn.google, #signUpModal .modal-content .modal-body .socialBtns .orangeBtn.google {
+          background-color: #e24733; }
+          #loginModal .modal-content .modal-body .socialBtns .orangeBtn.google:hover, #signUpModal .modal-content .modal-body .socialBtns .orangeBtn.google:hover {
+            box-shadow: 0px 1px 12px #e2473396;
+            -webkit-box-shadow: 0px 1px 12px #e2473396;
+            -moz-box-shadow: 0px 1px 12px #e2473396;
+            -o-box-shadow: 0px 1px 12px #e2473396; }
+        #loginModal .modal-content .modal-body .socialBtns .orangeBtn.twitter, #signUpModal .modal-content .modal-body .socialBtns .orangeBtn.twitter {
+          background-color: #00b7d8; }
+          #loginModal .modal-content .modal-body .socialBtns .orangeBtn.twitter:hover, #signUpModal .modal-content .modal-body .socialBtns .orangeBtn.twitter:hover {
+            box-shadow: 0px 1px 12px #00b7d875;
+            -webkit-box-shadow: 0px 1px 12px #00b7d875;
+            -moz-box-shadow: 0px 1px 12px #00b7d875;
+            -o-box-shadow: 0px 1px 12px #00b7d875; }
+        #loginModal .modal-content .modal-body .socialBtns .orangeBtn.linkedIn, #signUpModal .modal-content .modal-body .socialBtns .orangeBtn.linkedIn {
+          background-color: #2c2e65; }
+          #loginModal .modal-content .modal-body .socialBtns .orangeBtn.linkedIn:hover, #signUpModal .modal-content .modal-body .socialBtns .orangeBtn.linkedIn:hover {
+            box-shadow: 0px 1px 12px #2c2e659e;
+            -webkit-box-shadow: 0px 1px 12px #2c2e659e;
+            -moz-box-shadow: 0px 1px 12px #2c2e659e;
+            -o-box-shadow: 0px 1px 12px #2c2e659e; }
+    #loginModal .modal-content .modal-body .haveAcc, #signUpModal .modal-content .modal-body .haveAcc {
+      font-size: 14px;
+      justify-content: center;
+      margin-top: 20px;
+      -webkit-transition: all 0.5s ease-in-out;
+      -o-transition: all 0.5s ease-in-out;
+      -moz-transition: all 0.5s ease-in-out; }
+      #loginModal .modal-content .modal-body .haveAcc:hover, #signUpModal .modal-content .modal-body .haveAcc:hover {
+        text-decoration: underline; }
+      #loginModal .modal-content .modal-body .haveAcc.signingUp, #signUpModal .modal-content .modal-body .haveAcc.signingUp {
+        display: flex; }
+        #loginModal .modal-content .modal-body .haveAcc.signingUp a, #signUpModal .modal-content .modal-body .haveAcc.signingUp a {
+          display: inline-block; }
+          #loginModal .modal-content .modal-body .haveAcc.signingUp a span, #signUpModal .modal-content .modal-body .haveAcc.signingUp a span {
+            color: #ff7600;
+            text-decoration: underline;
+            font-weight: normal;
+            margin: 0 5px; }
+        #loginModal .modal-content .modal-body .haveAcc.signingUp:hover, #signUpModal .modal-content .modal-body .haveAcc.signingUp:hover {
+          text-decoration: none; }
+
+/* end Modal */
 /* start categories */
 .categoriesLinks {
   padding: 20px 0 0;
@@ -1085,7 +1310,8 @@ header {
     left: -100%;
     transform-origin: left;
     border-radius: 0;
-    display: block !important; }
+    display: block !important;
+    overflow: auto; }
     body header .menu.ulDir {
       left: 0; }
     body header .menu .gradientBg {
@@ -1129,6 +1355,28 @@ header {
       body header .menu .catLink i {
         margin-right: 8px !important;
         font-size: 13px; }
+      body header .menu .catLink ul {
+        visibility: hidden;
+        opacity: 0;
+        top: 0;
+        left: 0;
+        width: 100%;
+        position: relative;
+        display: none; }
+        body header .menu .catLink ul ul {
+          left: 0;
+          box-shadow: none;
+          transform: initial; }
+          body header .menu .catLink ul ul:hover {
+            transform: initial; }
+      body header .menu .catLink li:hover > ul {
+        visibility: visible;
+        opacity: 1;
+        position: relative;
+        transform: initial; }
+      body header .menu .catLink:hover .sub-menu {
+        display: block;
+        margin-bottom: 30px; }
   body .sliderBg {
     min-height: unset;
     height: 150px; }
@@ -1290,9 +1538,9 @@ header {
     body header {
       height: 100px; }
       body header .mr-18 {
-        margin-right: 26px; }
-      body header .mr-28 {
-        margin-right: 26px; }
+        margin-right: 25px; }
+      body header .mr-27 {
+        margin-right: 25px; }
       body header .menu {
         justify-content: center; }
         body header .menu .gradientBg {
@@ -1303,6 +1551,14 @@ header {
           font-size: 13px; }
         body header .menu .cartDiv, body header .menu .flagImg {
           margin-top: 12px; }
+        body header .menu .catLink ul {
+          width: 190px; }
+          body header .menu .catLink ul.sub-menu ul {
+            transform: translate(20px, 0px); }
+            body header .menu .catLink ul.sub-menu ul:hover {
+              transform: translate(20px, 0); }
+          body header .menu .catLink ul li a {
+            font-size: 10px; }
     body .categoriesLinks {
       justify-content: center; }
       body .categoriesLinks li a {
@@ -1318,6 +1574,24 @@ header {
           font-size: 12px; }
         body .sliderBg .sliderText .gradientBg {
           font-size: 12px; }
+      body .sliderBg.guestBg {
+        min-height: 240px; }
+        body .sliderBg.guestBg .sliderText {
+          margin-left: 150px; }
+          body .sliderBg.guestBg .sliderText p.titleText {
+            font-size: 23px; }
+          body .sliderBg.guestBg .sliderText .blackText {
+            font-size: 12px; }
+          body .sliderBg.guestBg .sliderText p.grayText {
+            font-size: 12px;
+            margin: 5px 0 15px; }
+          body .sliderBg.guestBg .sliderText .searchDiv input {
+            font-size: 12px; }
+          body .sliderBg.guestBg .sliderText #clockdiv .count span {
+            width: 40px;
+            height: 50px;
+            line-height: 50px;
+            font-size: 18px; }
     body .myCourses div {
       justify-content: center !important; }
       body .myCourses div > div.hi {
@@ -1335,11 +1609,14 @@ header {
     body .recommended .nav-pills .nav-item {
       margin-right: 15px;
       margin-bottom: 7px; }
+      body .recommended .nav-pills .nav-item .nav-link {
+        font-size: 14px; }
     body .recommended .course {
       max-width: none;
       max-height: none;
-      width: 48%;
-      margin-bottom: 25px; }
+      width: 24%; }
+      body .recommended .course .courseName {
+        font-size: 12px; }
     body .mapCourses #map {
       width: 66%;
       height: 255px; }
@@ -1364,11 +1641,60 @@ header {
       height: auto;
       padding: 30px 0; }
       body .register .regText {
-        margin: 0; } }
+        margin: 0; }
+        body .register .regText .title {
+          font-size: 20px; }
+    body .personalization {
+      min-height: 300px;
+      padding-top: 20px; }
+      body .personalization .desc {
+        font-size: 13px; }
+      body .personalization .orangeBtn {
+        font-size: 13px; }
+    body .topCat .categories .cat {
+      width: 157px;
+      height: 147px; }
+      body .topCat .categories .cat img {
+        width: 35px;
+        height: 35px; }
+      body .topCat .categories .cat h4 {
+        font-size: 12px; }
+      body .topCat .categories .cat div {
+        font-size: 11px; }
+      body .topCat .categories .cat.viewAll h4 {
+        font-size: 12px !important; }
+    body .institutesContainer .institutes .courserBlock {
+      max-height: unset;
+      height: 135px; }
+      body .institutesContainer .institutes .courserBlock .startsBlock {
+        margin: 0 0 0px;
+        font-size: 10px; }
+      body .institutesContainer .institutes .courserBlock .courseText {
+        padding: 5px 10px; }
+        body .institutesContainer .institutes .courserBlock .courseText p:first-child {
+          font-size: 13px; }
+        body .institutesContainer .institutes .courserBlock .courseText p:nth-child(2) {
+          font-size: 13px; }
+      body .institutesContainer .institutes .courserBlock .info {
+        font-size: 11px;
+        flex-wrap: wrap;
+        margin: 5px 0; }
+        body .institutesContainer .institutes .courserBlock .info div {
+          margin-bottom: 3px; }
+          body .institutesContainer .institutes .courserBlock .info div:nth-child(2) {
+            margin: 0 15px 3px; }
+          body .institutesContainer .institutes .courserBlock .info div img {
+            width: 10px;
+            height: 11px; }
+      body .institutesContainer .institutes .courserBlock .price {
+        font-size: 11px; } }
 /*Medium Screen*/
 @media (min-width: 992px) and (max-width: 1199px) {
   .mr-18 {
-    margin-right: 12px; }
+    margin-right: 11px; }
+
+  .mr-27 {
+    margin-right: 16px; }
 
   header .menu .catLink, header .menu .gradientBg {
     font-size: 13px; }
@@ -1392,7 +1718,15 @@ header {
     max-width: 220px; }
 
   .register .regText {
-    margin: 0 auto 0 210px; } }
+    margin: 0 auto 0 210px; }
+
+  .personalization {
+    min-height: 500px;
+    padding-top: 60px; }
+
+  .topCat .categories .cat {
+    width: 215px;
+    height: 160px; } }
 /*Larger Screen*/
 /* End Media Query */
 
