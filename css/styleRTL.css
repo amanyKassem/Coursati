@@ -1,21 +1,27 @@
 body {
   direction: rtl;
-  text-align: right; }
+  text-align: right;
+}
 
 .owl-carousel {
-  direction: ltr; }
+  direction: ltr;
+}
 
 .fadeInRight {
-  animation-name: fadeInLeft !important; }
+  animation-name: fadeInLeft !important;
+}
 
 .fadeInLeft {
-  animation-name: fadeInRight !important; }
+  animation-name: fadeInRight !important;
+}
 
 .hvr-forward:hover, .hvr-forward:focus, .hvr-forward:active {
   -webkit-transform: translateX(-8px);
-  transform: translateX(-8px); }
+  transform: translateX(-8px);
+}
 
 #scroll-top {
-  right: 15px; }
+  right: 15px;
+}
 
 /*# sourceMappingURL=styleRTL.css.map */

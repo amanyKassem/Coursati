@@ -6,7 +6,8 @@
 
 .btn:hover, .btn:focus, .btn.focus {
   text-decoration: none;
-  outline: none; }
+  outline: none;
+  box-shadow: none; }
 
 .modal {
   overflow-y: auto; }
@@ -16,6 +17,36 @@ a, button {
   -o-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
   -webkit-transition: all 0.5s ease-in-out; }
+
+.bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+  width: 100%;
+  border-radius: 7px;
+  height: 45px;
+  font-size: 14px; }
+  .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) > .dropdown-toggle.bs-placeholder, .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) > .dropdown-toggle.bs-placeholder:active, .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) > .dropdown-toggle.bs-placeholder:focus,
+  .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) > .dropdown-toggle.bs-placeholder:hover {
+    background: #fff;
+    color: #1c1b1c;
+    font-size: 14px;
+    height: 100%;
+    border: 1px solid #d6d6d6;
+    box-shadow: none;
+    outline: 0 !important; }
+    .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) > .dropdown-toggle.bs-placeholder .filter-option-inner, .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) > .dropdown-toggle.bs-placeholder:active .filter-option-inner, .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) > .dropdown-toggle.bs-placeholder:focus .filter-option-inner,
+    .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) > .dropdown-toggle.bs-placeholder:hover .filter-option-inner {
+      height: 100%;
+      align-items: center;
+      display: flex; }
+  .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) .dropdown-menu {
+    padding: 0; }
+    .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) .dropdown-menu li {
+      border-bottom: 1px solid #d6d6d6; }
+      .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) .dropdown-menu li:last-child {
+        border: 0; }
+      .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) .dropdown-menu li a {
+        padding: 10px; }
+        .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) .dropdown-menu li a span {
+          font-weight: normal; }
 
 :placeholder-shown::-webkit-input-placeholder {
   opacity: 1;
@@ -71,6 +102,33 @@ p {
 
 .whiteBg {
   background-color: #fff; }
+
+.custom-checkbox {
+  min-height: auto; }
+  .custom-checkbox .custom-control-input:checked ~ .custom-control-label::after {
+    background-image: url(../img/tick.png); }
+  .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+    color: #ffffff;
+    border-color: #ffffff;
+    background-color: #ffffff; }
+  .custom-checkbox .custom-control-input:focus ~ .custom-control-label::before {
+    box-shadow: none; }
+  .custom-checkbox .custom-control-label {
+    padding-left: 15px; }
+    .custom-checkbox .custom-control-label::before {
+      width: 20px;
+      height: 20px;
+      background-color: #d8d8d8;
+      border: 0;
+      top: 0; }
+    .custom-checkbox .custom-control-label::after {
+      width: 20px;
+      height: 20px;
+      top: 0; }
+    .custom-checkbox .custom-control-label span {
+      color: #524e50;
+      font-size: 11px;
+      margin-left: 5px; }
 
 .searchDiv {
   position: relative; }
@@ -527,37 +585,6 @@ header {
         -moz-transition: all 0.5s ease-in-out; }
         #loginModal .modal-content .modal-body form .forget:hover, #signUpModal .modal-content .modal-body form .forget:hover {
           text-decoration: underline; }
-      #loginModal .modal-content .modal-body form .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn), #signUpModal .modal-content .modal-body form .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
-        width: 100%;
-        border-radius: 7px;
-        height: 45px;
-        font-size: 14px; }
-        #loginModal .modal-content .modal-body form .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) > .dropdown-toggle.bs-placeholder, #loginModal .modal-content .modal-body form .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) > .dropdown-toggle.bs-placeholder:active, #loginModal .modal-content .modal-body form .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) > .dropdown-toggle.bs-placeholder:focus,
-        #loginModal .modal-content .modal-body form .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) > .dropdown-toggle.bs-placeholder:hover, #signUpModal .modal-content .modal-body form .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) > .dropdown-toggle.bs-placeholder, #signUpModal .modal-content .modal-body form .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) > .dropdown-toggle.bs-placeholder:active, #signUpModal .modal-content .modal-body form .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) > .dropdown-toggle.bs-placeholder:focus,
-        #signUpModal .modal-content .modal-body form .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) > .dropdown-toggle.bs-placeholder:hover {
-          background: #fff;
-          color: #1c1b1c;
-          font-size: 14px;
-          height: 100%;
-          border: 1px solid #d6d6d6;
-          box-shadow: none;
-          outline: 0 !important; }
-          #loginModal .modal-content .modal-body form .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) > .dropdown-toggle.bs-placeholder .filter-option-inner, #loginModal .modal-content .modal-body form .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) > .dropdown-toggle.bs-placeholder:active .filter-option-inner, #loginModal .modal-content .modal-body form .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) > .dropdown-toggle.bs-placeholder:focus .filter-option-inner,
-          #loginModal .modal-content .modal-body form .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) > .dropdown-toggle.bs-placeholder:hover .filter-option-inner, #signUpModal .modal-content .modal-body form .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) > .dropdown-toggle.bs-placeholder .filter-option-inner, #signUpModal .modal-content .modal-body form .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) > .dropdown-toggle.bs-placeholder:active .filter-option-inner, #signUpModal .modal-content .modal-body form .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) > .dropdown-toggle.bs-placeholder:focus .filter-option-inner,
-          #signUpModal .modal-content .modal-body form .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) > .dropdown-toggle.bs-placeholder:hover .filter-option-inner {
-            height: 100%;
-            align-items: center;
-            display: flex; }
-        #loginModal .modal-content .modal-body form .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) .dropdown-menu, #signUpModal .modal-content .modal-body form .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) .dropdown-menu {
-          padding: 0; }
-          #loginModal .modal-content .modal-body form .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) .dropdown-menu li, #signUpModal .modal-content .modal-body form .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) .dropdown-menu li {
-            border-bottom: 1px solid #d6d6d6; }
-            #loginModal .modal-content .modal-body form .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) .dropdown-menu li:last-child, #signUpModal .modal-content .modal-body form .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) .dropdown-menu li:last-child {
-              border: 0; }
-            #loginModal .modal-content .modal-body form .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) .dropdown-menu li a, #signUpModal .modal-content .modal-body form .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) .dropdown-menu li a {
-              padding: 10px; }
-              #loginModal .modal-content .modal-body form .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) .dropdown-menu li a span, #signUpModal .modal-content .modal-body form .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) .dropdown-menu li a span {
-                font-weight: normal; }
     #loginModal .modal-content .modal-body a, #signUpModal .modal-content .modal-body a {
       color: #100f10;
       font-size: 13px; }
@@ -1219,6 +1246,70 @@ header {
             margin-right: 7px; }
 
 /* end institutes */
+/* start result sNum */
+.resultsNum h4 {
+  font-weight: bold;
+  font-size: 26px; }
+  .resultsNum h4 span {
+    color: #ff7600; }
+.resultsNum p {
+  color: #848484;
+  font-size: 14px; }
+
+.filterBtns .filter {
+  border-radius: 5px;
+  border: solid 1px #d3d3d3;
+  background-color: #ffffff;
+  width: 120px;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  align-self: flex-start;
+  font-size: 14px;
+  color: #100f10; }
+  .filterBtns .filter img {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px; }
+.filterBtns .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+  margin-left: 10px;
+  width: 120px !important;
+  height: 40px;
+  background: #ededed !important;
+  border-radius: 5px; }
+  .filterBtns .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) button {
+    color: #100f10; }
+
+/* end results Num */
+/* start resultsContainer */
+.resultsContainer {
+  margin-top: 25px; }
+  .resultsContainer .topics .myaccordion {
+    width: 270px; }
+    .resultsContainer .topics .myaccordion .card {
+      margin-bottom: 10px;
+      border-radius: 6px;
+      overflow: hidden;
+      background: transparent; }
+      .resultsContainer .topics .myaccordion .card .card-header {
+        background: #fff;
+        padding: 10px 20px;
+        border-radius: 0; }
+        .resultsContainer .topics .myaccordion .card .card-header button {
+          color: #100f10;
+          font-size: 16px;
+          font-weight: bold;
+          padding: 0; }
+          .resultsContainer .topics .myaccordion .card .card-header button i {
+            font-size: 14px; }
+      .resultsContainer .topics .myaccordion .card .card-body {
+        padding: 0 20px; }
+        .resultsContainer .topics .myaccordion .card .card-body li {
+          padding: 15px 0;
+          border-bottom: 1px solid #dfdfdf;
+          font-size: 14px; }
+
+/* end resultsContainer */
 /*start scroll top */
 #scroll-top {
   width: 40px;

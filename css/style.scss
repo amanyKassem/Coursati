@@ -19,6 +19,7 @@ $medGray: #524e50;
 .btn:hover, .btn:focus, .btn.focus {
   text-decoration: none;
   outline: none;
+  box-shadow: none;
 }
 
 .modal{
@@ -30,6 +31,51 @@ a, button {
   -o-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
   -webkit-transition: all 0.5s ease-in-out;
+}
+
+
+.bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+  width: 100%;
+  border-radius: 7px;
+  height: 45px;
+  font-size: 14px;
+
+  >.dropdown-toggle.bs-placeholder, >.dropdown-toggle.bs-placeholder:active, >.dropdown-toggle.bs-placeholder:focus,
+  >.dropdown-toggle.bs-placeholder:hover {
+    background: #fff;
+    color: #1c1b1c;
+    font-size: 14px;
+    height: 100%;
+    border: 1px solid #d6d6d6;
+    box-shadow: none;
+    outline: 0 !important;
+
+    .filter-option-inner {
+      height: 100%;
+      align-items: center;
+      display: flex;
+    }
+
+  }
+
+  .dropdown-menu {
+    padding: 0;
+
+    li {
+      border-bottom: 1px solid #d6d6d6;
+
+      &:last-child{
+        border: 0;
+      }
+
+      a{
+        padding: 10px;
+        span {
+          font-weight: normal;
+        }
+      }
+    }
+  }
 }
 
 :placeholder-shown::-webkit-input-placeholder {
@@ -102,6 +148,59 @@ p {
 .whiteBg {
   background-color: #fff;
 }
+
+.custom-checkbox {
+  min-height: auto;
+  .custom-control-input{
+    &:checked{
+      ~.custom-control-label{
+        &::after {
+          background-image: url(../img/tick.png);
+        }
+
+        &::before {
+          color: #ffffff;
+          border-color: #ffffff;
+          background-color: #ffffff;
+        }
+      }
+    }
+
+    &:focus{
+      ~.custom-control-label{
+        &::before {
+          box-shadow: none;
+        }
+      }
+    }
+  }
+
+  .custom-control-label{
+    padding-left: 15px;
+    &::before {
+      width: 20px;
+      height: 20px;
+      background-color: #d8d8d8;
+      border: 0;
+      top: 0;
+    }
+
+    &::after {
+      width: 20px;
+      height: 20px;
+      top: 0;
+    }
+
+    span{
+      color: #524e50;
+      font-size: 11px;
+      margin-left: 5px;
+    }
+
+  }
+
+}
+
 
 .searchDiv {
   position: relative;
@@ -757,53 +856,6 @@ header {
             text-decoration: underline;
           }
         }
-
-        .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
-          width: 100%;
-          border-radius: 7px;
-          height: 45px;
-          font-size: 14px;
-
-          >.dropdown-toggle.bs-placeholder, >.dropdown-toggle.bs-placeholder:active, >.dropdown-toggle.bs-placeholder:focus,
-          >.dropdown-toggle.bs-placeholder:hover {
-            background: #fff;
-            color: #1c1b1c;
-            font-size: 14px;
-            height: 100%;
-            border: 1px solid #d6d6d6;
-            box-shadow: none;
-            outline: 0 !important;
-
-            .filter-option-inner {
-              height: 100%;
-              align-items: center;
-              display: flex;
-            }
-
-          }
-
-          .dropdown-menu {
-            padding: 0;
-
-            li {
-              border-bottom: 1px solid #d6d6d6;
-
-              &:last-child{
-                border: 0;
-              }
-
-              a{
-                padding: 10px;
-                span {
-                  font-weight: normal;
-                }
-              }
-            }
-          }
-        }
-
-
-
       }
 
       a{
@@ -1775,6 +1827,98 @@ header {
 }
 
 /* end institutes */
+
+/* start result sNum */
+.resultsNum{
+  h4{
+    font-weight: bold;
+    font-size: 26px;
+    span{
+      color:$orange
+    }
+  }
+  p{
+    color: #848484;
+    font-size: 14px;
+  }
+}
+
+.filterBtns{
+  .filter {
+    border-radius: 5px;
+    border: solid 1px #d3d3d3;
+    background-color: #ffffff;
+    width: 120px;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    align-self: flex-start;
+    font-size: 14px;
+    color: $black;
+
+    img{
+      width: 15px;
+      height: 15px;
+      margin-right: 5px;
+    }
+  }
+
+  .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn){
+    margin-left: 10px;
+    width: 120px !important;
+    height: 40px;
+    background: #ededed !important;
+    border-radius: 5px;
+
+    button{
+      color: $black;
+    }
+  }
+}
+/* end results Num */
+
+/* start resultsContainer */
+.resultsContainer {
+  margin-top: 25px;
+  .topics{
+    .myaccordion{
+      width: 270px;
+      .card {
+        margin-bottom: 10px;
+        border-radius: 6px;
+        overflow: hidden;
+        background: transparent;
+
+        .card-header{
+          background: #fff;
+          padding: 10px 20px;
+          border-radius: 0;
+
+          button{
+            color: $black;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 0;
+            i{
+              font-size: 14px;
+            }
+          }
+        }
+
+        .card-body{
+          padding: 0 20px;
+          li {
+            padding: 15px 0;
+            border-bottom: 1px solid #dfdfdf;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* end resultsContainer */
 
 
 /*start scroll top */
