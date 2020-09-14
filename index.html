@@ -38,7 +38,7 @@
 
         <div class="menuBar d-flex d-md-none justify-content-between align-items-center">
             <div class="d-flex flex-row align-items-center">
-                <a href="#" class="cart">
+                <a href="cart.html" class="cart">
                     <img src="img/cart.png" class="cartImg" alt="cart">
                 </a>
                 <a class="toggleSearch">
@@ -60,7 +60,7 @@
                 </a>
                 <input type="text" placeholder="What do you want to learn?">
             </div>
-            <aclass="toggleSearch">
+            <a class="toggleSearch">
                 <i class="fas fa-times-circle"></i>
             </a>
         </div>
@@ -74,8 +74,8 @@
             </a>
 
             <div class="user userAuth d-md-none">
-                <a href="#">login</a>
-                <a href="#">sign up</a>
+                <a data-toggle="modal" data-target="#loginModal">login</a>
+                <a data-toggle="modal" data-target="#signUpModal">sign up</a>
             </div>
 
             <div class="catLink mr-27">
@@ -225,10 +225,10 @@
             </a>
 
             <div class="cartDiv align-items-center mr-27  d-none d-md-flex">
-                <a href="#" class="mr-27">
+                <a href="cart.html" class="cart mr-27">
                     <img src="img/cart.png" class="cartImg" alt="cart">
                 </a>
-                <a href="#" class="mr-27">
+                <a href="#" class="twitter mr-27">
                     <img src="img/twitter.png" class="cartImg" alt="twitter">
                 </a>
 
@@ -340,7 +340,6 @@
                             <option>instructor</option>
                             <option>student</option>
                         </select>
-
                     </div>
 
                     <div class="d-flex justify-content-between align-items-center">

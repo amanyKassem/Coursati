@@ -2,13 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0bdf0a79-fbaa-46ea-9800-98d63acf27bb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/cart.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/styleRTL.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/styleRTL.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/styleRTL.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/styleRTL.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/bg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/discover.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/discover.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/master.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/master.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/visa.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/visa.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/scripts.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/searchResults.html" beforeDir="false" afterPath="$PROJECT_DIR$/searchResults.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,7 +44,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1hS12PjlBT4Vu0ipM2IBtka2U47" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -118,6 +125,8 @@
       <workItem from="1599719846049" duration="25561000" />
       <workItem from="1599989477476" duration="5903000" />
       <workItem from="1600004967428" duration="2322000" />
+      <workItem from="1600068233150" duration="12777000" />
+      <workItem from="1600087395841" duration="3928000" />
     </task>
     <servers />
   </component>
@@ -129,5 +138,9 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="833" y="445" key="publish.login/0.0.1920.1080@0.0.1920.1080" timestamp="1599996355725" />
+    <state x="625" y="241" width="670" height="676" key="search.everywhere.popup" timestamp="1600073744264">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="625" y="241" width="670" height="676" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1600073744264" />
   </component>
 </project>

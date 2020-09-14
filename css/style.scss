@@ -22,6 +22,12 @@ $medGray: #524e50;
   box-shadow: none;
 }
 
+.btn-light {
+  color: $black;
+  background-color: #ffffff;
+  border-color: #d6d6d6;
+}
+
 .modal{
   overflow-y:auto;
 }
@@ -34,7 +40,7 @@ a, button {
 }
 
 
-.bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+.bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) , .bootstrap-select>.dropdown-toggle{
   width: 100%;
   border-radius: 7px;
   height: 45px;
@@ -49,13 +55,19 @@ a, button {
     border: 1px solid #d6d6d6;
     box-shadow: none;
     outline: 0 !important;
+    border-radius: 7px;
+  }
 
-    .filter-option-inner {
-      height: 100%;
-      align-items: center;
-      display: flex;
-    }
+  .dropdown-toggle:focus, >select.mobile-device:focus+.dropdown-toggle {
+    outline: none !important;
+    outline-offset: 0;
+    background: #fff;
+  }
 
+  .filter-option-inner {
+    height: 100%;
+    align-items: center;
+    display: flex;
   }
 
   .dropdown-menu {
@@ -201,6 +213,30 @@ p {
 
 }
 
+.breadcrumb {
+  background-color: transparent;
+  padding: 0;
+  margin: 10px 0 30px;
+  .breadcrumb-item{
+    color: $black;
+    font-size: 13px;
+    text-transform: capitalize;
+    a{
+      color: $black;
+      i{
+        margin-right: 20px;
+      }
+    }
+    +.breadcrumb-item{
+      &::before {
+        display: inline-block;
+        padding-right: .5rem;
+        color: $black;
+        content: "\\" ;
+      }
+    }
+  }
+}
 
 .searchDiv {
   position: relative;
@@ -227,6 +263,13 @@ p {
     transform: translateY(-50%);
     font-size: 14px;
     color: $black;
+  }
+
+  &.activeSearch{
+    input{
+      box-shadow: 0 8px 10px 0 rgba(255, 118, 0, 0.17);
+      border: solid 2px var(--orange);
+    }
   }
 }
 
@@ -1851,7 +1894,7 @@ header {
     width: 120px;
     justify-content: center;
     align-items: center;
-    height: 40px;
+    height: 45px;
     align-self: flex-start;
     font-size: 14px;
     color: $black;
@@ -1866,12 +1909,13 @@ header {
   .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn){
     margin-left: 10px;
     width: 120px !important;
-    height: 40px;
+    height: 45px;
     background: #ededed !important;
     border-radius: 5px;
 
     button{
       color: $black;
+      background-color: #ededed !important;
     }
   }
 }
@@ -1916,9 +1960,288 @@ header {
       }
     }
   }
+
+  .results {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+
+    .titles {
+      display: flex;
+      align-items: center;
+
+      div {
+        display: flex;
+        background-color: #e23a7e;
+        margin-right: 10px;
+        padding: 10px 15px;
+        border-radius: 5px;
+        color: #fff;
+        font-size: 15px;
+        .deleteTitle {
+          color: #fff;
+          margin-left: 20px;
+        }
+      }
+    }
+
+    .institutesContainer {
+      .institutes {
+        .courserBlock {
+          width: 100%;
+          max-height: 160px;
+          height: 160px;
+
+          .courseText{
+
+            .rightDiv {
+              display: flex;
+              align-items: flex-end;
+              flex-direction: column;
+              width: 20%;
+              padding-top: 10px;
+              .price , .startsBlock{
+                display: flex;
+                flex-direction: column !important;
+                align-items: flex-end !important;
+                font-size: 15px;
+              }
+
+              .price{
+                span{
+                  color: #524e50;
+                }
+              }
+
+              .startsBlock{
+                .stars {
+                  margin-right: 0;
+                }
+              }
+
+            }
+            .leftDiv{
+              p:first-child{
+                font-size: 15px;
+              }
+              p:nth-child(2) {
+                font-size: 14px;
+              }
+              .info {
+                div {
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  font-size: 13px;
+                }
+              }
+              .desc {
+                height: 60px;
+                overflow: hidden;
+              }
+            }
+
+          }
+
+          &:hover {
+            box-shadow: none;
+            background-color: #ededed;
+          }
+
+        }
+      }
+    }
+    .bottomNav {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 15px;
+      a{
+        background: #fff;
+        color: $black;
+        margin-right: 5px;
+        width: 35px;
+        height: 35px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        font-size: 16px;
+
+        &.nextNav , &.prevNav{
+          width: 80px;
+        }
+
+        &:last-child{
+          margin-right: 0;
+        }
+        &:hover{
+          background-color: #ededed;
+        }
+      }
+    }
+  }
 }
 
 /* end resultsContainer */
+
+/* start cartContainer */
+.cartContainer {
+  margin-top: 35px;
+  .title{
+    font-size: 21px;
+    margin-bottom: 20px;
+  }
+  .payment , .cartItems{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+  }
+
+  .payment {
+    margin-right: 20px;
+    form{
+      label {
+        font-weight: bold;
+        font-size: 16px;
+      }
+      .form-control {
+        height: 50px;
+        padding: 10px 20px;
+        font-size: 15px;
+        color: black;
+        border: 1px solid #d6d6d6;
+        border-radius: 7px;
+        &:focus {
+          background-color: #fff;
+          outline: 0;
+          box-shadow: none;
+          border: 1px solid #d6d6d6;
+        }
+      }
+
+      .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) , .bootstrap-select>.dropdown-toggle{
+        height: 50px;
+        border-radius: 7px;
+
+        >.dropdown-toggle.bs-placeholder, >.dropdown-toggle.bs-placeholder:active, >.dropdown-toggle.bs-placeholder:focus,
+        >.dropdown-toggle.bs-placeholder:hover {
+          border-radius: 7px;
+        }
+
+      }
+
+      .title{
+        margin-top: 40px;
+      }
+
+      .PayOptions{
+        margin-bottom: 35px;
+        img{
+          width: 100px;
+          height: 70px;
+          border-radius: 10px;
+          box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.08);
+          margin-right: 15px;
+          &:last-child{
+            margin-right: 0;
+          }
+        }
+      }
+
+      .monthYear{
+        margin-bottom: 40px;
+        .bootstrap-select{
+          &:first-child{
+            margin-right: 20px;
+          }
+        }
+      }
+
+      .orangeBtn{
+        height: 50px;
+        min-width: 165px;
+      }
+    }
+  }
+
+  .cartItems{
+    .itemsCont{
+      background-color: #fff;
+      padding: 25px;
+      border-radius: 10px;
+
+      .item{
+        margin-bottom: 20px;
+        img{
+          width: 90px;
+          height: 90px;
+          border-radius: 10px;
+          margin-right: 10px;
+        }
+
+        > div {
+          flex: 1;
+          .courseText{
+            align-self: flex-start;
+            h5{
+              font-size: 17px;
+              font-weight: bold;
+              margin-bottom: 5px;
+            }
+
+            p{
+              text-transform: capitalize;
+              font-size: 15px;
+            }
+
+            .price {
+              font-size: 16px;
+              font-weight: bold;
+              color: $orange;
+              margin-top: 5px;
+              span{
+                color: #524e50;
+                margin-left: 10px;
+              }
+            }
+          }
+          .deleteItem{
+            img{
+              width: 30px;
+              height: 30px;
+              margin-right: 0;
+            }
+
+            &:hover {
+              box-shadow: 0px 1px 12px #ff7600;
+              -webkit-box-shadow: 0px 1px 12px #ff7600;
+              -moz-box-shadow: 0px 1px 12px #ff7600;
+              -o-box-shadow: 0px 1px 12px #ff7600;
+            }
+          }
+        }
+      }
+      .customHr {
+        margin: 30px 0;
+      }
+
+      .total{
+        margin-bottom: 20px;
+        span{
+          font-weight: bold;
+          font-size: 23px;
+          &:first-child{
+            color: $black;
+          }
+          &:last-child{
+            color: $orange;
+          }
+        }
+      }
+    }
+  }
+}
+/* end cartContainer */
 
 
 /*start scroll top */
@@ -2449,6 +2772,225 @@ header {
       }
     }
 
+    #loginModal , #signUpModal{
+
+      .modal-content {
+        padding: 10px;
+
+        .modal-header {
+          padding: 0 0 10px;
+
+          .close{
+            img {
+              height: 22px;
+              width: 22px;
+            }
+          }
+
+          h5{
+            font-size: 16px;
+          }
+
+        }
+
+        .modal-body {
+          padding: 10px 0 0;
+
+          form {
+            margin-bottom: 10px;
+
+            .fullName{
+              .form-group {
+                width: 49%;
+                margin-bottom: 1rem !important;
+              }
+            }
+
+
+            .form-group{
+              .form-control {
+                height: 40px;
+                font-size: 12px;
+              }
+
+              &:last-child{
+                margin-bottom: 10px;
+              }
+            }
+
+
+            .orangeBtn{
+              font-size: 12px;
+              width: 85px;
+              min-width: auto;
+            }
+
+            .forget{
+              font-size: 11px;
+            }
+          }
+
+          a{
+            span{
+              margin-left: 3px;
+            }
+          }
+
+          .blackText {
+            font-size: 12px;
+            margin: 10px 0;
+          }
+
+          .socialBtns{
+            margin-bottom: 10px;
+            flex-wrap: wrap;
+
+            .orangeBtn {
+              width: 125px;
+              font-size: 12px;
+              img {
+                width: 12px;
+                height: 12px;
+              }
+
+              &.linkedIn{
+                flex: 1;
+                margin-top: 10px;
+              }
+            }
+          }
+
+          .haveAcc{
+            font-size: 12px;
+            margin-top: 10px;
+            &.signingUp{
+              display: flex;
+              flex-wrap: wrap;
+            }
+          }
+
+        }
+      }
+    }
+
+    .topResult{
+      flex-direction: column;
+      .resultsNum {
+        text-align: center;
+        margin-bottom: 10px;
+
+        h4 {
+          font-size: 20px;
+        }
+        p {
+          color: #848484;
+          font-size: 13px;
+        }
+      }
+      .filterBtns {
+        .filter {
+          height: 35px;
+          font-size: 15px;
+        }
+
+        .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn){
+          height: 35px;
+        }
+      }
+    }
+
+    .resultsContainer {
+      margin-top: 25px;
+      flex-direction: column;
+
+      .topics {
+        .myaccordion {
+          width: 100%;
+          .card {
+            .card-header {
+              padding: 5px 10px;
+              button {
+                font-size: 13px;
+              }
+            }
+
+            .card-body {
+              li {
+                padding: 10px 0;
+                font-size: 12px;
+              }
+            }
+          }
+        }
+
+      }
+
+      .results {
+        margin-left: 0;
+        .titles {
+          flex-wrap: wrap;
+          justify-content: space-between;
+          div {
+            margin-right: 0;
+            padding: 5px 10px;
+            font-size: 13px;
+            margin-bottom: 10px;
+          }
+        }
+
+        .institutesContainer {
+          padding: 0;
+          .institutes {
+            margin-top: 0;
+            .courserBlock {
+              max-height: unset;
+              height: 285px;
+              flex-direction: column !important;
+              overflow: hidden;
+              .courseImg {
+                width: 100%;
+                height: 120px;
+              }
+              .courseText {
+                flex-direction: column;
+                justify-content: center !important;
+                .leftDiv {
+                  p{
+                    &:first-child {
+                      font-size: 14px;
+                    }
+                  }
+
+                  .desc {
+                    height: 30px;
+                  }
+                }
+
+                .rightDiv {
+                  align-items: center;
+                  flex-direction: row;
+                  width: 100%;
+                  padding-top: 10px;
+                  justify-content: space-between;
+                  .startsBlock , .price{
+                    font-size: 13px;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .bottomNav {
+          flex-wrap: wrap;
+          justify-content: center;
+          a {
+            font-size: 13px;
+            margin-bottom: 5px;
+          }
+        }
+      }
+    }
+
   }
 
 }
@@ -2798,6 +3340,62 @@ header {
 
           .price {
             font-size: 11px;
+          }
+        }
+      }
+    }
+
+    .resultsContainer{
+      .topResult{
+        .resultsNum {
+          h4 {
+            font-size: 22px;
+          }
+          p {
+            font-size: 13px;
+          }
+        }
+      }
+
+      .topics {
+        .myaccordion {
+          width: 215px;
+          .card {
+            .card-header {
+              padding: 10px 10px;
+            }
+
+            .card-body {
+              padding: 0 10px;
+              li {
+                font-size: 13px;
+              }
+
+            }
+          }
+        }
+      }
+
+      .results {
+        margin-left: 15px;
+        .titles {
+          div {
+            font-size: 14px;
+          }
+        }
+        .institutesContainer {
+          padding: 5px 0;
+          .institutes {
+            flex-direction: column;
+            flex-wrap: unset;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+        .bottomNav {
+          justify-content: center;
+          a {
+            margin-bottom: 5px;
           }
         }
       }

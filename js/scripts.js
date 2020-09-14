@@ -28,6 +28,13 @@ $(document).ready(function () {
         event.preventDefault();
     });
 
+
+    // delete course item
+    $(".deleteItem").click(function () {
+        $(this).parent().parent().remove();
+        event.preventDefault();
+    });
+
     // carousal
 
     $('.courses').slick({

@@ -9,6 +9,11 @@
   outline: none;
   box-shadow: none; }
 
+.btn-light {
+  color: #100f10;
+  background-color: #ffffff;
+  border-color: #d6d6d6; }
+
 .modal {
   overflow-y: auto; }
 
@@ -18,34 +23,39 @@ a, button {
   -moz-transition: all 0.5s ease-in-out;
   -webkit-transition: all 0.5s ease-in-out; }
 
-.bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+.bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn), .bootstrap-select > .dropdown-toggle {
   width: 100%;
   border-radius: 7px;
   height: 45px;
   font-size: 14px; }
   .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) > .dropdown-toggle.bs-placeholder, .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) > .dropdown-toggle.bs-placeholder:active, .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) > .dropdown-toggle.bs-placeholder:focus,
-  .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) > .dropdown-toggle.bs-placeholder:hover {
+  .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) > .dropdown-toggle.bs-placeholder:hover, .bootstrap-select > .dropdown-toggle > .dropdown-toggle.bs-placeholder, .bootstrap-select > .dropdown-toggle > .dropdown-toggle.bs-placeholder:active, .bootstrap-select > .dropdown-toggle > .dropdown-toggle.bs-placeholder:focus,
+  .bootstrap-select > .dropdown-toggle > .dropdown-toggle.bs-placeholder:hover {
     background: #fff;
     color: #1c1b1c;
     font-size: 14px;
     height: 100%;
     border: 1px solid #d6d6d6;
     box-shadow: none;
-    outline: 0 !important; }
-    .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) > .dropdown-toggle.bs-placeholder .filter-option-inner, .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) > .dropdown-toggle.bs-placeholder:active .filter-option-inner, .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) > .dropdown-toggle.bs-placeholder:focus .filter-option-inner,
-    .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) > .dropdown-toggle.bs-placeholder:hover .filter-option-inner {
-      height: 100%;
-      align-items: center;
-      display: flex; }
-  .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) .dropdown-menu {
+    outline: 0 !important;
+    border-radius: 7px; }
+  .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) .dropdown-toggle:focus, .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) > select.mobile-device:focus + .dropdown-toggle, .bootstrap-select > .dropdown-toggle .dropdown-toggle:focus, .bootstrap-select > .dropdown-toggle > select.mobile-device:focus + .dropdown-toggle {
+    outline: none !important;
+    outline-offset: 0;
+    background: #fff; }
+  .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) .filter-option-inner, .bootstrap-select > .dropdown-toggle .filter-option-inner {
+    height: 100%;
+    align-items: center;
+    display: flex; }
+  .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) .dropdown-menu, .bootstrap-select > .dropdown-toggle .dropdown-menu {
     padding: 0; }
-    .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) .dropdown-menu li {
+    .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) .dropdown-menu li, .bootstrap-select > .dropdown-toggle .dropdown-menu li {
       border-bottom: 1px solid #d6d6d6; }
-      .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) .dropdown-menu li:last-child {
+      .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) .dropdown-menu li:last-child, .bootstrap-select > .dropdown-toggle .dropdown-menu li:last-child {
         border: 0; }
-      .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) .dropdown-menu li a {
+      .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) .dropdown-menu li a, .bootstrap-select > .dropdown-toggle .dropdown-menu li a {
         padding: 10px; }
-        .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) .dropdown-menu li a span {
+        .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) .dropdown-menu li a span, .bootstrap-select > .dropdown-toggle .dropdown-menu li a span {
           font-weight: normal; }
 
 :placeholder-shown::-webkit-input-placeholder {
@@ -130,6 +140,24 @@ p {
       font-size: 11px;
       margin-left: 5px; }
 
+.breadcrumb {
+  background-color: transparent;
+  padding: 0;
+  margin: 10px 0 30px; }
+  .breadcrumb .breadcrumb-item {
+    color: #100f10;
+    font-size: 13px;
+    text-transform: capitalize; }
+    .breadcrumb .breadcrumb-item a {
+      color: #100f10; }
+      .breadcrumb .breadcrumb-item a i {
+        margin-right: 20px; }
+    .breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+      display: inline-block;
+      padding-right: .5rem;
+      color: #100f10;
+      content: "\\"; }
+
 .searchDiv {
   position: relative; }
   .searchDiv input {
@@ -152,6 +180,9 @@ p {
     transform: translateY(-50%);
     font-size: 14px;
     color: #100f10; }
+  .searchDiv.activeSearch input {
+    box-shadow: 0 8px 10px 0 rgba(255, 118, 0, 0.17);
+    border: solid 2px var(--orange); }
 
 .gradientBg {
   border-radius: 5px;
@@ -1263,7 +1294,7 @@ header {
   width: 120px;
   justify-content: center;
   align-items: center;
-  height: 40px;
+  height: 45px;
   align-self: flex-start;
   font-size: 14px;
   color: #100f10; }
@@ -1274,11 +1305,12 @@ header {
 .filterBtns .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
   margin-left: 10px;
   width: 120px !important;
-  height: 40px;
+  height: 45px;
   background: #ededed !important;
   border-radius: 5px; }
   .filterBtns .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) button {
-    color: #100f10; }
+    color: #100f10;
+    background-color: #ededed !important; }
 
 /* end results Num */
 /* start resultsContainer */
@@ -1308,8 +1340,186 @@ header {
           padding: 15px 0;
           border-bottom: 1px solid #dfdfdf;
           font-size: 14px; }
+  .resultsContainer .results {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px; }
+    .resultsContainer .results .titles {
+      display: flex;
+      align-items: center; }
+      .resultsContainer .results .titles div {
+        display: flex;
+        background-color: #e23a7e;
+        margin-right: 10px;
+        padding: 10px 15px;
+        border-radius: 5px;
+        color: #fff;
+        font-size: 15px; }
+        .resultsContainer .results .titles div .deleteTitle {
+          color: #fff;
+          margin-left: 20px; }
+    .resultsContainer .results .institutesContainer .institutes .courserBlock {
+      width: 100%;
+      max-height: 160px;
+      height: 160px; }
+      .resultsContainer .results .institutesContainer .institutes .courserBlock .courseText .rightDiv {
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+        width: 20%;
+        padding-top: 10px; }
+        .resultsContainer .results .institutesContainer .institutes .courserBlock .courseText .rightDiv .price, .resultsContainer .results .institutesContainer .institutes .courserBlock .courseText .rightDiv .startsBlock {
+          display: flex;
+          flex-direction: column !important;
+          align-items: flex-end !important;
+          font-size: 15px; }
+        .resultsContainer .results .institutesContainer .institutes .courserBlock .courseText .rightDiv .price span {
+          color: #524e50; }
+        .resultsContainer .results .institutesContainer .institutes .courserBlock .courseText .rightDiv .startsBlock .stars {
+          margin-right: 0; }
+      .resultsContainer .results .institutesContainer .institutes .courserBlock .courseText .leftDiv p:first-child {
+        font-size: 15px; }
+      .resultsContainer .results .institutesContainer .institutes .courserBlock .courseText .leftDiv p:nth-child(2) {
+        font-size: 14px; }
+      .resultsContainer .results .institutesContainer .institutes .courserBlock .courseText .leftDiv .info div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 13px; }
+      .resultsContainer .results .institutesContainer .institutes .courserBlock .courseText .leftDiv .desc {
+        height: 60px;
+        overflow: hidden; }
+      .resultsContainer .results .institutesContainer .institutes .courserBlock:hover {
+        box-shadow: none;
+        background-color: #ededed; }
+    .resultsContainer .results .bottomNav {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 15px; }
+      .resultsContainer .results .bottomNav a {
+        background: #fff;
+        color: #100f10;
+        margin-right: 5px;
+        width: 35px;
+        height: 35px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        font-size: 16px; }
+        .resultsContainer .results .bottomNav a.nextNav, .resultsContainer .results .bottomNav a.prevNav {
+          width: 80px; }
+        .resultsContainer .results .bottomNav a:last-child {
+          margin-right: 0; }
+        .resultsContainer .results .bottomNav a:hover {
+          background-color: #ededed; }
 
 /* end resultsContainer */
+/* start cartContainer */
+.cartContainer {
+  margin-top: 35px; }
+  .cartContainer .title {
+    font-size: 21px;
+    margin-bottom: 20px; }
+  .cartContainer .payment, .cartContainer .cartItems {
+    display: flex;
+    flex: 1;
+    flex-direction: column; }
+  .cartContainer .payment {
+    margin-right: 20px; }
+    .cartContainer .payment form label {
+      font-weight: bold;
+      font-size: 16px; }
+    .cartContainer .payment form .form-control {
+      height: 50px;
+      padding: 10px 20px;
+      font-size: 15px;
+      color: black;
+      border: 1px solid #d6d6d6;
+      border-radius: 7px; }
+      .cartContainer .payment form .form-control:focus {
+        background-color: #fff;
+        outline: 0;
+        box-shadow: none;
+        border: 1px solid #d6d6d6; }
+    .cartContainer .payment form .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn), .cartContainer .payment form .bootstrap-select > .dropdown-toggle {
+      height: 50px;
+      border-radius: 7px; }
+      .cartContainer .payment form .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) > .dropdown-toggle.bs-placeholder, .cartContainer .payment form .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) > .dropdown-toggle.bs-placeholder:active, .cartContainer .payment form .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) > .dropdown-toggle.bs-placeholder:focus,
+      .cartContainer .payment form .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) > .dropdown-toggle.bs-placeholder:hover, .cartContainer .payment form .bootstrap-select > .dropdown-toggle > .dropdown-toggle.bs-placeholder, .cartContainer .payment form .bootstrap-select > .dropdown-toggle > .dropdown-toggle.bs-placeholder:active, .cartContainer .payment form .bootstrap-select > .dropdown-toggle > .dropdown-toggle.bs-placeholder:focus,
+      .cartContainer .payment form .bootstrap-select > .dropdown-toggle > .dropdown-toggle.bs-placeholder:hover {
+        border-radius: 7px; }
+    .cartContainer .payment form .title {
+      margin-top: 40px; }
+    .cartContainer .payment form .PayOptions {
+      margin-bottom: 35px; }
+      .cartContainer .payment form .PayOptions img {
+        width: 100px;
+        height: 70px;
+        border-radius: 10px;
+        box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.08);
+        margin-right: 15px; }
+        .cartContainer .payment form .PayOptions img:last-child {
+          margin-right: 0; }
+    .cartContainer .payment form .monthYear {
+      margin-bottom: 40px; }
+      .cartContainer .payment form .monthYear .bootstrap-select:first-child {
+        margin-right: 20px; }
+    .cartContainer .payment form .orangeBtn {
+      height: 50px;
+      min-width: 165px; }
+  .cartContainer .cartItems .itemsCont {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 10px; }
+    .cartContainer .cartItems .itemsCont .item {
+      margin-bottom: 20px; }
+      .cartContainer .cartItems .itemsCont .item img {
+        width: 90px;
+        height: 90px;
+        border-radius: 10px;
+        margin-right: 10px; }
+      .cartContainer .cartItems .itemsCont .item > div {
+        flex: 1; }
+        .cartContainer .cartItems .itemsCont .item > div .courseText {
+          align-self: flex-start; }
+          .cartContainer .cartItems .itemsCont .item > div .courseText h5 {
+            font-size: 17px;
+            font-weight: bold;
+            margin-bottom: 5px; }
+          .cartContainer .cartItems .itemsCont .item > div .courseText p {
+            text-transform: capitalize;
+            font-size: 15px; }
+          .cartContainer .cartItems .itemsCont .item > div .courseText .price {
+            font-size: 16px;
+            font-weight: bold;
+            color: #ff7600;
+            margin-top: 5px; }
+            .cartContainer .cartItems .itemsCont .item > div .courseText .price span {
+              color: #524e50;
+              margin-left: 10px; }
+        .cartContainer .cartItems .itemsCont .item > div .deleteItem img {
+          width: 30px;
+          height: 30px;
+          margin-right: 0; }
+        .cartContainer .cartItems .itemsCont .item > div .deleteItem:hover {
+          box-shadow: 0px 1px 12px #ff7600;
+          -webkit-box-shadow: 0px 1px 12px #ff7600;
+          -moz-box-shadow: 0px 1px 12px #ff7600;
+          -o-box-shadow: 0px 1px 12px #ff7600; }
+    .cartContainer .cartItems .itemsCont .customHr {
+      margin: 30px 0; }
+    .cartContainer .cartItems .itemsCont .total {
+      margin-bottom: 20px; }
+      .cartContainer .cartItems .itemsCont .total span {
+        font-weight: bold;
+        font-size: 23px; }
+        .cartContainer .cartItems .itemsCont .total span:first-child {
+          color: #100f10; }
+        .cartContainer .cartItems .itemsCont .total span:last-child {
+          color: #ff7600; }
+
+/* end cartContainer */
 /*start scroll top */
 #scroll-top {
   width: 40px;
@@ -1611,7 +1821,127 @@ header {
           width: 10px;
           height: 11px; }
     body .institutesContainer .institutes .courserBlock .price {
-      font-size: 10px; } }
+      font-size: 10px; }
+  body #loginModal .modal-content, body #signUpModal .modal-content {
+    padding: 10px; }
+    body #loginModal .modal-content .modal-header, body #signUpModal .modal-content .modal-header {
+      padding: 0 0 10px; }
+      body #loginModal .modal-content .modal-header .close img, body #signUpModal .modal-content .modal-header .close img {
+        height: 22px;
+        width: 22px; }
+      body #loginModal .modal-content .modal-header h5, body #signUpModal .modal-content .modal-header h5 {
+        font-size: 16px; }
+    body #loginModal .modal-content .modal-body, body #signUpModal .modal-content .modal-body {
+      padding: 10px 0 0; }
+      body #loginModal .modal-content .modal-body form, body #signUpModal .modal-content .modal-body form {
+        margin-bottom: 10px; }
+        body #loginModal .modal-content .modal-body form .fullName .form-group, body #signUpModal .modal-content .modal-body form .fullName .form-group {
+          width: 49%;
+          margin-bottom: 1rem !important; }
+        body #loginModal .modal-content .modal-body form .form-group .form-control, body #signUpModal .modal-content .modal-body form .form-group .form-control {
+          height: 40px;
+          font-size: 12px; }
+        body #loginModal .modal-content .modal-body form .form-group:last-child, body #signUpModal .modal-content .modal-body form .form-group:last-child {
+          margin-bottom: 10px; }
+        body #loginModal .modal-content .modal-body form .orangeBtn, body #signUpModal .modal-content .modal-body form .orangeBtn {
+          font-size: 12px;
+          width: 85px;
+          min-width: auto; }
+        body #loginModal .modal-content .modal-body form .forget, body #signUpModal .modal-content .modal-body form .forget {
+          font-size: 11px; }
+      body #loginModal .modal-content .modal-body a span, body #signUpModal .modal-content .modal-body a span {
+        margin-left: 3px; }
+      body #loginModal .modal-content .modal-body .blackText, body #signUpModal .modal-content .modal-body .blackText {
+        font-size: 12px;
+        margin: 10px 0; }
+      body #loginModal .modal-content .modal-body .socialBtns, body #signUpModal .modal-content .modal-body .socialBtns {
+        margin-bottom: 10px;
+        flex-wrap: wrap; }
+        body #loginModal .modal-content .modal-body .socialBtns .orangeBtn, body #signUpModal .modal-content .modal-body .socialBtns .orangeBtn {
+          width: 125px;
+          font-size: 12px; }
+          body #loginModal .modal-content .modal-body .socialBtns .orangeBtn img, body #signUpModal .modal-content .modal-body .socialBtns .orangeBtn img {
+            width: 12px;
+            height: 12px; }
+          body #loginModal .modal-content .modal-body .socialBtns .orangeBtn.linkedIn, body #signUpModal .modal-content .modal-body .socialBtns .orangeBtn.linkedIn {
+            flex: 1;
+            margin-top: 10px; }
+      body #loginModal .modal-content .modal-body .haveAcc, body #signUpModal .modal-content .modal-body .haveAcc {
+        font-size: 12px;
+        margin-top: 10px; }
+        body #loginModal .modal-content .modal-body .haveAcc.signingUp, body #signUpModal .modal-content .modal-body .haveAcc.signingUp {
+          display: flex;
+          flex-wrap: wrap; }
+  body .topResult {
+    flex-direction: column; }
+    body .topResult .resultsNum {
+      text-align: center;
+      margin-bottom: 10px; }
+      body .topResult .resultsNum h4 {
+        font-size: 20px; }
+      body .topResult .resultsNum p {
+        color: #848484;
+        font-size: 13px; }
+    body .topResult .filterBtns .filter {
+      height: 35px;
+      font-size: 15px; }
+    body .topResult .filterBtns .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+      height: 35px; }
+  body .resultsContainer {
+    margin-top: 25px;
+    flex-direction: column; }
+    body .resultsContainer .topics .myaccordion {
+      width: 100%; }
+      body .resultsContainer .topics .myaccordion .card .card-header {
+        padding: 5px 10px; }
+        body .resultsContainer .topics .myaccordion .card .card-header button {
+          font-size: 13px; }
+      body .resultsContainer .topics .myaccordion .card .card-body li {
+        padding: 10px 0;
+        font-size: 12px; }
+    body .resultsContainer .results {
+      margin-left: 0; }
+      body .resultsContainer .results .titles {
+        flex-wrap: wrap;
+        justify-content: space-between; }
+        body .resultsContainer .results .titles div {
+          margin-right: 0;
+          padding: 5px 10px;
+          font-size: 13px;
+          margin-bottom: 10px; }
+      body .resultsContainer .results .institutesContainer {
+        padding: 0; }
+        body .resultsContainer .results .institutesContainer .institutes {
+          margin-top: 0; }
+          body .resultsContainer .results .institutesContainer .institutes .courserBlock {
+            max-height: unset;
+            height: 285px;
+            flex-direction: column !important;
+            overflow: hidden; }
+            body .resultsContainer .results .institutesContainer .institutes .courserBlock .courseImg {
+              width: 100%;
+              height: 120px; }
+            body .resultsContainer .results .institutesContainer .institutes .courserBlock .courseText {
+              flex-direction: column;
+              justify-content: center !important; }
+              body .resultsContainer .results .institutesContainer .institutes .courserBlock .courseText .leftDiv p:first-child {
+                font-size: 14px; }
+              body .resultsContainer .results .institutesContainer .institutes .courserBlock .courseText .leftDiv .desc {
+                height: 30px; }
+              body .resultsContainer .results .institutesContainer .institutes .courserBlock .courseText .rightDiv {
+                align-items: center;
+                flex-direction: row;
+                width: 100%;
+                padding-top: 10px;
+                justify-content: space-between; }
+                body .resultsContainer .results .institutesContainer .institutes .courserBlock .courseText .rightDiv .startsBlock, body .resultsContainer .results .institutesContainer .institutes .courserBlock .courseText .rightDiv .price {
+                  font-size: 13px; }
+      body .resultsContainer .results .bottomNav {
+        flex-wrap: wrap;
+        justify-content: center; }
+        body .resultsContainer .results .bottomNav a {
+          font-size: 13px;
+          margin-bottom: 5px; } }
 /*Small Screen*/
 @media (min-width: 768px) and (max-width: 991px) {
   body {
@@ -1778,7 +2108,34 @@ header {
             width: 10px;
             height: 11px; }
       body .institutesContainer .institutes .courserBlock .price {
-        font-size: 11px; } }
+        font-size: 11px; }
+    body .resultsContainer .topResult .resultsNum h4 {
+      font-size: 22px; }
+    body .resultsContainer .topResult .resultsNum p {
+      font-size: 13px; }
+    body .resultsContainer .topics .myaccordion {
+      width: 215px; }
+      body .resultsContainer .topics .myaccordion .card .card-header {
+        padding: 10px 10px; }
+      body .resultsContainer .topics .myaccordion .card .card-body {
+        padding: 0 10px; }
+        body .resultsContainer .topics .myaccordion .card .card-body li {
+          font-size: 13px; }
+    body .resultsContainer .results {
+      margin-left: 15px; }
+      body .resultsContainer .results .titles div {
+        font-size: 14px; }
+      body .resultsContainer .results .institutesContainer {
+        padding: 5px 0; }
+        body .resultsContainer .results .institutesContainer .institutes {
+          flex-direction: column;
+          flex-wrap: unset;
+          justify-content: center;
+          align-items: center; }
+      body .resultsContainer .results .bottomNav {
+        justify-content: center; }
+        body .resultsContainer .results .bottomNav a {
+          margin-bottom: 5px; } }
 /*Medium Screen*/
 @media (min-width: 992px) and (max-width: 1199px) {
   .mr-18 {
