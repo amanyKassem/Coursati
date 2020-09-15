@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Corsati</title>
+    <link rel="shortcut icon" href="img/c.png">
+
+    <link href="css/all.min.css" rel="stylesheet"/>
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="css/bootstrap-select.min.css" rel="stylesheet"/>
+    <link href="css/owl.carousel.css" rel="stylesheet"/>
+    <link href="css/slick.css" rel="stylesheet"/>
+    <link href="css/hover.css" rel="stylesheet"/>
+    <link href="css/jquery.fancybox.min.css" rel="stylesheet"/>
+    <link href="css/animate.css" rel="stylesheet"/>
+    <link href="css/style.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <!--<link href="css/styleRTL.css" rel="stylesheet" />-->
+
+</head>
+<body>
+
+<!-- Start Loading Page -->
+
+<div class="layer-preloader">
+    <!--<div class="lds-dual-ring"></div>-->
+    <img src="img/logoo.png" alt="Coursati logo">
+</div>
+
+<!-- End Loading Page -->
+
+<!--  Start Header  -->
+
+<header>
+    <div class="container">
+
+        <div class="menuBar d-flex d-md-none justify-content-between align-items-center">
+            <div class="d-flex flex-row align-items-center">
+                <a href="cart.html" class="cart">
+                    <img src="img/cart.png" class="cartImg" alt="cart">
+                </a>
+                <a class="toggleSearch">
+                    <i class="fas fa-search"></i>
+                </a>
+            </div>
+            <a href="home.html">
+                <img src="img/logoo.png" class="logo" alt="logo">
+            </a>
+            <div class="toggle">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </div>
+        </div>
+
+        <div class="mobileSearch">
+            <div class="d-flex searchContainer">
+                <a href="searchResults.html">
+                    <i class="fas fa-search"></i>
+                </a>
+                <input type="text" placeholder="What do you want to learn?">
+            </div>
+            <a class="toggleSearch">
+                <i class="fas fa-times-circle"></i>
+            </a>
+        </div>
+
+        <div class="overlay"></div>
+
+        <div class="menu d-flex flex-wrap align-items-center">
+
+            <a href="home.html" class="d-none d-md-block mr-18">
+                <img src="img/logoo.png" class="logo" alt="logo">
+            </a>
+
+            <a class="user d-md-none">
+                <img src="img/pic.jpg" class="img-fluid" alt="profile">
+                <p>
+                    hi, Amany kassem
+                </p>
+                <!--<a href="#">-->
+                <!--<i class="fas fa-chevron-right"></i>-->
+                <!--</a>-->
+            </a>
+
+            <a href="#" class="catLink mr-18 d-md-none">
+                <i class="fas fa-bell mr-1"></i>
+                <span>Notifications</span>
+            </a>
+
+            <a href="#" class="catLink mr-18 d-md-none">
+                <i class="fas fa-heart mr-1"></i>
+                <span>Wishlist</span>
+            </a>
+
+            <div class="catLink mr-18">
+                <i class="fas fa-th mr-1"></i>
+                <span>categories</span>
+                <ul class="sub-menu">
+                    <li class="dirLi">
+                        <a href="#">
+                            <div><img src="img/black_contact.png" alt="">Development</div>
+                            <i class='fas fa-chevron-right'></i>
+                        </a>
+                    </li>
+                    <li class="dirLi">
+                        <a href="#">
+                            <div><img src="img/black_contact.png" alt="">Business</div>
+                            <i class='fas fa-chevron-right'></i>
+                        </a>
+                        <ul class="d-none d-md-block">
+                            <li>
+                                <a href="#">
+                                    <div><img src="img/black_contact.png" alt="">Development</div>
+                                    <i class='fas fa-chevron-right'></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div><img src="img/black_contact.png" alt="">IT & Software</div>
+                                    <i class='fas fa-chevron-right'></i>
+                                </a>
+                                <ul>
+                                    <li class="dirLi">
+                                        <a href="#">
+                                            <div><img src="img/black_contact.png" alt="">Office Productivity</div>
+                                            <i class='fas fa-chevron-right'></i>
+                                        </a>
+                                    </li>
+                                    <li class="dirLi">
+                                        <a href="#">
+                                            <div><img src="img/black_contact.png" alt="">Personal Development</div>
+                                            <i class='fas fa-chevron-right'></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dirLi">
+                        <a href="#">
+                            <div><img src="img/black_contact.png" alt="">IT & Software</div>
+                            <i class='fas fa-chevron-right'></i>
+                        </a>
+                        <ul class="d-none d-md-block">
+                            <li class="dirLi">
+                                <a href="#">
+                                    <div><img src="img/black_contact.png" alt="">Music</div>
+                                    <i class='fas fa-chevron-right'></i>
+                                </a>
+                            </li>
+                            <li class="dirLi">
+                                <a href="#">
+                                    <div><img src="img/black_contact.png" alt="">Motion Graphic</div>
+                                    <i class='fas fa-chevron-right'></i>
+                                </a>
+                            </li>
+                            <li class="dirLi">
+                                <a href="#">
+                                    <div><img src="img/black_contact.png" alt="">General</div>
+                                    <i class='fas fa-chevron-right'></i>
+                                </a>
+                            </li>
+                            <li class="dirLi">
+                                <a href="#">
+                                    <div><img src="img/black_contact.png" alt="">other</div>
+                                    <i class='fas fa-chevron-right'></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="dirLi">
+                        <a href="#">
+                            <div><img src="img/black_contact.png" alt="">Office Productivity</div>
+                            <i class='fas fa-chevron-right'></i>
+                        </a>
+                    </li>
+                    <li class="dirLi">
+                        <a href="#">
+                            <div><img src="img/black_contact.png" alt="">Personal Development</div>
+                            <i class='fas fa-chevron-right'></i>
+                        </a>
+                    </li>
+                    <li class="dirLi">
+                        <a href="#">
+                            <div><img src="img/black_contact.png" alt="">Design</div>
+                            <i class='fas fa-chevron-right'></i>
+                        </a>
+                    </li>
+                    <li class="dirLi">
+                        <a href="#">
+                            <div><img src="img/black_contact.png" alt="">Marketing</div>
+                            <i class='fas fa-chevron-right'></i>
+                        </a>
+                    </li>
+                    <li class="dirLi">
+                        <a href="#">
+                            <div><img src="img/black_contact.png" alt="">Health & Fitness</div>
+                            <i class='fas fa-chevron-right'></i>
+                        </a>
+                    </li>
+                    <li class="dirLi">
+                        <a href="#">
+                            <div><img src="img/black_contact.png" alt="">Music</div>
+                            <i class='fas fa-chevron-right'></i>
+                        </a>
+                    </li>
+                    <li class="dirLi">
+                        <a href="#">
+                            <div><img src="img/black_contact.png" alt="">Motion Graphic</div>
+                            <i class='fas fa-chevron-right'></i>
+                        </a>
+                    </li>
+                    <li class="dirLi">
+                        <a href="#">
+                            <div><img src="img/black_contact.png" alt="">General</div>
+                            <i class='fas fa-chevron-right'></i>
+                        </a>
+                    </li>
+                    <li class="dirLi">
+                        <a href="#">
+                            <div><img src="img/black_contact.png" alt="">other</div>
+                            <i class='fas fa-chevron-right'></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <a href="#" class="catLink d-md-none">
+                <i class="fas fa-book-reader"></i>
+                <span>My courses</span>
+            </a>
+
+            <div class="searchDiv d-none d-md-block mr-18">
+                <input type="text" placeholder="What do you want to learn?">
+                <a href="searchResults.html">
+                    <i class="fas fa-search"></i>
+                </a>
+            </div>
+
+            <a href="teachOnCoursati.html" class="gradientBg mr-18">
+                Teach On Coursati
+            </a>
+
+            <div class="cartDiv align-items-center mr-18 d-none d-md-flex">
+                <a href="cart.html" class=" cart mr-18">
+                    <img src="img/cart.png" class="cartImg" alt="cart">
+                </a>
+                <a href="#" class="twitter mr-18">
+                    <img src="img/twitter.png" class="cartImg" alt="twitter">
+                </a>
+
+                <div class="line mr-18"></div>
+
+                <a href="#" class="catLink mr-18">
+                    <span>My courses</span>
+                    <i class="fas fa-chevron-down"></i>
+                </a>
+                <a href="#" class="mr-18">
+                    <img src="img/heart.png" class="bell" alt="like">
+                </a>
+                <a href="#" class="mr-18">
+                    <img src="img/bell.png" class="bell" alt="notification">
+                </a>
+                <a href="#" class="profilePic">
+                    <img src="img/pic.jpg" class="img-fluid" alt="profile">
+                </a>
+            </div>
+            <a href="#" class="flagImg d-none d-md-flex">
+                <img src="img/uk.png" class="" alt="lang">
+            </a>
+        </div>
+
+    </div>
+</header>
+<!--end header-->
+
+<!--start categories-->
+<div class="bgGray d-none d-md-flex">
+    <div class="container">
+        <ul class="categoriesLinks">
+            <li>
+                <a href="category.html">Development</a>
+            </li>
+            <li>
+                <a href="category.html">Business</a>
+            </li>
+            <li>
+                <a href="category.html"> IT & Software</a>
+            </li>
+            <li>
+                <a href="category.html"> Office Productivity</a>
+            </li>
+            <li>
+                <a href="category.html"> Personal Development</a>
+            </li>
+            <li>
+                <a href="category.html">Design</a>
+            </li>
+            <li>
+                <a href="category.html">Marketing</a>
+            </li>
+            <li>
+                <a href="category.html"> Health & Fitness</a>
+            </li>
+            <li>
+                <a href="category.html">Music</a>
+            </li>
+            <li>
+                <a href="category.html"> Motion Graphic</a>
+            </li>
+            <li>
+                <a href="category.html">General</a>
+            </li>
+            <li>
+                <a href="category.html">other</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--end categories-->
+
+<!--start light gray bg-->
+<div class="lightGrayBg pb-5">
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="home.html"><i class='fas fa-chevron-left'></i>Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Teach with us</li>
+            </ol>
+        </nav>
+
+        <div class="d-flex justify-content-between align-items-center">
+            <div>
+                <h2 class="title">Teach with us</h2>
+                <p class="desc">Please complete the form so you can upload courses and trainings</p>
+            </div>
+
+            <div class="steps">
+                <div class="circleBlock">
+                    <span>Account details</span>
+                    <div class="orangeCircle">1</div>
+                </div>
+                <div class="circleBlock">
+                    <span>Qualifications</span>
+                    <div class="grayCircle">2</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="accDetails">
+            <h3 class="title">
+                Account details
+            </h3>
+
+            <div class="changeImg">
+                <img src="img/girl.jpg" alt="profile">
+                <a class="change">
+                    Change image
+                    <input class="file-upload" type="file" accept="image/*"/>
+                </a>
+            </div>
+
+            <form>
+                <div class="rowSpace">
+
+                    <div class="form-group">
+                        <label for="firstName">First Name</label>
+                        <input type="text" class="form-control" id="firstName" placeholder="First Name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" class="form-control" id="lastName" placeholder="Last Name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="emailAdd">Email address</label>
+                        <input type="email" class="form-control" id="emailAdd" placeholder="Email address">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Contact number</label>
+                        <input type="tel" class="form-control" id="phone" placeholder="Phone number">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="address">Address</label>
+                        <input type="text" class="form-control" id="address" placeholder="Address">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="dob">Date of Birth</label>
+                        <input type="text" class="form-control" id="dob" placeholder="Date of Birth">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="nationality">Nationality</label>
+                        <select class="selectpicker" id="nationality" title="Select">
+                            <option>Egyptian</option>
+                            <option>English</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="gender">Gender</label>
+                        <select class="selectpicker" id="gender" title="Select">
+                            <option>female</option>
+                            <option>male</option>
+                        </select>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="identification">Identification (Passport , National ID)</label>
+                        <input type="text" class="form-control" id="identification" placeholder="Add ID number">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="photo-upload" class="custom-file-upload">Identification  photo</label>
+                        <input type="text" class="form-control" id="docPhoto" placeholder="Browse" disabled>
+                        <input id="photo-upload" class="uploadFile" name='upload_cont_file' type="file" accept="image/*">
+                    </div>
+
+                    <div class="form-group textAreaDiv">
+                        <label for="bio">About or bio</label>
+                        <textarea class="form-control" id="bio" rows="5" placeholder="Add your bio"></textarea>
+                    </div>
+
+                </div>
+                <a class="orangeBtn" href="teachQualifications.html">Save changes</a>
+            </form>
+        </div>
+
+    </div>
+</div>
+<!--end light gray bg-->
+
+
+<!--start white bg-->
+<div class="whiteBg">
+
+    <hr class="customHr" />
+
+    <!--start links-->
+    <div class="container">
+        <div class="footLinks d-flex justify-content-between align-items-center">
+            <div>
+                <a href="exploreCategories.html">Explore Categories</a>
+                <a href="teachOnCoursati.html">Teach On Coursati</a>
+            </div>
+            <div>
+                <a href="advertise.html">Advertise with us</a>
+                <a href="aboutUs.html">About Us</a>
+            </div>
+            <div>
+                <a href="contactUs.html">Contact Us</a>
+                <a href="help.html">Help & Support</a>
+            </div>
+            <div>
+                <select class="selectpicker" data-width="fit">
+                    <option data-content='<img src="img/uk.png" class="" alt="lang"> English'>English</option>
+                    <option  data-content='<img src="img/uk.png" class="" alt="lang"> Español'>Español</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <!--end links-->
+
+    <hr class="customHr" />
+
+    <!--start footer-->
+    <div class="container">
+        <footer class="footer d-flex justify-content-between align-items-center">
+            <div class="d-flex flex-row align-items-center">
+                <img src="img/logoo.png" class="logo" alt="logo">
+                <p class="desc">Copyright © 2020 Corsati, Inc.</p>
+            </div>
+
+            <ul class="d-flex flex-row align-items-center">
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Cookie Policy</a></li>
+            </ul>
+        </footer>
+    </div>
+    <!--end footer-->
+
+</div>
+<!--end white bg-->
+
+
+<!-- start scroll-top-->
+<div id="scroll-top" class="text-center">
+    <i class="fas fa-angle-up"></i>
+</div>
+<!-- end scroll-top-->
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-select.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/masonry-docs.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/scripts.js"></script>
+<script>
+    new WOW().init();
+</script>
+<!--start select-->
+<script>
+    $('.selectpicker').selectpicker();
+</script>
+<!--end select-->
+</body>
+</html>

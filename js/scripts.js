@@ -3,6 +3,16 @@ $(document).ready(function () {
     // category active link
     $(".categoriesLinks li a").click(function () {
         $(this).parent().addClass("active").siblings().removeClass("active");
+    });
+
+
+    // grid view
+    $(".listMenu").click(function () {
+        $('.categoryCont .resultsContainer .results .institutesContainer .institutes .courserBlock').removeClass("w-49");
+        event.preventDefault();
+    });
+    $(".gridMenu").click(function () {
+        $('.categoryCont .resultsContainer .results .institutesContainer .institutes .courserBlock').addClass("w-49");
         event.preventDefault();
     });
 
@@ -28,6 +38,13 @@ $(document).ready(function () {
         event.preventDefault();
     });
 
+
+    // delete course item
+    $(".deleteItem").click(function () {
+        $(this).parent().parent().remove();
+        event.preventDefault();
+    });
+
     // carousal
 
     $('.courses').slick({
@@ -43,7 +60,7 @@ $(document).ready(function () {
 
     });
 
-    $('#owl-demo1 , #owl-demo2 , #owl-demo3').owlCarousel({
+    $('#owl-demo1 , #owl-demo2 , #owl-demo3 , #owl-demo4').owlCarousel({
         // center: true,
         dots: false,
         nav: true,
@@ -71,10 +88,61 @@ $(document).ready(function () {
         }
     });
 
+    $('#owl-demo5').owlCarousel({
+        // center: true,
+        dots: false,
+        nav: true,
+        navText: [
+            "<i class='fas fa-chevron-left'></i>",
+            "<i class='fas fa-chevron-right'></i>"
+        ],
+        autoplay: true,
+        loop: true,
+        animateOut: 'fadeOut',
+        responsive: {
+            0: {
+                items: 1,
+            },
+            768: {
+                items: 2,
+                // center: false
+            },
+            992: {
+                items: 4,
+            },
+        }
+    });
+
     // lang selector
 
     $(function(){
         $('.selectpicker').selectpicker();
+    });
+
+    // upload image
+    var readURL = function(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                $('.changeImg img').attr('src', e.target.result);
+            }
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+
+
+    $(".file-upload").on('change', function(){
+        readURL(this);
+    });
+
+    // upload documentation photo text
+
+    $('.uploadFile').change(function() {
+        var i = $(this).prev('.custom-file-upload').clone();
+        var file = $(this)[0].files[0].name;
+        $(this).prev('#docPhoto').attr('placeholder',file);
     });
 
 

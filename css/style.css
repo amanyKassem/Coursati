@@ -4,18 +4,111 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
+.purbleClr {
+  background-color: #e23a7e !important; }
+  .purbleClr:hover {
+    background: #fff !important;
+    color: #e23a7e !important;
+    border-color: #e23a7e !important; }
+
 .btn:hover, .btn:focus, .btn.focus {
   text-decoration: none;
-  outline: none; }
+  outline: none;
+  box-shadow: none; }
+
+.btn-light {
+  color: #100f10;
+  background-color: #ffffff;
+  border-color: #d6d6d6; }
 
 .modal {
   overflow-y: auto; }
+
+.w-49 {
+  width: 49% !important; }
 
 a, button {
   transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
   -webkit-transition: all 0.5s ease-in-out; }
+
+form label {
+  font-weight: bold;
+  font-size: 15px; }
+form .form-control {
+  height: 50px;
+  padding: 10px 20px;
+  font-size: 15px;
+  color: black;
+  border: 1px solid #d6d6d6;
+  border-radius: 7px; }
+  form .form-control:focus {
+    background-color: #fff;
+    outline: 0;
+    box-shadow: none;
+    border: 1px solid #d6d6d6; }
+form .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn), form .bootstrap-select > .dropdown-toggle {
+  height: 50px;
+  border-radius: 7px; }
+  form .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) > .dropdown-toggle.bs-placeholder, form .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) > .dropdown-toggle.bs-placeholder:active, form .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) > .dropdown-toggle.bs-placeholder:focus,
+  form .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) > .dropdown-toggle.bs-placeholder:hover, form .bootstrap-select > .dropdown-toggle > .dropdown-toggle.bs-placeholder, form .bootstrap-select > .dropdown-toggle > .dropdown-toggle.bs-placeholder:active, form .bootstrap-select > .dropdown-toggle > .dropdown-toggle.bs-placeholder:focus,
+  form .bootstrap-select > .dropdown-toggle > .dropdown-toggle.bs-placeholder:hover {
+    border-radius: 7px; }
+form .title {
+  margin-top: 40px; }
+form .PayOptions {
+  margin-bottom: 35px; }
+  form .PayOptions img {
+    width: 100px;
+    height: 70px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.08);
+    margin-right: 15px; }
+    form .PayOptions img:last-child {
+      margin-right: 0; }
+form .monthYear {
+  margin-bottom: 40px; }
+  form .monthYear .bootstrap-select:first-child {
+    margin-right: 20px; }
+form .orangeBtn {
+  height: 50px;
+  min-width: 165px; }
+
+.bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn), .bootstrap-select > .dropdown-toggle {
+  width: 100%;
+  border-radius: 7px;
+  height: 40px;
+  font-size: 14px; }
+  .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) > .dropdown-toggle.bs-placeholder, .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) > .dropdown-toggle.bs-placeholder:active, .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) > .dropdown-toggle.bs-placeholder:focus,
+  .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) > .dropdown-toggle.bs-placeholder:hover, .bootstrap-select > .dropdown-toggle > .dropdown-toggle.bs-placeholder, .bootstrap-select > .dropdown-toggle > .dropdown-toggle.bs-placeholder:active, .bootstrap-select > .dropdown-toggle > .dropdown-toggle.bs-placeholder:focus,
+  .bootstrap-select > .dropdown-toggle > .dropdown-toggle.bs-placeholder:hover {
+    background: #fff;
+    color: #1c1b1c;
+    font-size: 14px;
+    height: 100%;
+    border: 1px solid #d6d6d6;
+    box-shadow: none;
+    outline: 0 !important;
+    border-radius: 7px; }
+  .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) .dropdown-toggle:focus, .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) > select.mobile-device:focus + .dropdown-toggle, .bootstrap-select > .dropdown-toggle .dropdown-toggle:focus, .bootstrap-select > .dropdown-toggle > select.mobile-device:focus + .dropdown-toggle {
+    outline: none !important;
+    outline-offset: 0;
+    background: #fff; }
+  .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) .filter-option-inner, .bootstrap-select > .dropdown-toggle .filter-option-inner {
+    height: 100%;
+    align-items: center;
+    display: flex; }
+  .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) .dropdown-menu, .bootstrap-select > .dropdown-toggle .dropdown-menu {
+    padding: 0; }
+    .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) .dropdown-menu li, .bootstrap-select > .dropdown-toggle .dropdown-menu li {
+      border-bottom: 1px solid #d6d6d6; }
+      .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) .dropdown-menu li:last-child, .bootstrap-select > .dropdown-toggle .dropdown-menu li:last-child {
+        border: 0; }
+      .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) .dropdown-menu li a, .bootstrap-select > .dropdown-toggle .dropdown-menu li a {
+        padding: 10px; }
+        .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) .dropdown-menu li a span, .bootstrap-select > .dropdown-toggle .dropdown-menu li a span {
+          font-weight: normal; }
 
 :placeholder-shown::-webkit-input-placeholder {
   opacity: 1;
@@ -72,6 +165,52 @@ p {
 .whiteBg {
   background-color: #fff; }
 
+.custom-checkbox {
+  min-height: auto; }
+  .custom-checkbox .custom-control-input:checked ~ .custom-control-label::after {
+    background-image: url(../img/tick.png); }
+  .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+    color: #ffffff;
+    border-color: #ffffff;
+    background-color: #ffffff; }
+  .custom-checkbox .custom-control-input:focus ~ .custom-control-label::before {
+    box-shadow: none; }
+  .custom-checkbox .custom-control-label {
+    padding-left: 15px; }
+    .custom-checkbox .custom-control-label::before {
+      width: 20px;
+      height: 20px;
+      background-color: #d8d8d8;
+      border: 0;
+      top: 0; }
+    .custom-checkbox .custom-control-label::after {
+      width: 20px;
+      height: 20px;
+      top: 0; }
+    .custom-checkbox .custom-control-label span {
+      color: #524e50;
+      font-size: 11px;
+      margin-left: 5px; }
+
+.breadcrumb {
+  background-color: transparent;
+  padding: 0;
+  margin: 10px 0 30px; }
+  .breadcrumb .breadcrumb-item {
+    color: #100f10;
+    font-size: 13px;
+    text-transform: capitalize; }
+    .breadcrumb .breadcrumb-item a {
+      color: #100f10;
+      font-weight: bold; }
+      .breadcrumb .breadcrumb-item a i {
+        margin-right: 20px; }
+    .breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+      display: inline-block;
+      padding-right: .5rem;
+      color: #100f10;
+      content: "\\"; }
+
 .searchDiv {
   position: relative; }
   .searchDiv input {
@@ -94,6 +233,9 @@ p {
     transform: translateY(-50%);
     font-size: 14px;
     color: #100f10; }
+  .searchDiv.activeSearch input {
+    box-shadow: 0 8px 10px 0 rgba(255, 118, 0, 0.17);
+    border: solid 2px var(--orange); }
 
 .gradientBg {
   border-radius: 5px;
@@ -116,7 +258,8 @@ p {
   min-width: 150px;
   justify-content: center;
   font-size: 14px;
-  border-radius: 4px; }
+  border-radius: 4px;
+  height: auto !important; }
   .orangeBtn:hover {
     border-color: #ff7600;
     background-color: #fff;
@@ -517,6 +660,8 @@ header {
           border: 1px solid #d6d6d6; }
       #loginModal .modal-content .modal-body form .form-group:last-child, #signUpModal .modal-content .modal-body form .form-group:last-child {
         margin-bottom: 20px; }
+      #loginModal .modal-content .modal-body form .form-group .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn), #loginModal .modal-content .modal-body form .form-group .bootstrap-select > .dropdown-toggle, #signUpModal .modal-content .modal-body form .form-group .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn), #signUpModal .modal-content .modal-body form .form-group .bootstrap-select > .dropdown-toggle {
+        height: 45px; }
       #loginModal .modal-content .modal-body form .orangeBtn, #signUpModal .modal-content .modal-body form .orangeBtn {
         font-size: 13px;
         padding: 8px; }
@@ -527,37 +672,6 @@ header {
         -moz-transition: all 0.5s ease-in-out; }
         #loginModal .modal-content .modal-body form .forget:hover, #signUpModal .modal-content .modal-body form .forget:hover {
           text-decoration: underline; }
-      #loginModal .modal-content .modal-body form .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn), #signUpModal .modal-content .modal-body form .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
-        width: 100%;
-        border-radius: 7px;
-        height: 45px;
-        font-size: 14px; }
-        #loginModal .modal-content .modal-body form .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) > .dropdown-toggle.bs-placeholder, #loginModal .modal-content .modal-body form .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) > .dropdown-toggle.bs-placeholder:active, #loginModal .modal-content .modal-body form .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) > .dropdown-toggle.bs-placeholder:focus,
-        #loginModal .modal-content .modal-body form .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) > .dropdown-toggle.bs-placeholder:hover, #signUpModal .modal-content .modal-body form .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) > .dropdown-toggle.bs-placeholder, #signUpModal .modal-content .modal-body form .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) > .dropdown-toggle.bs-placeholder:active, #signUpModal .modal-content .modal-body form .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) > .dropdown-toggle.bs-placeholder:focus,
-        #signUpModal .modal-content .modal-body form .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) > .dropdown-toggle.bs-placeholder:hover {
-          background: #fff;
-          color: #1c1b1c;
-          font-size: 14px;
-          height: 100%;
-          border: 1px solid #d6d6d6;
-          box-shadow: none;
-          outline: 0 !important; }
-          #loginModal .modal-content .modal-body form .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) > .dropdown-toggle.bs-placeholder .filter-option-inner, #loginModal .modal-content .modal-body form .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) > .dropdown-toggle.bs-placeholder:active .filter-option-inner, #loginModal .modal-content .modal-body form .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) > .dropdown-toggle.bs-placeholder:focus .filter-option-inner,
-          #loginModal .modal-content .modal-body form .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) > .dropdown-toggle.bs-placeholder:hover .filter-option-inner, #signUpModal .modal-content .modal-body form .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) > .dropdown-toggle.bs-placeholder .filter-option-inner, #signUpModal .modal-content .modal-body form .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) > .dropdown-toggle.bs-placeholder:active .filter-option-inner, #signUpModal .modal-content .modal-body form .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) > .dropdown-toggle.bs-placeholder:focus .filter-option-inner,
-          #signUpModal .modal-content .modal-body form .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) > .dropdown-toggle.bs-placeholder:hover .filter-option-inner {
-            height: 100%;
-            align-items: center;
-            display: flex; }
-        #loginModal .modal-content .modal-body form .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) .dropdown-menu, #signUpModal .modal-content .modal-body form .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) .dropdown-menu {
-          padding: 0; }
-          #loginModal .modal-content .modal-body form .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) .dropdown-menu li, #signUpModal .modal-content .modal-body form .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) .dropdown-menu li {
-            border-bottom: 1px solid #d6d6d6; }
-            #loginModal .modal-content .modal-body form .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) .dropdown-menu li:last-child, #signUpModal .modal-content .modal-body form .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) .dropdown-menu li:last-child {
-              border: 0; }
-            #loginModal .modal-content .modal-body form .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) .dropdown-menu li a, #signUpModal .modal-content .modal-body form .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) .dropdown-menu li a {
-              padding: 10px; }
-              #loginModal .modal-content .modal-body form .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) .dropdown-menu li a span, #signUpModal .modal-content .modal-body form .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) .dropdown-menu li a span {
-                font-weight: normal; }
     #loginModal .modal-content .modal-body a, #signUpModal .modal-content .modal-body a {
       color: #100f10;
       font-size: 13px; }
@@ -674,7 +788,7 @@ header {
         -o-transition: all 0.5s ease-in-out;
         -moz-transition: all 0.5s ease-in-out; }
       .categoriesLinks li a:hover:before {
-        width: 20px; }
+        width: 15px; }
       .categoriesLinks li a:hover {
         font-weight: bold; }
 
@@ -930,19 +1044,19 @@ header {
     text-decoration: underline;
     display: inline;
     font-weight: bold; }
-  .learnNext #owl-demo1, .learnNext #owl-demo2, .learnNext #owl-demo3 {
+  .learnNext #owl-demo1, .learnNext #owl-demo2, .learnNext #owl-demo3, .learnNext #owl-demo5, .learnNext #owl-demo4 {
     margin-top: 5px; }
-    .learnNext #owl-demo1 .item, .learnNext #owl-demo2 .item, .learnNext #owl-demo3 .item {
+    .learnNext #owl-demo1 .item, .learnNext #owl-demo2 .item, .learnNext #owl-demo3 .item, .learnNext #owl-demo5 .item, .learnNext #owl-demo4 .item {
       position: relative;
       width: 165px;
       padding: 10px 0; }
-      .learnNext #owl-demo1 .item .course, .learnNext #owl-demo2 .item .course, .learnNext #owl-demo3 .item .course {
+      .learnNext #owl-demo1 .item .course, .learnNext #owl-demo2 .item .course, .learnNext #owl-demo3 .item .course, .learnNext #owl-demo5 .item .course, .learnNext #owl-demo4 .item .course {
         max-width: 100%; }
-        .learnNext #owl-demo1 .item .course .courseName, .learnNext #owl-demo2 .item .course .courseName, .learnNext #owl-demo3 .item .course .courseName {
+        .learnNext #owl-demo1 .item .course .courseName, .learnNext #owl-demo2 .item .course .courseName, .learnNext #owl-demo3 .item .course .courseName, .learnNext #owl-demo5 .item .course .courseName, .learnNext #owl-demo4 .item .course .courseName {
           font-size: 11px; }
-    .learnNext #owl-demo1 .owl-nav, .learnNext #owl-demo2 .owl-nav, .learnNext #owl-demo3 .owl-nav {
+    .learnNext #owl-demo1 .owl-nav, .learnNext #owl-demo2 .owl-nav, .learnNext #owl-demo3 .owl-nav, .learnNext #owl-demo5 .owl-nav, .learnNext #owl-demo4 .owl-nav {
       display: block; }
-      .learnNext #owl-demo1 .owl-nav .owl-prev, .learnNext #owl-demo1 .owl-nav .owl-next, .learnNext #owl-demo2 .owl-nav .owl-prev, .learnNext #owl-demo2 .owl-nav .owl-next, .learnNext #owl-demo3 .owl-nav .owl-prev, .learnNext #owl-demo3 .owl-nav .owl-next {
+      .learnNext #owl-demo1 .owl-nav .owl-prev, .learnNext #owl-demo1 .owl-nav .owl-next, .learnNext #owl-demo2 .owl-nav .owl-prev, .learnNext #owl-demo2 .owl-nav .owl-next, .learnNext #owl-demo3 .owl-nav .owl-prev, .learnNext #owl-demo3 .owl-nav .owl-next, .learnNext #owl-demo5 .owl-nav .owl-prev, .learnNext #owl-demo5 .owl-nav .owl-next, .learnNext #owl-demo4 .owl-nav .owl-prev, .learnNext #owl-demo4 .owl-nav .owl-next {
         width: 25px;
         height: 50px;
         line-height: 50px;
@@ -961,16 +1075,16 @@ header {
         -moz-transition: all .5s ease-in-out;
         -o-transition: all .5s ease-in-out;
         transition: all .5s ease-in-out; }
-        .learnNext #owl-demo1 .owl-nav .owl-prev:hover, .learnNext #owl-demo1 .owl-nav .owl-next:hover, .learnNext #owl-demo2 .owl-nav .owl-prev:hover, .learnNext #owl-demo2 .owl-nav .owl-next:hover, .learnNext #owl-demo3 .owl-nav .owl-prev:hover, .learnNext #owl-demo3 .owl-nav .owl-next:hover {
+        .learnNext #owl-demo1 .owl-nav .owl-prev:hover, .learnNext #owl-demo1 .owl-nav .owl-next:hover, .learnNext #owl-demo2 .owl-nav .owl-prev:hover, .learnNext #owl-demo2 .owl-nav .owl-next:hover, .learnNext #owl-demo3 .owl-nav .owl-prev:hover, .learnNext #owl-demo3 .owl-nav .owl-next:hover, .learnNext #owl-demo5 .owl-nav .owl-prev:hover, .learnNext #owl-demo5 .owl-nav .owl-next:hover, .learnNext #owl-demo4 .owl-nav .owl-prev:hover, .learnNext #owl-demo4 .owl-nav .owl-next:hover {
           background-color: #FFF;
           color: #ff7600;
           border: 2px solid #ff7600;
           display: block; }
-      .learnNext #owl-demo1 .owl-nav .owl-next, .learnNext #owl-demo2 .owl-nav .owl-next, .learnNext #owl-demo3 .owl-nav .owl-next {
+      .learnNext #owl-demo1 .owl-nav .owl-next, .learnNext #owl-demo2 .owl-nav .owl-next, .learnNext #owl-demo3 .owl-nav .owl-next, .learnNext #owl-demo5 .owl-nav .owl-next, .learnNext #owl-demo4 .owl-nav .owl-next {
         right: 0;
         border-top-left-radius: 10px;
         border-bottom-left-radius: 10px; }
-      .learnNext #owl-demo1 .owl-nav .owl-prev, .learnNext #owl-demo2 .owl-nav .owl-prev, .learnNext #owl-demo3 .owl-nav .owl-prev {
+      .learnNext #owl-demo1 .owl-nav .owl-prev, .learnNext #owl-demo2 .owl-nav .owl-prev, .learnNext #owl-demo3 .owl-nav .owl-prev, .learnNext #owl-demo5 .owl-nav .owl-prev, .learnNext #owl-demo4 .owl-nav .owl-prev {
         left: 0;
         border-top-right-radius: 10px;
         border-bottom-right-radius: 10px;
@@ -1219,6 +1333,587 @@ header {
             margin-right: 7px; }
 
 /* end institutes */
+/* start result sNum */
+.resultsNum h4 {
+  font-weight: bold;
+  font-size: 26px; }
+  .resultsNum h4 span {
+    color: #ff7600; }
+.resultsNum p {
+  color: #848484;
+  font-size: 14px; }
+
+.filterBtns .filter {
+  border-radius: 5px;
+  border: solid 1px #d3d3d3;
+  background-color: #ffffff;
+  width: 120px;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  align-self: flex-start;
+  font-size: 14px;
+  color: #100f10; }
+  .filterBtns .filter img {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px; }
+.filterBtns .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+  margin-left: 10px;
+  width: 120px !important;
+  height: 40px;
+  background: #ededed !important;
+  border-radius: 5px; }
+  .filterBtns .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) button {
+    color: #100f10;
+    background-color: #ededed !important; }
+
+/* end results Num */
+/* start resultsContainer */
+.resultsContainer {
+  margin-top: 25px; }
+  .resultsContainer .topics .myaccordion {
+    width: 270px; }
+    .resultsContainer .topics .myaccordion .card {
+      margin-bottom: 10px;
+      border-radius: 6px;
+      overflow: hidden;
+      background: transparent; }
+      .resultsContainer .topics .myaccordion .card .card-header {
+        background: #fff;
+        padding: 10px 20px;
+        border-radius: 0; }
+        .resultsContainer .topics .myaccordion .card .card-header button {
+          color: #100f10;
+          font-size: 16px;
+          font-weight: bold;
+          padding: 0; }
+          .resultsContainer .topics .myaccordion .card .card-header button i {
+            font-size: 14px; }
+      .resultsContainer .topics .myaccordion .card .card-body {
+        padding: 0 20px; }
+        .resultsContainer .topics .myaccordion .card .card-body li {
+          padding: 15px 0;
+          border-bottom: 1px solid #dfdfdf;
+          font-size: 14px; }
+  .resultsContainer .results {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px; }
+    .resultsContainer .results .titles {
+      display: flex;
+      align-items: center; }
+      .resultsContainer .results .titles div {
+        display: flex;
+        background-color: #e23a7e;
+        margin-right: 10px;
+        padding: 10px 15px;
+        border-radius: 5px;
+        color: #fff;
+        font-size: 15px; }
+        .resultsContainer .results .titles div .deleteTitle {
+          color: #fff;
+          margin-left: 20px; }
+    .resultsContainer .results .institutesContainer .institutes .courserBlock {
+      width: 100%;
+      max-height: 160px;
+      height: 160px; }
+      .resultsContainer .results .institutesContainer .institutes .courserBlock .courseText .rightDiv {
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+        width: 20%;
+        padding-top: 10px; }
+        .resultsContainer .results .institutesContainer .institutes .courserBlock .courseText .rightDiv .price, .resultsContainer .results .institutesContainer .institutes .courserBlock .courseText .rightDiv .startsBlock {
+          display: flex;
+          flex-direction: column !important;
+          align-items: flex-end !important;
+          font-size: 15px; }
+        .resultsContainer .results .institutesContainer .institutes .courserBlock .courseText .rightDiv .price span {
+          color: #524e50; }
+        .resultsContainer .results .institutesContainer .institutes .courserBlock .courseText .rightDiv .startsBlock .stars {
+          margin-right: 0; }
+      .resultsContainer .results .institutesContainer .institutes .courserBlock .courseText .leftDiv p:first-child {
+        font-size: 15px; }
+      .resultsContainer .results .institutesContainer .institutes .courserBlock .courseText .leftDiv p:nth-child(2) {
+        font-size: 14px; }
+      .resultsContainer .results .institutesContainer .institutes .courserBlock .courseText .leftDiv .info div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 13px; }
+      .resultsContainer .results .institutesContainer .institutes .courserBlock .courseText .leftDiv .desc {
+        height: 60px;
+        overflow: hidden; }
+      .resultsContainer .results .institutesContainer .institutes .courserBlock:hover {
+        box-shadow: none;
+        background-color: #ededed; }
+    .resultsContainer .results .bottomNav {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 15px; }
+      .resultsContainer .results .bottomNav a {
+        background: #fff;
+        color: #100f10;
+        margin-right: 5px;
+        width: 35px;
+        height: 35px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        font-size: 16px; }
+        .resultsContainer .results .bottomNav a.nextNav, .resultsContainer .results .bottomNav a.prevNav {
+          width: 80px; }
+        .resultsContainer .results .bottomNav a:last-child {
+          margin-right: 0; }
+        .resultsContainer .results .bottomNav a:hover {
+          background-color: #ededed; }
+
+/* end resultsContainer */
+/* start cartContainer */
+.cartContainer {
+  margin-top: 35px; }
+  .cartContainer .title {
+    font-size: 18px;
+    margin-bottom: 20px; }
+  .cartContainer .payment, .cartContainer .cartItems {
+    display: flex;
+    flex: 1;
+    flex-direction: column; }
+  .cartContainer .payment {
+    margin-right: 20px; }
+    .cartContainer .payment form .orangeBtn {
+      height: 40px !important; }
+  .cartContainer .cartItems .itemsCont {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 10px; }
+    .cartContainer .cartItems .itemsCont .item {
+      margin-bottom: 20px; }
+      .cartContainer .cartItems .itemsCont .item img {
+        width: 90px;
+        height: 90px;
+        border-radius: 10px;
+        margin-right: 10px; }
+      .cartContainer .cartItems .itemsCont .item > div {
+        flex: 1; }
+        .cartContainer .cartItems .itemsCont .item > div .courseText {
+          align-self: flex-start; }
+          .cartContainer .cartItems .itemsCont .item > div .courseText h5 {
+            font-size: 17px;
+            font-weight: bold;
+            margin-bottom: 5px; }
+          .cartContainer .cartItems .itemsCont .item > div .courseText p {
+            text-transform: capitalize;
+            font-size: 15px; }
+          .cartContainer .cartItems .itemsCont .item > div .courseText .price {
+            font-size: 16px;
+            font-weight: bold;
+            color: #ff7600;
+            margin-top: 5px; }
+            .cartContainer .cartItems .itemsCont .item > div .courseText .price span {
+              color: #524e50;
+              margin-left: 10px; }
+        .cartContainer .cartItems .itemsCont .item > div .deleteItem img {
+          width: 30px;
+          height: 30px;
+          margin-right: 0; }
+        .cartContainer .cartItems .itemsCont .item > div .deleteItem:hover {
+          box-shadow: 0px 1px 12px #ff7600;
+          -webkit-box-shadow: 0px 1px 12px #ff7600;
+          -moz-box-shadow: 0px 1px 12px #ff7600;
+          -o-box-shadow: 0px 1px 12px #ff7600; }
+    .cartContainer .cartItems .itemsCont .customHr {
+      margin: 30px 0; }
+    .cartContainer .cartItems .itemsCont .total {
+      margin-bottom: 20px; }
+      .cartContainer .cartItems .itemsCont .total span {
+        font-weight: bold;
+        font-size: 23px; }
+        .cartContainer .cartItems .itemsCont .total span:first-child {
+          color: #100f10; }
+        .cartContainer .cartItems .itemsCont .total span:last-child {
+          color: #ff7600; }
+
+/* end cartContainer */
+/* start explore categories */
+.categoriesLinks.catPage li.active a:before {
+  background: #9e348a; }
+.categoriesLinks.catPage li a:before {
+  background: #9e348a; }
+
+.catTitle {
+  display: flex;
+  align-items: center; }
+  .catTitle .title {
+    margin-bottom: 0;
+    font-size: 21px; }
+  .catTitle img {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px; }
+
+.development {
+  display: flex;
+  margin: 25px 0 20px; }
+  .development img {
+    width: 30px;
+    height: 20px;
+    margin-right: 10px; }
+  .development .title {
+    margin-bottom: 0;
+    font-size: 18px;
+    text-transform: capitalize; }
+  .development .desc {
+    font-size: 12px;
+    margin-top: 5px; }
+
+.coursesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center; }
+  .coursesContainer .item {
+    text-transform: capitalize;
+    width: 24%;
+    height: 60px;
+    border-radius: 7px;
+    background-color: #ffffff;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #100f10; }
+    .coursesContainer .item:hover {
+      box-shadow: 0 4px 11px 0 rgba(0, 0, 0, 0.18);
+      -webkit-box-shadow: 0 4px 11px 0 rgba(0, 0, 0, 0.18);
+      -moz-box-shadow: 0 4px 11px 0 rgba(0, 0, 0, 0.18);
+      -o-box-shadow: 0 4px 11px 0 rgba(0, 0, 0, 0.18); }
+    .coursesContainer .item span {
+      margin-left: 10px;
+      color: #6e6e6e;
+      font-weight: normal;
+      font-size: 12px; }
+
+/* end explore categories */
+/* start accDetails */
+.steps {
+  display: flex;
+  align-items: center;
+  height: 60px; }
+  .steps .circleBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    height: 100%; }
+    .steps .circleBlock:first-child {
+      margin-right: 50px; }
+      .steps .circleBlock:first-child:before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        width: 100px;
+        height: 8px;
+        background-color: #e8e8e8;
+        left: 61px; }
+    .steps .circleBlock.qual:first-child {
+      margin-right: 50px; }
+      .steps .circleBlock.qual:first-child:before {
+        background-color: #ff7600;
+        left: 60px; }
+    .steps .circleBlock .orangeCircle {
+      width: 35px;
+      height: 35px;
+      background-color: #ff7600;
+      color: #fff;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 35px; }
+    .steps .circleBlock span {
+      color: #100f10;
+      font-size: 12px;
+      font-weight: bold; }
+    .steps .circleBlock .grayCircle {
+      width: 30px;
+      height: 30px;
+      background-color: #e8e8e8;
+      color: #aaaaaa;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 30px;
+      position: absolute;
+      top: 70%;
+      transform: translateY(-70%); }
+
+.accDetails {
+  margin-top: 35px; }
+  .accDetails .title {
+    font-size: 18px;
+    margin-bottom: 20px; }
+  .accDetails .changeImg {
+    display: flex;
+    align-items: center; }
+    .accDetails .changeImg img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      margin-right: 30px; }
+    .accDetails .changeImg .change {
+      width: 115px;
+      height: 40px;
+      border-radius: 5px;
+      border: solid 1px #d3d3d3;
+      background-color: #ffffff;
+      font-size: 13px;
+      justify-content: center;
+      color: #100f10;
+      position: relative; }
+      .accDetails .changeImg .change .file-upload {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+        cursor: pointer; }
+      .accDetails .changeImg .change:hover {
+        background-color: #ff7600;
+        color: #fff; }
+  .accDetails form h3 {
+    text-transform: capitalize;
+    margin-top: 10px; }
+  .accDetails form .deleteField {
+    color: #f00;
+    font-size: 13px; }
+  .accDetails form .rowSpace {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; }
+    .accDetails form .rowSpace .form-group {
+      width: 49%;
+      position: relative; }
+      .accDetails form .rowSpace .form-group .add {
+        background-color: #ff7600;
+        border-radius: 5px;
+        width: 25px;
+        height: 25px;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        right: 20px;
+        top: 53%; }
+        .accDetails form .rowSpace .form-group .add img {
+          width: 13px;
+          height: 13px; }
+        .accDetails form .rowSpace .form-group .add:hover {
+          box-shadow: 0 4px 11px 0 rgba(0, 0, 0, 0.18);
+          -webkit-box-shadow: 0 4px 11px 0 rgba(0, 0, 0, 0.18);
+          -moz-box-shadow: 0 4px 11px 0 rgba(0, 0, 0, 0.18);
+          -o-box-shadow: 0 4px 11px 0 rgba(0, 0, 0, 0.18); }
+      .accDetails form .rowSpace .form-group .form-control:disabled {
+        background-color: #ffffff; }
+      .accDetails form .rowSpace .form-group .form-control.plusInput {
+        padding: 10px 55px 10px 20px; }
+      .accDetails form .rowSpace .form-group #photo-upload {
+        opacity: 0;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 50px; }
+      .accDetails form .rowSpace .form-group.textAreaDiv {
+        width: 100%; }
+        .accDetails form .rowSpace .form-group.textAreaDiv textarea {
+          resize: none;
+          height: auto;
+          margin-bottom: 10px; }
+  .accDetails form .orangeBtn {
+    height: 40px !important;
+    width: 120px; }
+
+/* end accDetails */
+/* start advertiseLinks */
+.advertiseLinks .socLinks {
+  color: #100f10;
+  margin-bottom: 5px;
+  font-size: 15px;
+  border-radius: 9px;
+  padding: 8px 10px; }
+  .advertiseLinks .socLinks div {
+    width: 50px;
+    height: 45px;
+    border-radius: 10px;
+    box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.07);
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px; }
+    .advertiseLinks .socLinks div img {
+      width: 15px;
+      height: 15px; }
+  .advertiseLinks .socLinks:hover {
+    font-weight: bold;
+    background-color: #f4f4f4; }
+
+/* end advertiseLinks */
+/* start aboutBg */
+.aboutBg {
+  position: relative;
+  min-height: 400px;
+  background: url(../img/about.png) no-repeat center center;
+  background-size: cover !important;
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important; }
+  .aboutBg .orangeBg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    flex: 1;
+    background-color: #ff7600ba;
+    display: flex;
+    align-items: flex-start;
+    padding: 40px 0; }
+    .aboutBg .orangeBg a {
+      color: #100f10;
+      font-size: 14px; }
+      .aboutBg .orangeBg a img {
+        width: 20px;
+        height: 15px;
+        margin-right: 10px; }
+    .aboutBg .orangeBg .cCircle {
+      width: 50px;
+      height: 50px;
+      margin: 50px 0 10px;
+      display: block; }
+    .aboutBg .orangeBg .logoWhite {
+      width: 120px;
+      margin-bottom: 20px; }
+    .aboutBg .orangeBg .title {
+      color: #fff;
+      font-size: 40px;
+      text-transform: uppercase; }
+    .aboutBg .orangeBg .desc {
+      color: #fff;
+      font-size: 16px; }
+
+.about {
+  padding-top: 35px;
+  color: #100f10; }
+  .about .title {
+    font-size: 20px;
+    margin-bottom: 20px; }
+  .about p {
+    font-size: 13px;
+    margin-bottom: 20px; }
+
+/* end aboutBg */
+/* start categoryCont */
+.categoryCont .listMenu {
+  margin-right: 10px; }
+  .categoryCont .listMenu img {
+    width: 20px;
+    height: 15px; }
+.categoryCont .gridMenu {
+  margin-right: 10px;
+  background: #fff;
+  height: 40px;
+  width: 40px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px; }
+  .categoryCont .gridMenu img {
+    width: 15px;
+    height: 15px; }
+.categoryCont .filterBtns .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+  width: auto !important; }
+  .categoryCont .filterBtns .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) .videoDuration {
+    margin-left: 10px; }
+.categoryCont .institutesContainer .institutes .courserBlock.w-49 {
+  max-height: 160px;
+  height: 140px; }
+  .categoryCont .institutesContainer .institutes .courserBlock.w-49 .courseText .leftDiv p:first-child {
+    font-size: 14px; }
+  .categoryCont .institutesContainer .institutes .courserBlock.w-49 .courseText .leftDiv .info div {
+    font-size: 11px; }
+  .categoryCont .institutesContainer .institutes .courserBlock.w-49 .courseText .leftDiv .desc {
+    font-size: 12px;
+    height: 40px; }
+  .categoryCont .institutesContainer .institutes .courserBlock.w-49 .courseText .rightDiv .price, .categoryCont .institutesContainer .institutes .courserBlock.w-49 .courseText .rightDiv .startsBlock {
+    font-size: 14px; }
+  .categoryCont .institutesContainer .institutes .courserBlock.w-49 .courseText .rightDiv .startsBlock .stars i {
+    font-size: 10px; }
+.categoryCont .institutesContainer .institutes .courserBlock .courseImg {
+  width: 180px;
+  flex: none; }
+
+/* end categoryCont */
+/* start  popularInstructors */
+.popularInstructors {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  .popularInstructors #owl-demo5 {
+    margin-top: 0;
+    width: 70%; }
+    .popularInstructors #owl-demo5 .item {
+      width: 165px;
+      height: 210px;
+      margin: auto;
+      padding: 10px 0; }
+      .popularInstructors #owl-demo5 .item .instructor {
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 10px;
+        box-shadow: 0 3px 9px 0 rgba(0, 0, 0, 0.1);
+        background-color: #ffffff; }
+        .popularInstructors #owl-demo5 .item .instructor img {
+          width: 70px;
+          height: 70px;
+          border-radius: 50%;
+          margin-bottom: 5px; }
+        .popularInstructors #owl-demo5 .item .instructor .instructorName {
+          color: #100f10;
+          font-size: 15px;
+          font-weight: bold; }
+        .popularInstructors #owl-demo5 .item .instructor .courseName {
+          color: #524e50;
+          font-size: 12px;
+          margin-bottom: 15px; }
+        .popularInstructors #owl-demo5 .item .instructor div {
+          color: #524e50;
+          font-size: 12px; }
+          .popularInstructors #owl-demo5 .item .instructor div span {
+            color: #ff7600; }
+
+/* end  popularInstructors */
+/* start  sub category */
+#owl-demo4 .item {
+  margin-bottom: 0;
+  justify-content: flex-start;
+  padding: 0 10px !important;
+  font-size: 13px; }
+#owl-demo4 .owl-prev, #owl-demo4 .owl-next {
+  height: 30px !important;
+  line-height: 30px !important;
+  font-size: 12px !important;
+  background-color: #9e348a !important; }
+  #owl-demo4 .owl-prev:hover, #owl-demo4 .owl-next:hover {
+    background-color: #fff !important;
+    color: #9e348a !important;
+    border: 2px solid #9e348a !important; }
+
+/* end  sub category */
 /*start scroll top */
 #scroll-top {
   width: 40px;
@@ -1520,7 +2215,127 @@ header {
           width: 10px;
           height: 11px; }
     body .institutesContainer .institutes .courserBlock .price {
-      font-size: 10px; } }
+      font-size: 10px; }
+  body #loginModal .modal-content, body #signUpModal .modal-content {
+    padding: 10px; }
+    body #loginModal .modal-content .modal-header, body #signUpModal .modal-content .modal-header {
+      padding: 0 0 10px; }
+      body #loginModal .modal-content .modal-header .close img, body #signUpModal .modal-content .modal-header .close img {
+        height: 22px;
+        width: 22px; }
+      body #loginModal .modal-content .modal-header h5, body #signUpModal .modal-content .modal-header h5 {
+        font-size: 16px; }
+    body #loginModal .modal-content .modal-body, body #signUpModal .modal-content .modal-body {
+      padding: 10px 0 0; }
+      body #loginModal .modal-content .modal-body form, body #signUpModal .modal-content .modal-body form {
+        margin-bottom: 10px; }
+        body #loginModal .modal-content .modal-body form .fullName .form-group, body #signUpModal .modal-content .modal-body form .fullName .form-group {
+          width: 49%;
+          margin-bottom: 1rem !important; }
+        body #loginModal .modal-content .modal-body form .form-group .form-control, body #signUpModal .modal-content .modal-body form .form-group .form-control {
+          height: 40px;
+          font-size: 12px; }
+        body #loginModal .modal-content .modal-body form .form-group:last-child, body #signUpModal .modal-content .modal-body form .form-group:last-child {
+          margin-bottom: 10px; }
+        body #loginModal .modal-content .modal-body form .orangeBtn, body #signUpModal .modal-content .modal-body form .orangeBtn {
+          font-size: 12px;
+          width: 85px;
+          min-width: auto; }
+        body #loginModal .modal-content .modal-body form .forget, body #signUpModal .modal-content .modal-body form .forget {
+          font-size: 11px; }
+      body #loginModal .modal-content .modal-body a span, body #signUpModal .modal-content .modal-body a span {
+        margin-left: 3px; }
+      body #loginModal .modal-content .modal-body .blackText, body #signUpModal .modal-content .modal-body .blackText {
+        font-size: 12px;
+        margin: 10px 0; }
+      body #loginModal .modal-content .modal-body .socialBtns, body #signUpModal .modal-content .modal-body .socialBtns {
+        margin-bottom: 10px;
+        flex-wrap: wrap; }
+        body #loginModal .modal-content .modal-body .socialBtns .orangeBtn, body #signUpModal .modal-content .modal-body .socialBtns .orangeBtn {
+          width: 125px;
+          font-size: 12px; }
+          body #loginModal .modal-content .modal-body .socialBtns .orangeBtn img, body #signUpModal .modal-content .modal-body .socialBtns .orangeBtn img {
+            width: 12px;
+            height: 12px; }
+          body #loginModal .modal-content .modal-body .socialBtns .orangeBtn.linkedIn, body #signUpModal .modal-content .modal-body .socialBtns .orangeBtn.linkedIn {
+            flex: 1;
+            margin-top: 10px; }
+      body #loginModal .modal-content .modal-body .haveAcc, body #signUpModal .modal-content .modal-body .haveAcc {
+        font-size: 12px;
+        margin-top: 10px; }
+        body #loginModal .modal-content .modal-body .haveAcc.signingUp, body #signUpModal .modal-content .modal-body .haveAcc.signingUp {
+          display: flex;
+          flex-wrap: wrap; }
+  body .topResult {
+    flex-direction: column; }
+    body .topResult .resultsNum {
+      text-align: center;
+      margin-bottom: 10px; }
+      body .topResult .resultsNum h4 {
+        font-size: 20px; }
+      body .topResult .resultsNum p {
+        color: #848484;
+        font-size: 13px; }
+    body .topResult .filterBtns .filter {
+      height: 35px;
+      font-size: 15px; }
+    body .topResult .filterBtns .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+      height: 35px; }
+  body .resultsContainer {
+    margin-top: 25px;
+    flex-direction: column; }
+    body .resultsContainer .topics .myaccordion {
+      width: 100%; }
+      body .resultsContainer .topics .myaccordion .card .card-header {
+        padding: 5px 10px; }
+        body .resultsContainer .topics .myaccordion .card .card-header button {
+          font-size: 13px; }
+      body .resultsContainer .topics .myaccordion .card .card-body li {
+        padding: 10px 0;
+        font-size: 12px; }
+    body .resultsContainer .results {
+      margin-left: 0; }
+      body .resultsContainer .results .titles {
+        flex-wrap: wrap;
+        justify-content: space-between; }
+        body .resultsContainer .results .titles div {
+          margin-right: 0;
+          padding: 5px 10px;
+          font-size: 13px;
+          margin-bottom: 10px; }
+      body .resultsContainer .results .institutesContainer {
+        padding: 0; }
+        body .resultsContainer .results .institutesContainer .institutes {
+          margin-top: 0; }
+          body .resultsContainer .results .institutesContainer .institutes .courserBlock {
+            max-height: unset;
+            height: 285px;
+            flex-direction: column !important;
+            overflow: hidden; }
+            body .resultsContainer .results .institutesContainer .institutes .courserBlock .courseImg {
+              width: 100%;
+              height: 120px; }
+            body .resultsContainer .results .institutesContainer .institutes .courserBlock .courseText {
+              flex-direction: column;
+              justify-content: center !important; }
+              body .resultsContainer .results .institutesContainer .institutes .courserBlock .courseText .leftDiv p:first-child {
+                font-size: 14px; }
+              body .resultsContainer .results .institutesContainer .institutes .courserBlock .courseText .leftDiv .desc {
+                height: 30px; }
+              body .resultsContainer .results .institutesContainer .institutes .courserBlock .courseText .rightDiv {
+                align-items: center;
+                flex-direction: row;
+                width: 100%;
+                padding-top: 10px;
+                justify-content: space-between; }
+                body .resultsContainer .results .institutesContainer .institutes .courserBlock .courseText .rightDiv .startsBlock, body .resultsContainer .results .institutesContainer .institutes .courserBlock .courseText .rightDiv .price {
+                  font-size: 13px; }
+      body .resultsContainer .results .bottomNav {
+        flex-wrap: wrap;
+        justify-content: center; }
+        body .resultsContainer .results .bottomNav a {
+          font-size: 13px;
+          margin-bottom: 5px; } }
 /*Small Screen*/
 @media (min-width: 768px) and (max-width: 991px) {
   body {
@@ -1687,7 +2502,34 @@ header {
             width: 10px;
             height: 11px; }
       body .institutesContainer .institutes .courserBlock .price {
-        font-size: 11px; } }
+        font-size: 11px; }
+    body .resultsContainer .topResult .resultsNum h4 {
+      font-size: 22px; }
+    body .resultsContainer .topResult .resultsNum p {
+      font-size: 13px; }
+    body .resultsContainer .topics .myaccordion {
+      width: 215px; }
+      body .resultsContainer .topics .myaccordion .card .card-header {
+        padding: 10px 10px; }
+      body .resultsContainer .topics .myaccordion .card .card-body {
+        padding: 0 10px; }
+        body .resultsContainer .topics .myaccordion .card .card-body li {
+          font-size: 13px; }
+    body .resultsContainer .results {
+      margin-left: 15px; }
+      body .resultsContainer .results .titles div {
+        font-size: 14px; }
+      body .resultsContainer .results .institutesContainer {
+        padding: 5px 0; }
+        body .resultsContainer .results .institutesContainer .institutes {
+          flex-direction: column;
+          flex-wrap: unset;
+          justify-content: center;
+          align-items: center; }
+      body .resultsContainer .results .bottomNav {
+        justify-content: center; }
+        body .resultsContainer .results .bottomNav a {
+          margin-bottom: 5px; } }
 /*Medium Screen*/
 @media (min-width: 992px) and (max-width: 1199px) {
   .mr-18 {
