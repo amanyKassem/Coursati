@@ -26,6 +26,16 @@ $purple: #9e348a;
   }
 }
 
+.purbleBg {
+  background-color: $purple !important;
+
+  &:hover {
+    background: #fff !important;
+    color: $purple !important;
+    border-color: $purple !important;
+  }
+}
+
 .btn:hover, .btn:focus, .btn.focus {
   text-decoration: none;
   outline: none;
@@ -185,6 +195,18 @@ form {
 
 .owl-carousel {
   direction: ltr;
+}
+
+.purpleDemo{
+  .owl-prev, .owl-next {
+    background-color: $purple !important;
+
+    &:hover {
+      background-color: #fff !important;
+      color: $purple !important;
+      border: 2px solid $purple !important;
+    }
+  }
 }
 
 .customHr {
@@ -407,7 +429,7 @@ ul {
 .title {
   color: $black;
   font-weight: bold;
-  font-size: 25px;
+  font-size: 23px;
 }
 
 .desc {
@@ -1553,7 +1575,7 @@ header {
     }
   }
 
-  #owl-demo1, #owl-demo2, #owl-demo3, #owl-demo5, #owl-demo4 {
+  #owl-demo1, #owl-demo2, #owl-demo3, #owl-demo5, #owl-demo4 , #owl-demo6 {
     margin-top: 5px;
 
     .item {
@@ -2380,8 +2402,8 @@ header {
   margin: 25px 0 20px;
 
   img {
-    width: 30px;
-    height: 20px;
+    width: 35px;
+    height: 25px;
     margin-right: 10px;
   }
 
@@ -2902,26 +2924,108 @@ header {
 
 /* start  sub category */
 
-#owl-demo4 {
-  .item {
-    margin-bottom: 0;
-    justify-content: flex-start;
-    padding: 0 10px !important;
-    font-size: 13px;
-  }
-
-  .owl-prev, .owl-next {
-    height: 30px !important;
-    line-height: 30px !important;
-    font-size: 12px !important;
-    background-color: $purple !important;
-
-    &:hover {
-      background-color: #fff !important;
-      color: $purple !important;
-      border: 2px solid $purple !important;
+.subCatContainer{
+  #owl-demo4 , #owl-demo6{
+    .item {
+      margin-bottom: 0;
+      justify-content: flex-start;
+      padding: 0 10px !important;
+      font-size: 13px;
+      margin: 10px 0;
     }
   }
+
+  #owl-demo4{
+    .owl-prev, .owl-next {
+      height: 30px !important;
+      line-height: 30px !important;
+      font-size: 12px !important;
+    }
+  }
+
+  .subCat{
+
+    .nav-pills {
+      .nav-item {
+
+        .nav-link {
+
+          &:before {
+            background: $purple;
+          }
+
+          &.active, &:hover {
+            color: $purple;
+
+            &:before {
+              background: $purple;
+            }
+          }
+
+        }
+
+      }
+
+    }
+
+    #owl-demo6{
+      .item{
+        padding:0 !important;
+        width: auto;
+        margin: 10px 0;
+      }
+    }
+
+  }
+  .featuredCourse{
+    &.institutesContainer {
+
+      .institutes {
+
+        .courserBlock {
+          max-height: 230px;
+          height: 230px;
+          .courseImg {
+            width: 35%;
+          }
+
+          .courseText {
+            padding: 10px 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            p:first-child {
+              font-size: 15px;
+            }
+
+            .info {
+              font-size: 13px;
+            }
+            .desc {
+              margin-bottom: 10px;
+            }
+
+            .price {
+              font-size: 15px;
+              margin-bottom: 10px;
+              span{
+                color: #524e50;
+              }
+            }
+
+            .purbleBg {
+              width: 120px;
+              padding: 8px 5px;
+              font-size: 13px;
+            }
+          }
+        }
+
+      }
+    }
+  }
+
 }
 
 /* end  sub category */

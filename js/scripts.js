@@ -88,7 +88,7 @@ $(document).ready(function () {
         }
     });
 
-    $('#owl-demo5').owlCarousel({
+    $('#owl-demo5 , #owl-demo6').owlCarousel({
         // center: true,
         dots: false,
         nav: true,

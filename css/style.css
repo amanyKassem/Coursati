@@ -11,6 +11,13 @@
     color: #e23a7e !important;
     border-color: #e23a7e !important; }
 
+.purbleBg {
+  background-color: #9e348a !important; }
+  .purbleBg:hover {
+    background: #fff !important;
+    color: #9e348a !important;
+    border-color: #9e348a !important; }
+
 .btn:hover, .btn:focus, .btn.focus {
   text-decoration: none;
   outline: none;
@@ -119,6 +126,13 @@ form .orangeBtn {
 
 .owl-carousel {
   direction: ltr; }
+
+.purpleDemo .owl-prev, .purpleDemo .owl-next {
+  background-color: #9e348a !important; }
+  .purpleDemo .owl-prev:hover, .purpleDemo .owl-next:hover {
+    background-color: #fff !important;
+    color: #9e348a !important;
+    border: 2px solid #9e348a !important; }
 
 .customHr {
   margin-top: 0;
@@ -273,7 +287,7 @@ ul {
 .title {
   color: #100f10;
   font-weight: bold;
-  font-size: 25px; }
+  font-size: 23px; }
 
 .desc {
   color: #8e8e8e;
@@ -1044,19 +1058,19 @@ header {
     text-decoration: underline;
     display: inline;
     font-weight: bold; }
-  .learnNext #owl-demo1, .learnNext #owl-demo2, .learnNext #owl-demo3, .learnNext #owl-demo5, .learnNext #owl-demo4 {
+  .learnNext #owl-demo1, .learnNext #owl-demo2, .learnNext #owl-demo3, .learnNext #owl-demo5, .learnNext #owl-demo4, .learnNext #owl-demo6 {
     margin-top: 5px; }
-    .learnNext #owl-demo1 .item, .learnNext #owl-demo2 .item, .learnNext #owl-demo3 .item, .learnNext #owl-demo5 .item, .learnNext #owl-demo4 .item {
+    .learnNext #owl-demo1 .item, .learnNext #owl-demo2 .item, .learnNext #owl-demo3 .item, .learnNext #owl-demo5 .item, .learnNext #owl-demo4 .item, .learnNext #owl-demo6 .item {
       position: relative;
       width: 165px;
       padding: 10px 0; }
-      .learnNext #owl-demo1 .item .course, .learnNext #owl-demo2 .item .course, .learnNext #owl-demo3 .item .course, .learnNext #owl-demo5 .item .course, .learnNext #owl-demo4 .item .course {
+      .learnNext #owl-demo1 .item .course, .learnNext #owl-demo2 .item .course, .learnNext #owl-demo3 .item .course, .learnNext #owl-demo5 .item .course, .learnNext #owl-demo4 .item .course, .learnNext #owl-demo6 .item .course {
         max-width: 100%; }
-        .learnNext #owl-demo1 .item .course .courseName, .learnNext #owl-demo2 .item .course .courseName, .learnNext #owl-demo3 .item .course .courseName, .learnNext #owl-demo5 .item .course .courseName, .learnNext #owl-demo4 .item .course .courseName {
+        .learnNext #owl-demo1 .item .course .courseName, .learnNext #owl-demo2 .item .course .courseName, .learnNext #owl-demo3 .item .course .courseName, .learnNext #owl-demo5 .item .course .courseName, .learnNext #owl-demo4 .item .course .courseName, .learnNext #owl-demo6 .item .course .courseName {
           font-size: 11px; }
-    .learnNext #owl-demo1 .owl-nav, .learnNext #owl-demo2 .owl-nav, .learnNext #owl-demo3 .owl-nav, .learnNext #owl-demo5 .owl-nav, .learnNext #owl-demo4 .owl-nav {
+    .learnNext #owl-demo1 .owl-nav, .learnNext #owl-demo2 .owl-nav, .learnNext #owl-demo3 .owl-nav, .learnNext #owl-demo5 .owl-nav, .learnNext #owl-demo4 .owl-nav, .learnNext #owl-demo6 .owl-nav {
       display: block; }
-      .learnNext #owl-demo1 .owl-nav .owl-prev, .learnNext #owl-demo1 .owl-nav .owl-next, .learnNext #owl-demo2 .owl-nav .owl-prev, .learnNext #owl-demo2 .owl-nav .owl-next, .learnNext #owl-demo3 .owl-nav .owl-prev, .learnNext #owl-demo3 .owl-nav .owl-next, .learnNext #owl-demo5 .owl-nav .owl-prev, .learnNext #owl-demo5 .owl-nav .owl-next, .learnNext #owl-demo4 .owl-nav .owl-prev, .learnNext #owl-demo4 .owl-nav .owl-next {
+      .learnNext #owl-demo1 .owl-nav .owl-prev, .learnNext #owl-demo1 .owl-nav .owl-next, .learnNext #owl-demo2 .owl-nav .owl-prev, .learnNext #owl-demo2 .owl-nav .owl-next, .learnNext #owl-demo3 .owl-nav .owl-prev, .learnNext #owl-demo3 .owl-nav .owl-next, .learnNext #owl-demo5 .owl-nav .owl-prev, .learnNext #owl-demo5 .owl-nav .owl-next, .learnNext #owl-demo4 .owl-nav .owl-prev, .learnNext #owl-demo4 .owl-nav .owl-next, .learnNext #owl-demo6 .owl-nav .owl-prev, .learnNext #owl-demo6 .owl-nav .owl-next {
         width: 25px;
         height: 50px;
         line-height: 50px;
@@ -1075,16 +1089,16 @@ header {
         -moz-transition: all .5s ease-in-out;
         -o-transition: all .5s ease-in-out;
         transition: all .5s ease-in-out; }
-        .learnNext #owl-demo1 .owl-nav .owl-prev:hover, .learnNext #owl-demo1 .owl-nav .owl-next:hover, .learnNext #owl-demo2 .owl-nav .owl-prev:hover, .learnNext #owl-demo2 .owl-nav .owl-next:hover, .learnNext #owl-demo3 .owl-nav .owl-prev:hover, .learnNext #owl-demo3 .owl-nav .owl-next:hover, .learnNext #owl-demo5 .owl-nav .owl-prev:hover, .learnNext #owl-demo5 .owl-nav .owl-next:hover, .learnNext #owl-demo4 .owl-nav .owl-prev:hover, .learnNext #owl-demo4 .owl-nav .owl-next:hover {
+        .learnNext #owl-demo1 .owl-nav .owl-prev:hover, .learnNext #owl-demo1 .owl-nav .owl-next:hover, .learnNext #owl-demo2 .owl-nav .owl-prev:hover, .learnNext #owl-demo2 .owl-nav .owl-next:hover, .learnNext #owl-demo3 .owl-nav .owl-prev:hover, .learnNext #owl-demo3 .owl-nav .owl-next:hover, .learnNext #owl-demo5 .owl-nav .owl-prev:hover, .learnNext #owl-demo5 .owl-nav .owl-next:hover, .learnNext #owl-demo4 .owl-nav .owl-prev:hover, .learnNext #owl-demo4 .owl-nav .owl-next:hover, .learnNext #owl-demo6 .owl-nav .owl-prev:hover, .learnNext #owl-demo6 .owl-nav .owl-next:hover {
           background-color: #FFF;
           color: #ff7600;
           border: 2px solid #ff7600;
           display: block; }
-      .learnNext #owl-demo1 .owl-nav .owl-next, .learnNext #owl-demo2 .owl-nav .owl-next, .learnNext #owl-demo3 .owl-nav .owl-next, .learnNext #owl-demo5 .owl-nav .owl-next, .learnNext #owl-demo4 .owl-nav .owl-next {
+      .learnNext #owl-demo1 .owl-nav .owl-next, .learnNext #owl-demo2 .owl-nav .owl-next, .learnNext #owl-demo3 .owl-nav .owl-next, .learnNext #owl-demo5 .owl-nav .owl-next, .learnNext #owl-demo4 .owl-nav .owl-next, .learnNext #owl-demo6 .owl-nav .owl-next {
         right: 0;
         border-top-left-radius: 10px;
         border-bottom-left-radius: 10px; }
-      .learnNext #owl-demo1 .owl-nav .owl-prev, .learnNext #owl-demo2 .owl-nav .owl-prev, .learnNext #owl-demo3 .owl-nav .owl-prev, .learnNext #owl-demo5 .owl-nav .owl-prev, .learnNext #owl-demo4 .owl-nav .owl-prev {
+      .learnNext #owl-demo1 .owl-nav .owl-prev, .learnNext #owl-demo2 .owl-nav .owl-prev, .learnNext #owl-demo3 .owl-nav .owl-prev, .learnNext #owl-demo5 .owl-nav .owl-prev, .learnNext #owl-demo4 .owl-nav .owl-prev, .learnNext #owl-demo6 .owl-nav .owl-prev {
         left: 0;
         border-top-right-radius: 10px;
         border-bottom-right-radius: 10px;
@@ -1558,8 +1572,8 @@ header {
   display: flex;
   margin: 25px 0 20px; }
   .development img {
-    width: 30px;
-    height: 20px;
+    width: 35px;
+    height: 25px;
     margin-right: 10px; }
   .development .title {
     margin-bottom: 0;
@@ -1898,20 +1912,51 @@ header {
 
 /* end  popularInstructors */
 /* start  sub category */
-#owl-demo4 .item {
+.subCatContainer #owl-demo4 .item, .subCatContainer #owl-demo6 .item {
   margin-bottom: 0;
   justify-content: flex-start;
   padding: 0 10px !important;
-  font-size: 13px; }
-#owl-demo4 .owl-prev, #owl-demo4 .owl-next {
+  font-size: 13px;
+  margin: 10px 0; }
+.subCatContainer #owl-demo4 .owl-prev, .subCatContainer #owl-demo4 .owl-next {
   height: 30px !important;
   line-height: 30px !important;
-  font-size: 12px !important;
-  background-color: #9e348a !important; }
-  #owl-demo4 .owl-prev:hover, #owl-demo4 .owl-next:hover {
-    background-color: #fff !important;
-    color: #9e348a !important;
-    border: 2px solid #9e348a !important; }
+  font-size: 12px !important; }
+.subCatContainer .subCat .nav-pills .nav-item .nav-link:before {
+  background: #9e348a; }
+.subCatContainer .subCat .nav-pills .nav-item .nav-link.active, .subCatContainer .subCat .nav-pills .nav-item .nav-link:hover {
+  color: #9e348a; }
+  .subCatContainer .subCat .nav-pills .nav-item .nav-link.active:before, .subCatContainer .subCat .nav-pills .nav-item .nav-link:hover:before {
+    background: #9e348a; }
+.subCatContainer .subCat #owl-demo6 .item {
+  padding: 0 !important;
+  width: auto;
+  margin: 10px 0; }
+.subCatContainer .featuredCourse.institutesContainer .institutes .courserBlock {
+  max-height: 230px;
+  height: 230px; }
+  .subCatContainer .featuredCourse.institutesContainer .institutes .courserBlock .courseImg {
+    width: 35%; }
+  .subCatContainer .featuredCourse.institutesContainer .institutes .courserBlock .courseText {
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .subCatContainer .featuredCourse.institutesContainer .institutes .courserBlock .courseText p:first-child {
+      font-size: 15px; }
+    .subCatContainer .featuredCourse.institutesContainer .institutes .courserBlock .courseText .info {
+      font-size: 13px; }
+    .subCatContainer .featuredCourse.institutesContainer .institutes .courserBlock .courseText .desc {
+      margin-bottom: 10px; }
+    .subCatContainer .featuredCourse.institutesContainer .institutes .courserBlock .courseText .price {
+      font-size: 15px;
+      margin-bottom: 10px; }
+      .subCatContainer .featuredCourse.institutesContainer .institutes .courserBlock .courseText .price span {
+        color: #524e50; }
+    .subCatContainer .featuredCourse.institutesContainer .institutes .courserBlock .courseText .purbleBg {
+      width: 120px;
+      padding: 8px 5px;
+      font-size: 13px; }
 
 /* end  sub category */
 /*start scroll top */
