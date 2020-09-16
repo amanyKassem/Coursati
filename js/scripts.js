@@ -15,6 +15,15 @@ $(document).ready(function () {
         $('.categoryCont .resultsContainer .results .institutesContainer .institutes .courserBlock').addClass("w-49");
         event.preventDefault();
     });
+    // grid view
+    $(".listMenuCer").click(function () {
+        $('.categoryCont .resultsContainer .results .institutesContainer .institutes .media').removeClass("w-49");
+        event.preventDefault();
+    });
+    $(".gridMenuCer").click(function () {
+        $('.categoryCont .resultsContainer .results .institutesContainer .institutes .media').addClass("w-49");
+        event.preventDefault();
+    });
 
     // toggle menu
     $("header .toggle").click(function () {
@@ -88,7 +97,7 @@ $(document).ready(function () {
         }
     });
 
-    $('#owl-demo5 , #owl-demo6').owlCarousel({
+    $('#owl-demo5 , #owl-demo6 , #owl-demo7').owlCarousel({
         // center: true,
         dots: false,
         nav: true,
