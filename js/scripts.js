@@ -24,6 +24,15 @@ $(document).ready(function () {
         $('.categoryCont .resultsContainer .results .institutesContainer .institutes .media').addClass("w-49");
         event.preventDefault();
     });
+    // grid view
+    $(".listMenuTeacher").click(function () {
+        $('.categoryCont .resultsContainer .results .institutesContainer .institutes .tabCourse').removeClass("w-49");
+        event.preventDefault();
+    });
+    $(".gridMenuTeacher").click(function () {
+        $('.categoryCont .resultsContainer .results .institutesContainer .institutes .tabCourse').addClass("w-49");
+        event.preventDefault();
+    });
 
     // toggle menu
     $("header .toggle").click(function () {
@@ -38,6 +47,14 @@ $(document).ready(function () {
     $("header .overlay").click(function () {
         $(this).removeAttr("style");
         $(".menu").removeClass("ulDir");
+    });
+
+    // toggle dashboard menu
+
+    $("header .toggleSideMenu").click(function () {
+        $(".teacherCotent .sideMenu").toggleClass('ulDir');
+        $(".content").toggleClass('w-78 w-100');
+
     });
 
     // toggle mobile search
@@ -146,6 +163,24 @@ $(document).ready(function () {
         readURL(this);
     });
 
+    var readURLCourse = function(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                $('.createCourse .changeImg img').attr('src', e.target.result);
+            }
+
+            reader.readAsDataURL(input.files[0]);
+
+        }
+    }
+
+
+    $(".courseImgUpload").on('courseImg', function(){
+        readURLCourse(this);
+    });
+
     // upload documentation photo text
 
     $('.uploadFile').change(function() {
@@ -169,7 +204,6 @@ $(document).ready(function () {
     scrollButton.click(function () {
         $('html,body').animate({scrollTop: 0}, 600);
     });
-
 
 });
 

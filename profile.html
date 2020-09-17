@@ -279,8 +279,8 @@
 <!--start categories-->
 <div class="bgGray d-none d-md-flex">
     <div class="container">
-        <ul class="categoriesLinks catPage">
-            <li class="active">
+        <ul class="categoriesLinks">
+            <li>
                 <a href="category.html">Development</a>
             </li>
             <li>
@@ -322,296 +322,113 @@
 <!--end categories-->
 
 <!--start light gray bg-->
-<div class="lightGrayBg categoryCont pb-2">
+<div class="lightGrayBg pb-5 profileScreen">
     <div class="container">
-        <div class="development mt-0">
-            <img src="img/purple_learn.png" alt="book">
-            <div class="d-flex flex-column justify-content-center">
-                <h2 class="title">
-                    Development Courses
-                </h2>
-                <p class="desc">
-                    Description about section
-                </p>
-            </div>
-        </div>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="home.html"><i class='fas fa-chevron-left'></i>Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">My profile</li>
+            </ol>
+        </nav>
 
-        <div class="coursesContainer">
-            <a href="subCategory.html" class="item">
-                Web Development <span>(1,548)</span>
-            </a>
-            <a href="subCategory.html" class="item">
-                Data Science <span>(1,548)</span>
-            </a>
-            <a href="subCategory.html" class="item">
-                Python <span>(1,548)</span>
-            </a>
-            <a href="subCategory.html" class="item">
-                Java <span>(1,548)</span>
-            </a>
-            <a href="subCategory.html" class="item">
-                C# <span>(1,548)</span>
-            </a>
-            <a href="subCategory.html" class="item">
-                React <span>(1,548)</span>
-            </a>
-            <a href="subCategory.html" class="item">
-                Uniy <span>(1,548)</span>
-            </a>
-            <a href="subCategory.html" class="item">
-                Data Analysis <span>(1,548)</span>
-            </a>
-        </div>
+        <h2 class="title">My profile</h2>
+        <p class="desc">You can view and change your account details here</p>
 
+        <div class="accDetails">
 
-        <div class="topResult d-flex justify-content-between align-items-center mt-20">
-            <div class="resultsNum">
-                <h4>All courses in Development Courses</h4>
-                <p>All course available, 1500 courses</p>
-            </div>
-
-            <div class="filterBtns d-flex justify-content-center align-items-center">
-                <a class="listMenu" href="">
-                    <img src="img/gray_menu.png" alt="list">
-                </a>
-                <a class="gridMenu" href="">
-                    <img src="img/black_menu.png" alt="grid list">
-                </a>
-                <a class="filter" href="">
-                    <img src="img/filter.png" alt="filter">
-                    Filter
-                </a>
-                <select class="selectpicker" id="rating" title="Rating">
-                    <option>3</option>
-                    <option>5</option>
-                </select>
-                <select class="selectpicker" id="videoDuration" title="Video duration">
-                    <option>3</option>
-                    <option>5</option>
-                </select>
-            </div>
-        </div>
-
-        <div class="resultsContainer d-flex justify-content-between mt-0">
-            <div class="results ml-0">
-                <div class="institutesContainer pt-0">
-                    <div class="institutes">
-
-                        <a href="course.html" class="courserBlock d-flex flex-row align-items-center">
-                            <div class="courseImg">
-                                <img src="img/girl.jpg" alt="course image">
-                            </div>
-                            <div class="d-flex justify-content-between courseText">
-                                <div class="leftDiv">
-                                    <p>The Web Developer Bootcamp</p>
-                                    <p>Amany kassem</p>
-                                    <div class="info d-flex flex-row align-items-center">
-                                        <div><img src="img/book.png" alt="calender"> 40 Lecture</div>
-                                        <div><img src="img/time.png" alt="calender"> 370 hours</div>
-                                        <div><img src="img/goal.png" alt="calender"> All levels</div>
-                                    </div>
-                                    <p class="desc">The only course you need to learn web development - HTML, CSS, JS, Node, and More!</p>
-                                </div>
-                                <div class="rightDiv">
-                                    <div class="price">
-                                        <div><sup>$</sup>10.00</div>
-                                        <span><sup>$</sup>25.00</span>
-                                    </div>
-                                    <div class=" startsBlock d-flex flex-row align-items-center">
-                                        <div class="stars">
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                        </div>
-                                        <span><span>5</span>(12,460)</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-
-                        <a href="course.html" class="courserBlock d-flex flex-row align-items-center">
-                            <div class="courseImg">
-                                <img src="img/girl.jpg" alt="course image">
-                            </div>
-                            <div class="d-flex justify-content-between courseText">
-                                <div class="leftDiv">
-                                    <p>The Web Developer Bootcamp</p>
-                                    <p>Amany kassem</p>
-                                    <div class="info d-flex flex-row align-items-center">
-                                        <div><img src="img/book.png" alt="calender"> 40 Lecture</div>
-                                        <div><img src="img/time.png" alt="calender"> 370 hours</div>
-                                        <div><img src="img/goal.png" alt="calender"> All levels</div>
-                                    </div>
-                                    <p class="desc">The only course you need to learn web development - HTML, CSS, JS, Node, and More!</p>
-                                </div>
-                                <div class="rightDiv">
-                                    <div class="price">
-                                        <div><sup>$</sup>10.00</div>
-                                        <span><sup>$</sup>25.00</span>
-                                    </div>
-                                    <div class=" startsBlock d-flex flex-row align-items-center">
-                                        <div class="stars">
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                        </div>
-                                        <span><span>5</span>(12,460)</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-
-                        <a href="course.html" class="courserBlock d-flex flex-row align-items-center">
-                            <div class="courseImg">
-                                <img src="img/girl.jpg" alt="course image">
-                            </div>
-                            <div class="d-flex justify-content-between courseText">
-                                <div class="leftDiv">
-                                    <p>The Web Developer Bootcamp</p>
-                                    <p>Amany kassem</p>
-                                    <div class="info d-flex flex-row align-items-center">
-                                        <div><img src="img/book.png" alt="calender"> 40 Lecture</div>
-                                        <div><img src="img/time.png" alt="calender"> 370 hours</div>
-                                        <div><img src="img/goal.png" alt="calender"> All levels</div>
-                                    </div>
-                                    <p class="desc">The only course you need to learn web development - HTML, CSS, JS, Node, and More!</p>
-                                </div>
-                                <div class="rightDiv">
-                                    <div class="price">
-                                        <div><sup>$</sup>10.00</div>
-                                        <span><sup>$</sup>25.00</span>
-                                    </div>
-                                    <div class=" startsBlock d-flex flex-row align-items-center">
-                                        <div class="stars">
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                        </div>
-                                        <span><span>5</span>(12,460)</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-
-                        <a href="course.html" class="courserBlock d-flex flex-row align-items-center">
-                            <div class="courseImg">
-                                <img src="img/girl.jpg" alt="course image">
-                            </div>
-                            <div class="d-flex justify-content-between courseText">
-                                <div class="leftDiv">
-                                    <p>The Web Developer Bootcamp</p>
-                                    <p>Amany kassem</p>
-                                    <div class="info d-flex flex-row align-items-center">
-                                        <div><img src="img/book.png" alt="calender"> 40 Lecture</div>
-                                        <div><img src="img/time.png" alt="calender"> 370 hours</div>
-                                        <div><img src="img/goal.png" alt="calender"> All levels</div>
-                                    </div>
-                                    <p class="desc">The only course you need to learn web development - HTML, CSS, JS, Node, and More!</p>
-                                </div>
-                                <div class="rightDiv">
-                                    <div class="price">
-                                        <div><sup>$</sup>10.00</div>
-                                        <span><sup>$</sup>25.00</span>
-                                    </div>
-                                    <div class=" startsBlock d-flex flex-row align-items-center">
-                                        <div class="stars">
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                        </div>
-                                        <span><span>5</span>(12,460)</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-
-                        <a href="course.html" class="courserBlock d-flex flex-row align-items-center">
-                            <div class="courseImg">
-                                <img src="img/girl.jpg" alt="course image">
-                            </div>
-                            <div class="d-flex justify-content-between courseText">
-                                <div class="leftDiv">
-                                    <p>The Web Developer Bootcamp</p>
-                                    <p>Amany kassem</p>
-                                    <div class="info d-flex flex-row align-items-center">
-                                        <div><img src="img/book.png" alt="calender"> 40 Lecture</div>
-                                        <div><img src="img/time.png" alt="calender"> 370 hours</div>
-                                        <div><img src="img/goal.png" alt="calender"> All levels</div>
-                                    </div>
-                                    <p class="desc">The only course you need to learn web development - HTML, CSS, JS, Node, and More!</p>
-                                </div>
-                                <div class="rightDiv">
-                                    <div class="price">
-                                        <div><sup>$</sup>10.00</div>
-                                        <span><sup>$</sup>25.00</span>
-                                    </div>
-                                    <div class=" startsBlock d-flex flex-row align-items-center">
-                                        <div class="stars">
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                        </div>
-                                        <span><span>5</span>(12,460)</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-
-                    </div>
-                    <div class="bottomNav">
-                        <a href="#" class="prevNav">Prev</a>
-                        <a href="#">1</a>
-                        <a href="#">2</a>
-                        <a href="#">3</a>
-                        <a href="#">4</a>
-                        <a href="#">5</a>
-                        <a href="#">..</a>
-                        <a href="#">10</a>
-                        <a href="#">11</a>
-                        <a href="#">12</a>
-                        <a href="#">13</a>
-                        <a href="#">14</a>
-                        <a href="#" class="nextNav">Next</a>
-                    </div>
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="changeImg">
+                    <img src="img/girl.jpg" alt="profile">
+                    <a class="change">
+                        Change image
+                        <input class="file-upload" type="file" accept="image/*"/>
+                    </a>
                 </div>
+                <div class="accId">Account ID : 12411547</div>
             </div>
 
+            <form action="userDashboard.html">
+                <div class="rowSpace">
+
+                    <div class="form-group">
+                        <label for="firstName">First Name</label>
+                        <input type="text" class="form-control" id="firstName" placeholder="First Name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" class="form-control" id="lastName" placeholder="Last Name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="emailAdd">Email address</label>
+                        <input type="email" class="form-control" id="emailAdd" placeholder="Email address">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone number</label>
+                        <input type="tel" class="form-control" id="phone" placeholder="Phone number">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="country">Country</label>
+                        <select class="selectpicker" id="country" title="Select country">
+                            <option>Egypt</option>
+                            <option>USA</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="city">City</label>
+                        <select class="selectpicker" id="city" title="Select city">
+                            <option>Alex</option>
+                            <option>Mansoura</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="fields">Interested fields</label>
+                        <select class="selectpicker" id="fields" title="Select category">
+                            <option>Design</option>
+                            <option>Web Design</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="about">About</label>
+                        <input type="text" class="form-control" id="about" placeholder="About me">
+                    </div>
+
+                    <div class="titles">
+                        <div>
+                            Html5
+                            <a class="deleteTitle">
+                                <i class="fas fa-times"></i>
+                            </a>
+                        </div>
+                        <div>
+                            Bootstrap
+                            <a class="deleteTitle">
+                                <i class="fas fa-times"></i>
+                            </a>
+                        </div>
+                        <div>
+                            jQuery
+                            <a class="deleteTitle">
+                                <i class="fas fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <button type="submit" class="orangeBtn" onclick="location.href='userDashboard.html'">Save changes</button>
+            </form>
         </div>
+
     </div>
 </div>
 <!--end light gray bg-->
 
-<!--start Popular Instructors-->
-<div class="container">
-    <div class="popularInstructors learnNext">
-        <div class="">
-            <h2 class="title">Popular Instructors</h2>
-            <p class="desc">Popular Instructors in Development</a></p>
-        </div>
-        <div id="owl-demo5" class="owl-carousel">
-            <div class="item">
-                <a href="#" class="instructor">
-                    <img src="img/girl.jpg" alt="course image">
-                    <p class="instructorName">Amany kassem</p>
-                    <p class="courseName">React, JavaScript</p>
-                    <div><span>1,349</span> courses</div>
-                </a>
-            </div>
-
-        </div>
-    </div>
-</div>
-<!--end Popular Instructors-->
 
 <!--start white bg-->
 <div class="whiteBg">

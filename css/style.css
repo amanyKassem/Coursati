@@ -90,6 +90,21 @@ form .orangeBtn {
   height: 50px;
   min-width: 165px; }
 
+.titles {
+  display: flex;
+  align-items: center; }
+  .titles div {
+    display: flex;
+    background-color: #e23a7e;
+    margin-right: 10px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 15px; }
+    .titles div .deleteTitle {
+      color: #fff;
+      margin-left: 20px; }
+
 .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn), .bootstrap-select > .dropdown-toggle {
   width: 100%;
   border-radius: 7px;
@@ -170,6 +185,9 @@ p {
 
 .mt-20 {
   margin-top: 20px; }
+
+.mt-30 {
+  margin-top: 30px; }
 
 .bgGray {
   background-color: #f2f2f2;
@@ -1426,20 +1444,6 @@ header {
     display: flex;
     flex-direction: column;
     margin-left: 30px; }
-    .resultsContainer .results .titles {
-      display: flex;
-      align-items: center; }
-      .resultsContainer .results .titles div {
-        display: flex;
-        background-color: #e23a7e;
-        margin-right: 10px;
-        padding: 10px 15px;
-        border-radius: 5px;
-        color: #fff;
-        font-size: 15px; }
-        .resultsContainer .results .titles div .deleteTitle {
-          color: #fff;
-          margin-left: 20px; }
     .resultsContainer .results .institutesContainer .institutes .courserBlock {
       width: 100%;
       max-height: 160px;
@@ -1844,12 +1848,12 @@ header {
 
 /* end aboutBg */
 /* start categoryCont */
-.categoryCont .listMenu, .categoryCont .listMenuCer {
+.categoryCont .listMenu, .categoryCont .listMenuCer, .categoryCont .listMenuTeacher {
   margin-right: 10px; }
-  .categoryCont .listMenu img, .categoryCont .listMenuCer img {
+  .categoryCont .listMenu img, .categoryCont .listMenuCer img, .categoryCont .listMenuTeacher img {
     width: 20px;
     height: 15px; }
-.categoryCont .gridMenu, .categoryCont .gridMenuCer {
+.categoryCont .gridMenu, .categoryCont .gridMenuCer, .categoryCont .gridMenuTeacher {
   margin-right: 10px;
   background: #fff;
   height: 40px;
@@ -1857,7 +1861,7 @@ header {
   justify-content: center;
   align-items: center;
   border-radius: 5px; }
-  .categoryCont .gridMenu img, .categoryCont .gridMenuCer img {
+  .categoryCont .gridMenu img, .categoryCont .gridMenuCer img, .categoryCont .gridMenuTeacher img {
     width: 15px;
     height: 15px; }
 .categoryCont .filterBtns .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
@@ -2490,6 +2494,323 @@ header {
           margin-right: 10px; }
 
 /* end myCoursesTabs*/
+/* start profileScreen */
+.profileScreen .accDetails .accId {
+  color: #727272;
+  font-size: 13px; }
+.profileScreen .accDetails .titles {
+  margin: 5px 0 25px; }
+  .profileScreen .accDetails .titles div {
+    padding: 8px 15px;
+    font-size: 13px; }
+
+/* end profileScreen */
+/* start userDash */
+.userDash .coursesContainer .item {
+  height: 85px;
+  justify-content: flex-start;
+  padding: 10px 20px 10px 60px;
+  position: relative; }
+  .userDash .coursesContainer .item img {
+    width: 27px;
+    height: 27px;
+    position: absolute;
+    left: 20px;
+    transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out; }
+    .userDash .coursesContainer .item img:last-of-type {
+      opacity: 0; }
+  .userDash .coursesContainer .item:hover {
+    color: #ff7600; }
+    .userDash .coursesContainer .item:hover img:first-of-type {
+      opacity: 0; }
+    .userDash .coursesContainer .item:hover img:last-of-type {
+      opacity: 1; }
+
+/* end userDash */
+/* start teacher dashboard */
+.teacherHeader .container {
+  padding: 0 50px;
+  max-width: 100%; }
+  .teacherHeader .container .leftDiv {
+    display: flex;
+    align-items: center; }
+    .teacherHeader .container .leftDiv .toggleSideMenu img {
+      width: 20px; }
+  .teacherHeader .container .cartDiv {
+    border-left: 0; }
+
+.teacherCotent {
+  justify-content: flex-end; }
+  .teacherCotent .sideMenu {
+    width: 22%;
+    box-shadow: 4px 0 15px 0 rgba(0, 0, 0, 0.03);
+    -webkit-box-shadow: 4px 0 15px 0 rgba(0, 0, 0, 0.03);
+    -o-box-shadow: 4px 0 15px 0 rgba(0, 0, 0, 0.03);
+    -moz-box-shadow: 4px 0 15px 0 rgba(0, 0, 0, 0.03);
+    background-color: #ffffff;
+    position: fixed;
+    height: 100%;
+    padding: 50px 0 50px 50px;
+    transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    left: 0;
+    overflow: hidden; }
+    .teacherCotent .sideMenu.ulDir {
+      width: 0;
+      padding: 50px 0; }
+    .teacherCotent .sideMenu ul li {
+      margin-bottom: 20px;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      border-right: 4px solid transparent;
+      transition: all 0.5s ease-in-out;
+      -o-transition: all 0.5s ease-in-out;
+      -moz-transition: all 0.5s ease-in-out;
+      -webkit-transition: all 0.5s ease-in-out;
+      cursor: pointer; }
+      .teacherCotent .sideMenu ul li a {
+        color: #100f10;
+        position: relative;
+        padding: 0 0 0 40px;
+        font-size: 14px; }
+        .teacherCotent .sideMenu ul li a img {
+          width: 27px;
+          height: 25px;
+          position: absolute;
+          left: 0;
+          transition: all 0.5s ease-in-out;
+          -o-transition: all 0.5s ease-in-out;
+          -moz-transition: all 0.5s ease-in-out;
+          -webkit-transition: all 0.5s ease-in-out; }
+          .teacherCotent .sideMenu ul li a img:last-of-type {
+            opacity: 0; }
+        .teacherCotent .sideMenu ul li a:hover {
+          font-weight: bold; }
+          .teacherCotent .sideMenu ul li a:hover img:first-of-type {
+            opacity: 0; }
+          .teacherCotent .sideMenu ul li a:hover img:last-of-type {
+            opacity: 1; }
+      .teacherCotent .sideMenu ul li.active, .teacherCotent .sideMenu ul li:hover {
+        border-right: 4px solid #ff7600; }
+        .teacherCotent .sideMenu ul li.active a, .teacherCotent .sideMenu ul li:hover a {
+          font-weight: bold; }
+          .teacherCotent .sideMenu ul li.active a img:first-of-type, .teacherCotent .sideMenu ul li:hover a img:first-of-type {
+            opacity: 0; }
+          .teacherCotent .sideMenu ul li.active a img:last-of-type, .teacherCotent .sideMenu ul li:hover a img:last-of-type {
+            opacity: 1; }
+    .teacherCotent .sideMenu .gradientBg {
+      height: 40px;
+      color: #fff;
+      justify-content: center;
+      margin-right: 30px; }
+      .teacherCotent .sideMenu .gradientBg:hover {
+        color: #100f10;
+        font-weight: normal; }
+  .teacherCotent .content {
+    transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out; }
+    .teacherCotent .content .lightGrayBg {
+      min-height: calc(100vh - 127px); }
+      .teacherCotent .content .lightGrayBg .myCourses .gradientBg {
+        height: 33px;
+        font-size: 12px;
+        padding: 0 15px; }
+        .teacherCotent .content .lightGrayBg .myCourses .gradientBg:hover {
+          color: #100f10; }
+      .teacherCotent .content .lightGrayBg .haveQues {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 10px;
+        background-color: #ffffff;
+        height: 135px;
+        padding: 29px;
+        margin-bottom: 25px; }
+        .teacherCotent .content .lightGrayBg .haveQues .title {
+          font-size: 18px;
+          margin-bottom: 0; }
+        .teacherCotent .content .lightGrayBg .haveQues a {
+          height: 40px !important; }
+      .teacherCotent .content .lightGrayBg .institutes .tabCourse {
+        width: 100%; }
+        .teacherCotent .content .lightGrayBg .institutes .tabCourse .btns a {
+          border: solid 1px #d3d3d3;
+          background-color: #fff;
+          color: #100f10;
+          width: 100px;
+          justify-content: center;
+          border-radius: 5px;
+          height: 40px;
+          font-size: 13px; }
+          .teacherCotent .content .lightGrayBg .institutes .tabCourse .btns a:hover {
+            box-shadow: 0 4px 11px 0 rgba(0, 0, 0, 0.18);
+            -webkit-box-shadow: 0 4px 11px 0 rgba(0, 0, 0, 0.18);
+            -moz-box-shadow: 0 4px 11px 0 rgba(0, 0, 0, 0.18);
+            -o-box-shadow: 0 4px 11px 0 rgba(0, 0, 0, 0.18); }
+        .teacherCotent .content .lightGrayBg .institutes .tabCourse .courseText .rightDiv .startsBlock .stars i {
+          font-size: 11px; }
+      .teacherCotent .content .lightGrayBg.createCourse .steps .circleBlock {
+        width: 115px; }
+        .teacherCotent .content .lightGrayBg.createCourse .steps .circleBlock:before {
+          content: '';
+          position: absolute;
+          top: 50%;
+          height: 8px;
+          background-color: #e8e8e8; }
+        .teacherCotent .content .lightGrayBg.createCourse .steps .circleBlock:first-child {
+          margin-right: 0; }
+          .teacherCotent .content .lightGrayBg.createCourse .steps .circleBlock:first-child:before {
+            width: 85px;
+            left: 75px; }
+        .teacherCotent .content .lightGrayBg.createCourse .steps .circleBlock:nth-child(2):before {
+          width: 87px;
+          left: 72px; }
+        .teacherCotent .content .lightGrayBg.createCourse .steps .circleBlock:last-child(2):before {
+          content: none; }
+        .teacherCotent .content .lightGrayBg.createCourse .steps .circleBlock span {
+          font-size: 10px; }
+      .teacherCotent .content .lightGrayBg.createCourse .steps.step2 .circleBlock:before {
+        background-color: #ff7600; }
+      .teacherCotent .content .lightGrayBg.createCourse .steps.step2 .circleBlock:first-child {
+        margin-right: 0; }
+        .teacherCotent .content .lightGrayBg.createCourse .steps.step2 .circleBlock:first-child:before {
+          left: 74px; }
+      .teacherCotent .content .lightGrayBg.createCourse .steps.step2 .circleBlock:nth-child(2):before {
+        width: 85px;
+        left: 74px; }
+      .teacherCotent .content .lightGrayBg.createCourse .accDetails h4.title {
+        font-size: 12px !important;
+        margin-bottom: 10px !important;
+        margin-top: 0 !important; }
+      .teacherCotent .content .lightGrayBg.createCourse .accDetails form .changeImg, .teacherCotent .content .lightGrayBg.createCourse .accDetails form .changeVedio {
+        width: 260px;
+        border-radius: 5px;
+        border: solid 1px #d3d3d3;
+        background-color: #ffffff;
+        height: 130px;
+        justify-content: center;
+        overflow: hidden; }
+        .teacherCotent .content .lightGrayBg.createCourse .accDetails form .changeImg .courseImg, .teacherCotent .content .lightGrayBg.createCourse .accDetails form .changeImg .coursevideo, .teacherCotent .content .lightGrayBg.createCourse .accDetails form .changeVedio .courseImg, .teacherCotent .content .lightGrayBg.createCourse .accDetails form .changeVedio .coursevideo {
+          width: 100%;
+          height: 100%;
+          border-radius: 0;
+          border: 0;
+          background-color: transparent; }
+          .teacherCotent .content .lightGrayBg.createCourse .accDetails form .changeImg .courseImg img, .teacherCotent .content .lightGrayBg.createCourse .accDetails form .changeImg .coursevideo img, .teacherCotent .content .lightGrayBg.createCourse .accDetails form .changeVedio .courseImg img, .teacherCotent .content .lightGrayBg.createCourse .accDetails form .changeVedio .coursevideo img {
+            border-radius: 0;
+            width: 100%;
+            height: 100%;
+            margin-right: 0; }
+          .teacherCotent .content .lightGrayBg.createCourse .accDetails form .changeImg .courseImg:hover, .teacherCotent .content .lightGrayBg.createCourse .accDetails form .changeImg .coursevideo:hover, .teacherCotent .content .lightGrayBg.createCourse .accDetails form .changeVedio .courseImg:hover, .teacherCotent .content .lightGrayBg.createCourse .accDetails form .changeVedio .coursevideo:hover {
+            background-color: transparent;
+            box-shadow: 0 4px 11px 0 rgba(0, 0, 0, 0.18);
+            -webkit-box-shadow: 0 4px 11px 0 rgba(0, 0, 0, 0.18);
+            -moz-box-shadow: 0 4px 11px 0 rgba(0, 0, 0, 0.18);
+            -o-box-shadow: 0 4px 11px 0 rgba(0, 0, 0, 0.18); }
+      .teacherCotent .content .lightGrayBg.createCourse .accDetails form .form-group {
+        position: relative; }
+        .teacherCotent .content .lightGrayBg.createCourse .accDetails form .form-group label {
+          font-weight: bold;
+          font-size: 13px; }
+        .teacherCotent .content .lightGrayBg.createCourse .accDetails form .form-group .form-control {
+          font-size: 14px; }
+        .teacherCotent .content .lightGrayBg.createCourse .accDetails form .form-group .positionSpan {
+          position: absolute;
+          right: 20px;
+          bottom: 18%;
+          font-size: 13px; }
+        .teacherCotent .content .lightGrayBg.createCourse .accDetails form .form-group .minus, .teacherCotent .content .lightGrayBg.createCourse .accDetails form .form-group .add {
+          justify-content: center;
+          align-items: center;
+          right: 24px;
+          bottom: 15px;
+          width: 20px;
+          display: flex;
+          height: 20px;
+          position: absolute;
+          border-radius: 5px;
+          top: unset; }
+        .teacherCotent .content .lightGrayBg.createCourse .accDetails form .form-group .minus {
+          background-color: #e23a7e; }
+          .teacherCotent .content .lightGrayBg.createCourse .accDetails form .form-group .minus img {
+            width: 10px; }
+        .teacherCotent .content .lightGrayBg.createCourse .accDetails form .form-group .add {
+          background-color: #ff7600; }
+          .teacherCotent .content .lightGrayBg.createCourse .accDetails form .form-group .add img {
+            width: 10px;
+            height: 10px; }
+      .teacherCotent .content .lightGrayBg.createCourse .accDetails form .rowGroup .form-group {
+        width: 32%; }
+      .teacherCotent .content .lightGrayBg.createCourse .accDetails form .formGroupCont {
+        border-radius: 10px;
+        background-color: #fff;
+        padding: 20px 23px;
+        margin-bottom: 15px; }
+        .teacherCotent .content .lightGrayBg.createCourse .accDetails form .formGroupCont .form-control {
+          background: #f6f6f6; }
+      .teacherCotent .content .lightGrayBg.createCourse .accDetails form .addMoreLec {
+        color: #100f10;
+        font-size: 13px;
+        margin: 20px 0 30px;
+        font-weight: bold;
+        display: inline-flex; }
+        .teacherCotent .content .lightGrayBg.createCourse .accDetails form .addMoreLec:hover {
+          color: #ff7600; }
+      .teacherCotent .content .lightGrayBg .performance .item {
+        width: 32%;
+        justify-content: flex-start;
+        padding: 20px;
+        height: auto; }
+        .teacherCotent .content .lightGrayBg .performance .item img {
+          width: 35px;
+          height: 35px;
+          margin-right: 15px; }
+        .teacherCotent .content .lightGrayBg .performance .item h4 {
+          font-weight: bold;
+          font-size: 16px;
+          margin-bottom: 0; }
+        .teacherCotent .content .lightGrayBg .performance .item span {
+          margin-left: 0;
+          color: #ff7600;
+          font-weight: bold;
+          font-size: 22px; }
+    .teacherCotent .content.w-78 {
+      width: 78%; }
+      .teacherCotent .content.w-78 .topCat .categories .cat {
+        width: 16%; }
+        .teacherCotent .content.w-78 .topCat .categories .cat img {
+          width: 40px;
+          height: 40px; }
+        .teacherCotent .content.w-78 .topCat .categories .cat h4 {
+          font-size: 12px; }
+        .teacherCotent .content.w-78 .topCat .categories .cat div {
+          font-size: 11px; }
+        .teacherCotent .content.w-78 .topCat .categories .cat.viewAll h4 {
+          font-size: 12px; }
+      .teacherCotent .content.w-78 .institutes .tabCourse.w-49 .courseImg {
+        width: 130px; }
+      .teacherCotent .content.w-78 .institutes .tabCourse.w-49 .courseText .leftDiv p:first-child {
+        font-size: 14px; }
+      .teacherCotent .content.w-78 .institutes .tabCourse.w-49 .courseText .leftDiv p:nth-child(2) {
+        font-size: 13px; }
+      .teacherCotent .content.w-78 .institutes .tabCourse.w-49 .courseText .leftDiv .info div {
+        font-size: 12px; }
+        .teacherCotent .content.w-78 .institutes .tabCourse.w-49 .courseText .leftDiv .info div:nth-child(2) {
+          margin: 0 10px; }
+      .teacherCotent .content.w-78 .institutes .tabCourse.w-49 .courseText .rightDiv .price {
+        font-size: 13px; }
+      .teacherCotent .content.w-78 .institutes .tabCourse.w-49 .courseText .rightDiv .startsBlock .stars i {
+        font-size: 10px; }
+
+/* end teacher dashboard */
 /*start scroll top */
 #scroll-top {
   width: 40px;
