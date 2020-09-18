@@ -2768,7 +2768,8 @@ header {
         width: 32%;
         justify-content: flex-start;
         padding: 20px;
-        height: auto; }
+        height: 90px;
+        overflow: hidden; }
         .teacherCotent .content .lightGrayBg .performance .item img {
           width: 35px;
           height: 35px;
@@ -2776,7 +2777,9 @@ header {
         .teacherCotent .content .lightGrayBg .performance .item h4 {
           font-weight: bold;
           font-size: 16px;
-          margin-bottom: 0; }
+          margin-bottom: 0;
+          max-height: 40px;
+          overflow: hidden; }
         .teacherCotent .content .lightGrayBg .performance .item span {
           margin-left: 0;
           color: #ff7600;
@@ -2838,6 +2841,8 @@ header {
 /*end scroll-top*/
 /* Start Media Query */
 @media (max-width: 767px) {
+  body .transformColumn {
+    flex-direction: column; }
   body .title {
     font-size: 18px; }
   body .desc {
@@ -2850,6 +2855,33 @@ header {
     padding: 25px 0; }
     body .lightGrayBg.guestGray {
       padding: 15px 0; }
+  body .breadcrumb {
+    margin: 10px 0 20px; }
+  body form label {
+    font-size: 13px; }
+  body form .form-control {
+    height: 40px;
+    padding: 5px 10px;
+    font-size: 13px !important; }
+  body form .PayOptions {
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-between; }
+    body form .PayOptions img {
+      width: 80px;
+      height: 60px;
+      margin-right: 0; }
+  body .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn), body .bootstrap-select > .dropdown-toggle {
+    height: 40px !important; }
+    body .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) > .dropdown-toggle.bs-placeholder, body .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) > .dropdown-toggle.bs-placeholder:active, body .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) > .dropdown-toggle.bs-placeholder:focus,
+    body .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) > .dropdown-toggle.bs-placeholder:hover, body .bootstrap-select > .dropdown-toggle > .dropdown-toggle.bs-placeholder, body .bootstrap-select > .dropdown-toggle > .dropdown-toggle.bs-placeholder:active, body .bootstrap-select > .dropdown-toggle > .dropdown-toggle.bs-placeholder:focus,
+    body .bootstrap-select > .dropdown-toggle > .dropdown-toggle.bs-placeholder:hover {
+      font-size: 13px; }
+    body .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) .dropdown-menu li a, body .bootstrap-select > .dropdown-toggle .dropdown-menu li a {
+      padding: 6px 10px;
+      font-size: 13px; }
+  body .orangeBtn {
+    font-size: 13px; }
   body header .menuBar .toggle {
     display: block;
     color: #ff7600;
@@ -3169,15 +3201,13 @@ header {
       text-align: center;
       margin-bottom: 10px; }
       body .topResult .resultsNum h4 {
-        font-size: 20px; }
+        font-size: 18px; }
       body .topResult .resultsNum p {
         color: #848484;
         font-size: 13px; }
     body .topResult .filterBtns .filter {
-      height: 35px;
-      font-size: 15px; }
-    body .topResult .filterBtns .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
-      height: 35px; }
+      height: 40px;
+      font-size: 14px; }
   body .resultsContainer {
     margin-top: 25px;
     flex-direction: column; }
@@ -3206,7 +3236,7 @@ header {
           margin-top: 0; }
           body .resultsContainer .results .institutesContainer .institutes .courserBlock {
             max-height: unset;
-            height: 285px;
+            height: 300px;
             flex-direction: column !important;
             overflow: hidden; }
             body .resultsContainer .results .institutesContainer .institutes .courserBlock .courseImg {
@@ -3232,7 +3262,331 @@ header {
         justify-content: center; }
         body .resultsContainer .results .bottomNav a {
           font-size: 13px;
-          margin-bottom: 5px; } }
+          margin-bottom: 5px; }
+  body .aboutBg {
+    min-height: 200px; }
+    body .aboutBg .orangeBg {
+      padding: 20px 0; }
+      body .aboutBg .orangeBg a {
+        font-size: 13px; }
+        body .aboutBg .orangeBg a img {
+          width: 15px;
+          height: 10px; }
+      body .aboutBg .orangeBg .cCircle {
+        width: 30px;
+        height: 30px;
+        margin: 10px 0 5px; }
+      body .aboutBg .orangeBg .logoWhite {
+        width: 80px;
+        margin-bottom: 5px; }
+      body .aboutBg .orangeBg .title {
+        font-size: 16px; }
+      body .aboutBg .orangeBg .desc {
+        font-size: 13px; }
+  body .about {
+    padding-top: 18px; }
+    body .about .title {
+      font-size: 16px;
+      margin-bottom: 15px; }
+    body .about p {
+      font-size: 12px;
+      margin-bottom: 15px; }
+  body .cartContainer {
+    margin-top: 20px;
+    flex-wrap: wrap; }
+    body .cartContainer .title {
+      font-size: 16px; }
+    body .cartContainer .payment {
+      margin-right: 0; }
+      body .cartContainer .payment form .orangeBtn {
+        height: 35px !important;
+        margin-bottom: 20px; }
+    body .cartContainer .cartItems .itemsCont {
+      padding: 15px; }
+      body .cartContainer .cartItems .itemsCont .item img {
+        width: 75px;
+        height: 75px; }
+      body .cartContainer .cartItems .itemsCont .item > div .courseText h5 {
+        font-size: 13px; }
+      body .cartContainer .cartItems .itemsCont .item > div .courseText p {
+        font-size: 13px; }
+      body .cartContainer .cartItems .itemsCont .item > div .courseText .price {
+        font-size: 13px; }
+      body .cartContainer .cartItems .itemsCont .item > div .deleteItem img {
+        width: 25px;
+        height: 25px; }
+      body .cartContainer .cartItems .itemsCont .customHr {
+        margin: 25px 0; }
+      body .cartContainer .cartItems .itemsCont .total span {
+        font-size: 20px; }
+    body .cartContainer .cartItems.advertiseLinks .itemsCont {
+      padding: 15px; }
+      body .cartContainer .cartItems.advertiseLinks .itemsCont .socLinks {
+        font-size: 13px; }
+        body .cartContainer .cartItems.advertiseLinks .itemsCont .socLinks div {
+          width: 45px;
+          height: 40px; }
+          body .cartContainer .cartItems.advertiseLinks .itemsCont .socLinks div img {
+            width: 13px;
+            height: 13px; }
+  body .accDetails .title {
+    font-size: 15px;
+    margin-bottom: 10px; }
+  body .accDetails .changeImg {
+    width: 100%;
+    justify-content: center; }
+  body .accDetails .accId {
+    width: 100%;
+    text-align: center;
+    margin-top: 15px; }
+  body .accDetails .titles {
+    flex-wrap: wrap; }
+    body .accDetails .titles div {
+      margin-bottom: 10px; }
+  body .accDetails form .rowSpace {
+    margin-top: 15px; }
+    body .accDetails form .rowSpace .form-group {
+      width: 100%; }
+  body .development img {
+    width: 30px;
+    height: 20px; }
+  body .coursesContainer .item {
+    width: 49%;
+    font-size: 11px;
+    margin-bottom: 5px; }
+    body .coursesContainer .item span {
+      margin-left: 5px;
+      font-size: 9px; }
+  body .categoryCont .topResult .filterBtns {
+    flex-wrap: wrap;
+    margin: 10px 0 15px; }
+    body .categoryCont .topResult .filterBtns .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn):last-child {
+      margin: 10px 0 0; }
+  body .popularInstructors {
+    flex-direction: column; }
+    body .popularInstructors #owl-demo5, body .popularInstructors #owl-demo7 {
+      margin-top: 15px;
+      width: 100%; }
+      body .popularInstructors #owl-demo5 .item, body .popularInstructors #owl-demo7 .item {
+        width: 100%; }
+  body .courseInfo {
+    flex-wrap: wrap; }
+    body .courseInfo .courseText {
+      margin-right: 0; }
+      body .courseInfo .courseText .btns {
+        flex-wrap: wrap;
+        justify-content: center !important; }
+        body .courseInfo .courseText .btns div:first-child {
+          margin-bottom: 15px; }
+        body .courseInfo .courseText .btns div a {
+          height: 35px !important;
+          min-width: 130px; }
+      body .courseInfo .courseText p:first-child {
+        font-size: 17px; }
+      body .courseInfo .courseText .desc {
+        font-size: 12px; }
+      body .courseInfo .courseText .price {
+        font-size: 22px; }
+    body .courseInfo .courseVedio {
+      margin-top: 20px;
+      width: 100%; }
+      body .courseInfo .courseVedio .card {
+        position: relative; }
+  body .courseLearn .title {
+    font-size: 18px; }
+  body .courseLearn .learnUl {
+    padding: 15px;
+    width: 100%; }
+    body .courseLearn .learnUl ul li span {
+      width: 35px;
+      height: 20px;
+      margin-right: 10px; }
+  body .courseContent {
+    width: 100%; }
+    body .courseContent .title {
+      font-size: 18px; }
+    body .courseContent > div:first-child {
+      flex-wrap: wrap; }
+    body .courseContent .info {
+      font-size: 13px;
+      padding-right: 0;
+      margin-bottom: 15px;
+      width: 100%;
+      justify-content: space-between; }
+    body .courseContent #accordion .card .card-header {
+      background-color: #efefef;
+      padding: 5px 10px; }
+      body .courseContent #accordion .card .card-header button .headTitle {
+        font-weight: normal;
+        font-size: 12px; }
+        body .courseContent #accordion .card .card-header button .headTitle span {
+          margin-right: 5px; }
+      body .courseContent #accordion .card .card-header button .headInfo {
+        font-size: 11px; }
+        body .courseContent #accordion .card .card-header button .headInfo span:first-child {
+          margin-right: 12px; }
+    body .courseContent #accordion .card .card-body ul li {
+      padding: 10px 10px 10px 15px;
+      font-size: 11px; }
+    body .courseContent .viewMore {
+      height: 35px;
+      font-size: 12px; }
+    body .courseContent .requirment li {
+      font-size: 12px; }
+    body .courseContent .customHr {
+      margin: 20px 0; }
+    body .courseContent .subTitle {
+      font-size: 13px; }
+    body .courseContent .allDesc {
+      font-size: 12px; }
+    body .courseContent .instructorCard .media {
+      padding: 15px;
+      flex-direction: column; }
+      body .courseContent .instructorCard .media > img {
+        margin-right: 0 !important; }
+    body .courseContent .instructorCard .media-body h5 {
+      justify-content: center; }
+    body .courseContent .instructorCard .media-body .desc {
+      font-size: 11px;
+      text-align: center; }
+    body .courseContent .instructorCard .card-body h5 {
+      font-size: 13px; }
+    body .courseContent .instructorCard .card-body p {
+      font-size: 12px; }
+    body .courseContent .studentsRating .rates {
+      justify-content: center;
+      flex-direction: column; }
+      body .courseContent .studentsRating .rates div.leftDiv {
+        margin-right: 0; }
+        body .courseContent .studentsRating .rates div.leftDiv > span {
+          font-size: 23px; }
+        body .courseContent .studentsRating .rates div.leftDiv .title {
+          margin-bottom: 0; }
+      body .courseContent .studentsRating .rates div.rightDiv {
+        width: 100%;
+        margin-top: 10px; }
+        body .courseContent .studentsRating .rates div.rightDiv > div .progress {
+          width: 60%; }
+    body .courseContent .studentFeedBack .title {
+      margin-bottom: 15px; }
+    body .courseContent .studentFeedBack .media .media-body h5 > span {
+      font-size: 14px; }
+    body .courseContent .studentFeedBack .media .media-body p {
+      font-size: 11px; }
+  body .myCourse .courseInfo .courseText {
+    flex-direction: column; }
+    body .myCourse .courseInfo .courseText .leftDiv {
+      width: 100%; }
+      body .myCourse .courseInfo .courseText .leftDiv p:first-child {
+        font-size: 18px; }
+      body .myCourse .courseInfo .courseText .leftDiv .desc {
+        font-size: 11px; }
+    body .myCourse .courseInfo .courseText .rightDiv {
+      justify-content: space-between;
+      width: 100%; }
+      body .myCourse .courseInfo .courseText .rightDiv .btns {
+        margin-right: 5px; }
+        body .myCourse .courseInfo .courseText .rightDiv .btns a {
+          width: 75px; }
+          body .myCourse .courseInfo .courseText .rightDiv .btns a:first-child {
+            margin-right: 5px; }
+  body .myCourse .courseVedio {
+    flex-wrap: wrap; }
+    body .myCourse .courseVedio .vedioCont, body .myCourse .courseVedio .courseContent {
+      width: 100%; }
+    body .myCourse .courseVedio .courseContent #accordion .card .card-body ul li.lightGrayBg {
+      padding: 7px 10px 7px 10px; }
+      body .myCourse .courseVedio .courseContent #accordion .card .card-body ul li.lightGrayBg div span.review {
+        margin-right: 20px; }
+  body .courseContent .courseTabs nav .nav-tabs {
+    justify-content: center; }
+    body .courseContent .courseTabs nav .nav-tabs .nav-link {
+      font-size: 13px; }
+  body .myFeedBack .startsBlock .rating-box .rating-container label {
+    font-size: 16px; }
+  body .myCoursesTabs .courseContent .courseTabs nav {
+    display: block; }
+    body .myCoursesTabs .courseContent .courseTabs nav .nav-tabs {
+      justify-content: space-between; }
+      body .myCoursesTabs .courseContent .courseTabs nav .nav-tabs .nav-link {
+        flex: 1;
+        text-align: center; }
+  body .myCoursesTabs .courseContent .courseTabs .tab-content .resultsContainer .results .institutesContainer .institutes .media {
+    padding: 10px 15px; }
+    body .myCoursesTabs .courseContent .courseTabs .tab-content .resultsContainer .results .institutesContainer .institutes .media > img {
+      width: 30px;
+      height: 25px;
+      margin-right: 10px !important; }
+    body .myCoursesTabs .courseContent .courseTabs .tab-content .resultsContainer .results .institutesContainer .institutes .media .media-body a p:first-child {
+      font-size: 12px; }
+    body .myCoursesTabs .courseContent .courseTabs .tab-content .resultsContainer .results .institutesContainer .institutes .media .media-body a p:last-child {
+      color: #727272;
+      font-size: 11px; }
+    body .myCoursesTabs .courseContent .courseTabs .tab-content .resultsContainer .results .institutesContainer .institutes .media .media-body a h5 {
+      font-size: 13px; }
+    body .myCoursesTabs .courseContent .courseTabs .tab-content .resultsContainer .results .institutesContainer .institutes .media .media-body .pdfImg {
+      width: 20px;
+      margin-right: 5px; }
+    body .myCoursesTabs .courseContent .courseTabs .tab-content .resultsContainer .results .institutesContainer .institutes .media .media-body a.downloadPdf {
+      font-size: 11px; }
+  body .teacherHeader .container {
+    padding: 0 15px; }
+  body .teacherCotent .content.w-78 {
+    width: 100%; }
+  body .teacherCotent .content .courseTabs nav .nav-tabs {
+    justify-content: flex-start; }
+    body .teacherCotent .content .courseTabs nav .nav-tabs .nav-link {
+      font-size: 13px;
+      flex: 1;
+      text-align: center; }
+  body .teacherCotent .content .lightGrayBg .institutes .tabCourse .courserBlock {
+    height: 300px; }
+  body .teacherCotent .content .lightGrayBg .institutes .tabCourse .btns {
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    body .teacherCotent .content .lightGrayBg .institutes .tabCourse .btns a {
+      height: 35px;
+      font-size: 12px;
+      margin: 5px 0 !important; }
+  body .teacherCotent .content .lightGrayBg.myFeedBack form > div:first-child > div {
+    width: 100%;
+    margin-top: 10px; }
+    body .teacherCotent .content .lightGrayBg.myFeedBack form > div:first-child > div .changeImg, body .teacherCotent .content .lightGrayBg.myFeedBack form > div:first-child > div .changeVedio {
+      width: 100%; }
+  body .teacherCotent .content .lightGrayBg.myFeedBack form .rowGroup .form-group {
+    width: 100% !important; }
+  body .teacherCotent .content .lightGrayBg.createCourse .accDetails form .deleteField {
+    font-size: 12px; }
+  body .teacherCotent .content .lightGrayBg.createCourse .accDetails form .formGroupCont {
+    padding: 15px 15px; }
+  body .teacherCotent .content .lightGrayBg.createCourse .accDetails form .rowSpace .form-group {
+    width: 100%; }
+  body .teacherCotent .content .lightGrayBg.createCourse .accDetails form .form-group .positionSpan {
+    bottom: 14%;
+    right: 10px; }
+  body .teacherCotent .content .lightGrayBg.createCourse .accDetails form .form-group .minus, body .teacherCotent .content .lightGrayBg.createCourse .accDetails form .form-group .add {
+    bottom: 10px; }
+  body .teacherCotent .content .lightGrayBg .performance .item {
+    width: 49%;
+    padding: 10px; }
+    body .teacherCotent .content .lightGrayBg .performance .item img {
+      width: 30px;
+      height: 30px;
+      margin-right: 10px; }
+    body .teacherCotent .content .lightGrayBg .performance .item h4 {
+      font-size: 14px;
+      max-height: 35px; }
+    body .teacherCotent .content .lightGrayBg .performance .item span {
+      font-size: 16px; }
+  body .teacherCotent .content .lightGrayBg .haveQues {
+    padding: 10px;
+    justify-content: center;
+    flex-wrap: wrap; }
+    body .teacherCotent .content .lightGrayBg .haveQues .title {
+      font-size: 14px;
+      text-align: center; }
+    body .teacherCotent .content .lightGrayBg .haveQues a {
+      height: 35px !important; } }
 /*Small Screen*/
 @media (min-width: 768px) and (max-width: 991px) {
   body {
@@ -3247,6 +3601,13 @@ header {
       font-size: 20px; }
     body .desc {
       font-size: 11px; }
+    body form .PayOptions {
+      display: flex;
+      justify-content: space-between; }
+      body form .PayOptions img {
+        width: 80px;
+        height: 60px;
+        margin-right: 0; }
     body header {
       height: 100px; }
       body header .mr-18 {
@@ -3426,7 +3787,63 @@ header {
       body .resultsContainer .results .bottomNav {
         justify-content: center; }
         body .resultsContainer .results .bottomNav a {
-          margin-bottom: 5px; } }
+          margin-bottom: 5px; }
+    body .cartContainer .title {
+      font-size: 17px !important; }
+    body .cartContainer .cartItems .itemsCont .item > div .courseText h5 {
+      font-size: 15px; }
+    body .cartContainer .cartItems .itemsCont .item > div .courseText .price {
+      font-size: 15px; }
+    body .cartContainer .cartItems .itemsCont .total span {
+      font-size: 20px; }
+    body .categoryCont .resultsNum h4 {
+      font-size: 18px; }
+    body .coursesContainer .item {
+      font-size: 12px; }
+      body .coursesContainer .item span {
+        font-size: 11px; }
+    body .courseInfo {
+      flex-direction: column; }
+      body .courseInfo .courseText {
+        margin-right: 0; }
+        body .courseInfo .courseText p:first-child {
+          font-size: 22px; }
+      body .courseInfo .courseVedio {
+        width: 100%;
+        margin-top: 20px; }
+        body .courseInfo .courseVedio .card {
+          position: relative; }
+    body .courseLearn .learnUl {
+      width: 100%; }
+    body .courseContent {
+      width: 100%; }
+    body .myCourse .courseVedio .courseContent #accordion .card .card-header {
+      padding: 10px 20px 10px 20px; }
+    body .myCourse .courseVedio .courseContent #accordion .card .card-body ul li {
+      padding: 10px 20px 10px 25px; }
+      body .myCourse .courseVedio .courseContent #accordion .card .card-body ul li.lightGrayBg {
+        padding: 7px 20px 7px 25px; }
+        body .myCourse .courseVedio .courseContent #accordion .card .card-body ul li.lightGrayBg div span.review {
+          margin-right: 5px; }
+    body .teacherHeader .container {
+      padding: 0 25px; }
+    body .teacherCotent .sideMenu {
+      padding: 40px 0 40px 15px;
+      width: 27%; }
+      body .teacherCotent .sideMenu ul li a {
+        font-size: 13px;
+        padding: 0 0 0 30px; }
+        body .teacherCotent .sideMenu ul li a img {
+          width: 22px;
+          height: 20px; }
+    body .teacherCotent .content.w-78 {
+      width: 73%; }
+    body .teacherCotent .content .lightGrayBg .institutes .tabCourse .courserBlock .courseText .rightDiv .startsBlock .stars i {
+      font-size: 10px; }
+    body .teacherCotent .content .lightGrayBg.myFeedBack form .rowGroup .form-group {
+      width: 100% !important; }
+    body .teacherCotent .content .lightGrayBg .performance .item span {
+      font-size: 18px; } }
 /*Medium Screen*/
 @media (min-width: 992px) and (max-width: 1199px) {
   .mr-18 {
@@ -3465,7 +3882,17 @@ header {
 
   .topCat .categories .cat {
     width: 215px;
-    height: 160px; } }
+    height: 160px; }
+
+  .popularInstructors #owl-demo5, .popularInstructors #owl-demo7 {
+    width: 73%; }
+    .popularInstructors #owl-demo5 .item, .popularInstructors #owl-demo7 .item {
+      width: 150px; }
+
+  .courseContent .moreCourses #owl-demo7 .startsBlock .stars i {
+    font-size: 10px; }
+  .courseContent .studentsRating .rates div.rightDiv > div .progress {
+    width: 60%; } }
 /*Larger Screen*/
 /* End Media Query */
 
