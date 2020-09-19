@@ -2496,10 +2496,10 @@ header {
         content: '';
         position: absolute;
         top: 50%;
-        width: 100px;
+        width: 103px;
         height: 8px;
         background-color: #e8e8e8;
-        left: 61px;
+        left: 62px;
       }
     }
 
@@ -4903,6 +4903,12 @@ header {
                 font-size: 12px;
               }
             }
+
+          }
+
+
+          .progress{
+            justify-content: flex-start !important;
           }
 
           .courserBlock {
@@ -5098,12 +5104,12 @@ header {
           width: 135px;
 
           img {
-            width: 35px;
-            height: 35px;
+            width: 35px !important;
+            height: 35px !important;
           }
 
           h4 {
-            font-size: 11px;
+            font-size: 11px !important;
           }
 
         }
@@ -5600,6 +5606,53 @@ header {
           }
         }
       }
+
+      &.subCatContainer {
+        #owl-demo4 ,  #owl-demo6 {
+          .item {
+            width: 100%;
+          }
+        }
+
+        .featuredCourse{
+          &.institutesContainer {
+            .institutes {
+              .courserBlock {
+                max-height: unset;
+                height: auto;
+                flex-direction: column !important;
+
+                .courseImg {
+                  width: 100%;
+                }
+
+                .courseText{
+                  padding: 10px 10px;
+                  .info {
+                    font-size: 12px;
+                    margin: 5px 0 !important;
+
+                    div{
+                      &:nth-child(2) {
+                        margin: 0 3px 3px 5px;
+                      }
+                    }
+                  }
+                }
+
+                .startsBlock {
+                  flex-direction: column !important;
+                  width: 100px;
+                  align-items: flex-end !important;
+                  .stars {
+                    margin-right: 0;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
     }
 
     .popularInstructors {
@@ -6008,6 +6061,31 @@ header {
         }
 
         .lightGrayBg {
+
+          .myCourses {
+            padding: 10px 10px;
+
+            div {
+              > div{
+                &.hi {
+                  ~ div {
+                    flex-direction: column;
+                  }
+                }
+              }
+            }
+
+          }
+
+          .topCat {
+            .categories {
+              .cat {
+                width: 130px ;
+                margin-top: 15px;
+              }
+            }
+          }
+
           .institutes {
             .tabCourse {
 
@@ -6132,6 +6210,7 @@ header {
 
     .lightGrayBg {
       padding: 25px 0;
+      min-height: calc(100vh - 372px);
     }
 
     .startsBlock {
@@ -6315,6 +6394,9 @@ header {
             }
           }
 
+          .progress{
+            justify-content: flex-start !important;
+          }
 
           &:nth-child(2) {
             justify-content: space-between !important;
@@ -6591,6 +6673,16 @@ header {
           font-size: 18px;
         }
       }
+
+      &.subCatContainer {
+        .subCat {
+          #owl-demo6 {
+            .item {
+              width: 320px;
+            }
+          }
+        }
+      }
     }
 
     .coursesContainer {
@@ -6690,6 +6782,38 @@ header {
           width: 73%;
         }
         .lightGrayBg {
+
+          .myCourses {
+            padding: 10px 15px;
+
+            div {
+              > div{
+                &:nth-child(2) {
+                  justify-content: center !important;
+                  margin-top: 10px;
+
+                  div {
+                    justify-content: flex-start !important;
+                  }
+
+                }
+              }
+            }
+
+            .gradientBg {
+              width: 200px;
+              justify-content: center;
+            }
+          }
+
+          .topCat {
+            .categories {
+              .cat {
+                width: 157px ;
+              }
+            }
+          }
+
           .institutes {
             .tabCourse {
 
@@ -6738,6 +6862,9 @@ header {
 /*Medium Screen*/
 
 @media(min-width: 992px) and (max-width: 1199px) {
+  .lightGrayBg {
+    min-height: calc(100vh - 334px);
+  }
 
   .mr-18 {
     margin-right: 11px;
@@ -6844,6 +6971,33 @@ header {
               .progress {
                 width: 60%;
               }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .teacherCotent {
+    .content{
+      .lightGrayBg {
+
+        .myCourses {
+
+          div {
+            > div{
+              &:nth-child(2) {
+                margin-top: 15px;
+
+              }
+            }
+          }
+        }
+
+        .topCat {
+          .categories {
+            .cat {
+              width: 175px ;
             }
           }
         }

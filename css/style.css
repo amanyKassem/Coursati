@@ -1646,10 +1646,10 @@ header {
         content: '';
         position: absolute;
         top: 50%;
-        width: 100px;
+        width: 103px;
         height: 8px;
         background-color: #e8e8e8;
-        left: 61px; }
+        left: 62px; }
     .steps .circleBlock.qual:first-child {
       margin-right: 50px; }
       .steps .circleBlock.qual:first-child:before {
@@ -3012,6 +3012,8 @@ header {
         font-size: 14px; }
       body .myCourses div > div.hi .welcome p:last-child {
         font-size: 12px; }
+    body .myCourses div > div .progress {
+      justify-content: flex-start !important; }
     body .myCourses div > div .courserBlock {
       margin-right: 0;
       margin-bottom: 15px; }
@@ -3113,10 +3115,10 @@ header {
   body .topCat .categories .cat {
     width: 135px; }
     body .topCat .categories .cat img {
-      width: 35px;
-      height: 35px; }
+      width: 35px !important;
+      height: 35px !important; }
     body .topCat .categories .cat h4 {
-      font-size: 11px; }
+      font-size: 11px !important; }
   body .institutesContainer .institutes .courserBlock {
     width: 100%;
     max-height: unset;
@@ -3362,6 +3364,27 @@ header {
     margin: 10px 0 15px; }
     body .categoryCont .topResult .filterBtns .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn):last-child {
       margin: 10px 0 0; }
+  body .categoryCont.subCatContainer #owl-demo4 .item, body .categoryCont.subCatContainer #owl-demo6 .item {
+    width: 100%; }
+  body .categoryCont.subCatContainer .featuredCourse.institutesContainer .institutes .courserBlock {
+    max-height: unset;
+    height: auto;
+    flex-direction: column !important; }
+    body .categoryCont.subCatContainer .featuredCourse.institutesContainer .institutes .courserBlock .courseImg {
+      width: 100%; }
+    body .categoryCont.subCatContainer .featuredCourse.institutesContainer .institutes .courserBlock .courseText {
+      padding: 10px 10px; }
+      body .categoryCont.subCatContainer .featuredCourse.institutesContainer .institutes .courserBlock .courseText .info {
+        font-size: 12px;
+        margin: 5px 0 !important; }
+        body .categoryCont.subCatContainer .featuredCourse.institutesContainer .institutes .courserBlock .courseText .info div:nth-child(2) {
+          margin: 0 3px 3px 5px; }
+    body .categoryCont.subCatContainer .featuredCourse.institutesContainer .institutes .courserBlock .startsBlock {
+      flex-direction: column !important;
+      width: 100px;
+      align-items: flex-end !important; }
+      body .categoryCont.subCatContainer .featuredCourse.institutesContainer .institutes .courserBlock .startsBlock .stars {
+        margin-right: 0; }
   body .popularInstructors {
     flex-direction: column; }
     body .popularInstructors #owl-demo5, body .popularInstructors #owl-demo7 {
@@ -3539,6 +3562,13 @@ header {
       font-size: 13px;
       flex: 1;
       text-align: center; }
+  body .teacherCotent .content .lightGrayBg .myCourses {
+    padding: 10px 10px; }
+    body .teacherCotent .content .lightGrayBg .myCourses div > div.hi ~ div {
+      flex-direction: column; }
+  body .teacherCotent .content .lightGrayBg .topCat .categories .cat {
+    width: 130px;
+    margin-top: 15px; }
   body .teacherCotent .content .lightGrayBg .institutes .tabCourse .courserBlock {
     height: 300px; }
   body .teacherCotent .content .lightGrayBg .institutes .tabCourse .btns {
@@ -3592,7 +3622,8 @@ header {
   body {
     padding: 100px 0 0 0; }
     body .lightGrayBg {
-      padding: 25px 0; }
+      padding: 25px 0;
+      min-height: calc(100vh - 372px); }
     body .startsBlock {
       font-size: 8px; }
       body .startsBlock .stars i {
@@ -3673,6 +3704,8 @@ header {
           font-size: 14px; }
         body .myCourses div > div.hi .welcome p:last-child {
           font-size: 12px; }
+      body .myCourses div > div .progress {
+        justify-content: flex-start !important; }
       body .myCourses div > div:nth-child(2) {
         justify-content: space-between !important;
         width: 100%; }
@@ -3798,6 +3831,8 @@ header {
       font-size: 20px; }
     body .categoryCont .resultsNum h4 {
       font-size: 18px; }
+    body .categoryCont.subCatContainer .subCat #owl-demo6 .item {
+      width: 320px; }
     body .coursesContainer .item {
       font-size: 12px; }
       body .coursesContainer .item span {
@@ -3838,6 +3873,18 @@ header {
           height: 20px; }
     body .teacherCotent .content.w-78 {
       width: 73%; }
+    body .teacherCotent .content .lightGrayBg .myCourses {
+      padding: 10px 15px; }
+      body .teacherCotent .content .lightGrayBg .myCourses div > div:nth-child(2) {
+        justify-content: center !important;
+        margin-top: 10px; }
+        body .teacherCotent .content .lightGrayBg .myCourses div > div:nth-child(2) div {
+          justify-content: flex-start !important; }
+      body .teacherCotent .content .lightGrayBg .myCourses .gradientBg {
+        width: 200px;
+        justify-content: center; }
+    body .teacherCotent .content .lightGrayBg .topCat .categories .cat {
+      width: 157px; }
     body .teacherCotent .content .lightGrayBg .institutes .tabCourse .courserBlock .courseText .rightDiv .startsBlock .stars i {
       font-size: 10px; }
     body .teacherCotent .content .lightGrayBg.myFeedBack form .rowGroup .form-group {
@@ -3846,6 +3893,9 @@ header {
       font-size: 18px; } }
 /*Medium Screen*/
 @media (min-width: 992px) and (max-width: 1199px) {
+  .lightGrayBg {
+    min-height: calc(100vh - 334px); }
+
   .mr-18 {
     margin-right: 11px; }
 
@@ -3892,7 +3942,12 @@ header {
   .courseContent .moreCourses #owl-demo7 .startsBlock .stars i {
     font-size: 10px; }
   .courseContent .studentsRating .rates div.rightDiv > div .progress {
-    width: 60%; } }
+    width: 60%; }
+
+  .teacherCotent .content .lightGrayBg .myCourses div > div:nth-child(2) {
+    margin-top: 15px; }
+  .teacherCotent .content .lightGrayBg .topCat .categories .cat {
+    width: 175px; } }
 /*Larger Screen*/
 /* End Media Query */
 
