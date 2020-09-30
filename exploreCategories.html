@@ -279,8 +279,8 @@
 <!--start categories-->
 <div class="bgGray d-none d-md-flex">
     <div class="container">
-        <ul class="categoriesLinks">
-            <li>
+        <ul class="categoriesLinks catPage">
+            <li class="active">
                 <a href="category.html">Development</a>
             </li>
             <li>
@@ -322,152 +322,168 @@
 <!--end categories-->
 
 <!--start light gray bg-->
-<div class="lightGrayBg">
+<div class="lightGrayBg pb-5">
     <div class="container">
-        <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="home.html"><i class='fas fa-chevron-left'></i>My Dashboard</a></li>
-                <li class="breadcrumb-item active" aria-current="page">hopping cart</li>
-            </ol>
-        </nav>
+        <div class="catTitle">
+            <img src="img/c.png" alt="c">
+            <h2 class="title">All Categories</h2>
+        </div>
 
-        <h2 class="title">Shopping Cart</h2>
-        <p class="desc">You can view and change your account details here</p>
-
-        <div class="cartContainer d-flex justify-content-between">
-            <div class="payment">
-                <h3 class="title">Payment details</h3>
-                <form>
-                    <div class="form-group">
-                        <label for="fullName">Full name</label>
-                        <input type="text" class="form-control" id="fullName" placeholder="Full name">
-                    </div>
-                    <div class="form-group">
-                        <label for="emailAdd">Email address</label>
-                        <input type="email" class="form-control" id="emailAdd" placeholder="Email address">
-                    </div>
-                    <div class="form-group">
-                        <label for="country">Country</label>
-                        <select class="selectpicker" id="country" title="Select country">
-                            <option>Egypt</option>
-                            <option>USA</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="category">Vat Number</label>
-                        <select class="selectpicker" id="category" title="Select category">
-                            <option>cat1</option>
-                            <option>cat2</option>
-                        </select>
-                    </div>
-
-                    <h3 class="title">Payment options</h3>
-
-                    <div class="PayOptions">
-                        <img src="img/visa.png" alt="visa">
-                        <img src="img/master.png" alt="master">
-                        <img src="img/discover.png" alt="discover">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="cardNum">Card number</label>
-                        <input type="password" class="form-control" id="cardNum" placeholder="xxxx - xxxx - xxx - xxxx - xxxx">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="cvcNum">CVC number</label>
-                        <input type="password" class="form-control" id="cvcNum" placeholder="XXX">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="monthYear">Expires</label>
-                        <div id="monthYear" class="monthYear d-flex justify-content-between align-items-center">
-                            <select class="selectpicker" id="month" title="Chose month">
-                                <option>jan</option>
-                                <option>feb</option>
-                            </select>
-                            <select class="selectpicker" id="year" title="Year">
-                                <option>2000</option>
-                                <option>2001</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <button type="submit" class="orangeBtn">Complete Purchase</button>
-                </form>
-            </div>
-            <div class="cartItems">
-                <h3 class="title">Cart items</h3>
-
-                <div class="itemsCont">
-
-                    <div class="item d-flex">
-                        <img src="img/girl.jpg" alt="course">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="courseText">
-                                <h5>The Web Developer Bootcamp</h5>
-                                <p>Amany Kassem</p>
-                                <div class="price"><sup>$</sup>10.00<span><sup>$</sup>25.00</span></div>
-                            </div>
-                            <a class="deleteItem">
-                                <img src="img/close.png" alt="delete">
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="item d-flex">
-                        <img src="img/girl.jpg" alt="course">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="courseText">
-                                <h5>The Web Developer Bootcamp</h5>
-                                <p>Amany Kassem</p>
-                                <div class="price"><sup>$</sup>10.00<span><sup>$</sup>25.00</span></div>
-                            </div>
-                            <a class="deleteItem">
-                                <img src="img/close.png" alt="delete">
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="item d-flex">
-                        <img src="img/girl.jpg" alt="course">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="courseText">
-                                <h5>The Web Developer Bootcamp</h5>
-                                <p>Amany Kassem</p>
-                                <div class="price"><sup>$</sup>10.00<span><sup>$</sup>25.00</span></div>
-                            </div>
-                            <a class="deleteItem">
-                                <img src="img/close.png" alt="delete">
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="item d-flex">
-                        <img src="img/girl.jpg" alt="course">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="courseText">
-                                <h5>The Web Developer Bootcamp</h5>
-                                <p>Amany Kassem</p>
-                                <div class="price"><sup>$</sup>10.00<span><sup>$</sup>25.00</span></div>
-                            </div>
-                            <a class="deleteItem">
-                                <img src="img/close.png" alt="delete">
-                            </a>
-                        </div>
-                    </div>
-
-                    <hr class="customHr">
-
-                    <div class="total d-flex justify-content-between align-items-center">
-                        <span>Total</span>
-                        <span>40$</span>
-                    </div>
-
-                </div>
+        <div class="development">
+            <img src="img/purple_learn.png" alt="book">
+            <div class="d-flex flex-column justify-content-center">
+                <h2 class="title">
+                    Development Courses
+                </h2>
+                <p class="desc">
+                    Description about section
+                </p>
             </div>
         </div>
 
+        <div class="coursesContainer">
+            <a href="subCategory.html" class="item">
+                Web Development <span>(1,548)</span>
+            </a>
+            <a href="subCategory.html" class="item">
+                Data Science <span>(1,548)</span>
+            </a>
+            <a href="subCategory.html" class="item">
+                Python <span>(1,548)</span>
+            </a>
+            <a href="subCategory.html" class="item">
+                Java <span>(1,548)</span>
+            </a>
+            <a href="subCategory.html" class="item">
+                C# <span>(1,548)</span>
+            </a>
+            <a href="subCategory.html" class="item">
+                React <span>(1,548)</span>
+            </a>
+            <a href="subCategory.html" class="item">
+                Uniy <span>(1,548)</span>
+            </a>
+            <a href="subCategory.html" class="item">
+                Data Analysis <span>(1,548)</span>
+            </a>
+        </div>
+
+        <div class="development">
+            <img src="img/yellow_learn.png" alt="book">
+            <div class="d-flex flex-column justify-content-center">
+                <h2 class="title">
+                    It&Software
+                </h2>
+                <p class="desc">
+                    Description about section
+                </p>
+            </div>
+        </div>
+
+        <div class="coursesContainer">
+            <a href="subCategory.html" class="item">
+                Web Development <span>(1,548)</span>
+            </a>
+            <a href="subCategory.html" class="item">
+                Data Science <span>(1,548)</span>
+            </a>
+            <a href="subCategory.html" class="item">
+                Python <span>(1,548)</span>
+            </a>
+            <a href="subCategory.html" class="item">
+                Java <span>(1,548)</span>
+            </a>
+            <a href="subCategory.html" class="item">
+                C# <span>(1,548)</span>
+            </a>
+            <a href="subCategory.html" class="item">
+                React <span>(1,548)</span>
+            </a>
+            <a href="subCategory.html" class="item">
+                Uniy <span>(1,548)</span>
+            </a>
+            <a href="subCategory.html" class="item">
+                Data Analysis <span>(1,548)</span>
+            </a>
+        </div>
+
+        <div class="development">
+            <img src="img/baby_blue_learn.png" alt="book">
+            <div class="d-flex flex-column justify-content-center">
+                <h2 class="title">
+                    Office Productivity
+                </h2>
+                <p class="desc">
+                    Description about section
+                </p>
+            </div>
+        </div>
+
+        <div class="coursesContainer">
+            <a href="subCategory.html" class="item">
+                Web Development <span>(1,548)</span>
+            </a>
+            <a href="subCategory.html" class="item">
+                Data Science <span>(1,548)</span>
+            </a>
+            <a href="subCategory.html" class="item">
+                Python <span>(1,548)</span>
+            </a>
+            <a href="subCategory.html" class="item">
+                Java <span>(1,548)</span>
+            </a>
+            <a href="subCategory.html" class="item">
+                C# <span>(1,548)</span>
+            </a>
+            <a href="subCategory.html" class="item">
+                React <span>(1,548)</span>
+            </a>
+            <a href="subCategory.html" class="item">
+                Uniy <span>(1,548)</span>
+            </a>
+            <a href="subCategory.html" class="item">
+                Data Analysis <span>(1,548)</span>
+            </a>
+        </div>
+
+        <div class="development">
+            <img src="img/blue_learn.png" alt="book">
+            <div class="d-flex flex-column justify-content-center">
+                <h2 class="title">
+                    Health & Fitness
+                </h2>
+                <p class="desc">
+                    Description about section
+                </p>
+            </div>
+        </div>
+
+        <div class="coursesContainer">
+            <a href="subCategory.html" class="item">
+                Web Development <span>(1,548)</span>
+            </a>
+            <a href="subCategory.html" class="item">
+                Data Science <span>(1,548)</span>
+            </a>
+            <a href="subCategory.html" class="item">
+                Python <span>(1,548)</span>
+            </a>
+            <a href="subCategory.html" class="item">
+                Java <span>(1,548)</span>
+            </a>
+            <a href="subCategory.html" class="item">
+                C# <span>(1,548)</span>
+            </a>
+            <a href="subCategory.html" class="item">
+                React <span>(1,548)</span>
+            </a>
+            <a href="subCategory.html" class="item">
+                Uniy <span>(1,548)</span>
+            </a>
+            <a href="subCategory.html" class="item">
+                Data Analysis <span>(1,548)</span>
+            </a>
+        </div>
     </div>
 </div>
 <!--end light gray bg-->

@@ -13,7 +13,6 @@
     <link href="css/owl.carousel.css" rel="stylesheet"/>
     <link href="css/slick.css" rel="stylesheet"/>
     <link href="css/hover.css" rel="stylesheet"/>
-
     <link href="css/animate.css" rel="stylesheet"/>
     <link href="css/style.css" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
@@ -326,17 +325,17 @@
     <div class="container">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="home.html"><i class='fas fa-chevron-left'></i>My Dashboard</a></li>
-                <li class="breadcrumb-item active" aria-current="page">hopping cart</li>
+                <li class="breadcrumb-item"><a href="home.html"><i class='fas fa-chevron-left'></i>Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">contact us</li>
             </ol>
         </nav>
 
-        <h2 class="title">Shopping Cart</h2>
-        <p class="desc">You can view and change your account details here</p>
+        <h2 class="title">Contact us</h2>
+        <p class="desc">If you have any questions or want partnership please use the following methods to reach us</p>
 
         <div class="cartContainer d-flex justify-content-between">
-            <div class="payment">
-                <h3 class="title">Payment details</h3>
+            <div class="payment accDetails mt-0">
+                <h3 class="title">Send a message</h3>
                 <form>
                     <div class="form-group">
                         <label for="fullName">Full name</label>
@@ -346,124 +345,67 @@
                         <label for="emailAdd">Email address</label>
                         <input type="email" class="form-control" id="emailAdd" placeholder="Email address">
                     </div>
-                    <div class="form-group">
-                        <label for="country">Country</label>
-                        <select class="selectpicker" id="country" title="Select country">
-                            <option>Egypt</option>
-                            <option>USA</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="category">Vat Number</label>
-                        <select class="selectpicker" id="category" title="Select category">
-                            <option>cat1</option>
-                            <option>cat2</option>
-                        </select>
-                    </div>
 
-                    <h3 class="title">Payment options</h3>
-
-                    <div class="PayOptions">
-                        <img src="img/visa.png" alt="visa">
-                        <img src="img/master.png" alt="master">
-                        <img src="img/discover.png" alt="discover">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="cardNum">Card number</label>
-                        <input type="password" class="form-control" id="cardNum" placeholder="xxxx - xxxx - xxx - xxxx - xxxx">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="cvcNum">CVC number</label>
-                        <input type="password" class="form-control" id="cvcNum" placeholder="XXX">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="monthYear">Expires</label>
-                        <div id="monthYear" class="monthYear d-flex justify-content-between align-items-center">
-                            <select class="selectpicker" id="month" title="Chose month">
-                                <option>jan</option>
-                                <option>feb</option>
+                    <div class="rowSpace">
+                        <div class="form-group">
+                            <label for="number">Phone number</label>
+                            <input type="text" class="form-control" id="number" placeholder="Add number">
+                        </div>
+                        <div class="form-group">
+                            <label for="type">Type of message</label>
+                            <select class="selectpicker" id="type" title="Select type">
+                                <option>type 1</option>
+                                <option>type </option>
                             </select>
-                            <select class="selectpicker" id="year" title="Year">
-                                <option>2000</option>
-                                <option>2001</option>
-                            </select>
+                        </div>
+                        <div class="form-group textAreaDiv">
+                            <label for="message">Message</label>
+                            <textarea class="form-control" id="message" rows="4" placeholder="Message"></textarea>
                         </div>
                     </div>
 
-                    <button type="submit" class="orangeBtn">Complete Purchase</button>
+                    <button type="submit" class="orangeBtn" >Send message</button>
                 </form>
             </div>
-            <div class="cartItems">
-                <h3 class="title">Cart items</h3>
-
+            <div class="cartItems advertiseLinks">
+                <h3 class="title">Social media links</h3>
                 <div class="itemsCont">
-
-                    <div class="item d-flex">
-                        <img src="img/girl.jpg" alt="course">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="courseText">
-                                <h5>The Web Developer Bootcamp</h5>
-                                <p>Amany Kassem</p>
-                                <div class="price"><sup>$</sup>10.00<span><sup>$</sup>25.00</span></div>
-                            </div>
-                            <a class="deleteItem">
-                                <img src="img/close.png" alt="delete">
-                            </a>
+                    <a href="" class="socLinks">
+                        <div>
+                            <img src="img/orange_face.png" alt="facebook">
                         </div>
-                    </div>
-
-                    <div class="item d-flex">
-                        <img src="img/girl.jpg" alt="course">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="courseText">
-                                <h5>The Web Developer Bootcamp</h5>
-                                <p>Amany Kassem</p>
-                                <div class="price"><sup>$</sup>10.00<span><sup>$</sup>25.00</span></div>
-                            </div>
-                            <a class="deleteItem">
-                                <img src="img/close.png" alt="delete">
-                            </a>
+                        Coursati @ Facebook
+                    </a>
+                    <a href="" class="socLinks">
+                        <div>
+                            <img src="img/orange_twitter.png" alt="twitter">
                         </div>
-                    </div>
-
-                    <div class="item d-flex">
-                        <img src="img/girl.jpg" alt="course">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="courseText">
-                                <h5>The Web Developer Bootcamp</h5>
-                                <p>Amany Kassem</p>
-                                <div class="price"><sup>$</sup>10.00<span><sup>$</sup>25.00</span></div>
-                            </div>
-                            <a class="deleteItem">
-                                <img src="img/close.png" alt="delete">
-                            </a>
+                        Coursati @ Twitter
+                    </a>
+                    <a href="" class="socLinks">
+                        <div>
+                            <img src="img/orange_youtube.png" alt="youtube">
                         </div>
-                    </div>
-
-                    <div class="item d-flex">
-                        <img src="img/girl.jpg" alt="course">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="courseText">
-                                <h5>The Web Developer Bootcamp</h5>
-                                <p>Amany Kassem</p>
-                                <div class="price"><sup>$</sup>10.00<span><sup>$</sup>25.00</span></div>
-                            </div>
-                            <a class="deleteItem">
-                                <img src="img/close.png" alt="delete">
-                            </a>
+                        Coursati @ Youtube
+                    </a>
+                    <a href="" class="socLinks">
+                        <div>
+                            <img src="img/linked.png" alt="facebook">
                         </div>
-                    </div>
-
-                    <hr class="customHr">
-
-                    <div class="total d-flex justify-content-between align-items-center">
-                        <span>Total</span>
-                        <span>40$</span>
-                    </div>
-
+                        Coursati @ Linked in
+                    </a>
+                    <a href="" class="socLinks">
+                        <div>
+                            <img src="img/orange_dribbble.png" alt="dribbble">
+                        </div>
+                        Coursati @ Dribbble
+                    </a>
+                    <a href="" class="socLinks">
+                        <div>
+                            <img src="img/orange_behance.png" alt="behance">
+                        </div>
+                        Coursati @ Behance
+                    </a>
                 </div>
             </div>
         </div>
@@ -475,6 +417,18 @@
 
 <!--start white bg-->
 <div class="whiteBg">
+    <!--start register-->
+    <div class="container">
+        <div class="register d-flex flex-row align-items-center">
+            <img src="img/vector.png" class="d-none d-lg-block" alt="boy">
+            <div class="regText">
+                <h2 class="title">Register now as a trainer</h2>
+                <p class="desc">Become a teacher and help 2500+ students with you knowledge and experience.</p>
+            </div>
+            <a href="teachOnCoursati.html" class="orangeBtn">Register now</a>
+        </div>
+    </div>
+    <!--end register-->
 
     <hr class="customHr" />
 
@@ -538,7 +492,6 @@
 <script src="js/bootstrap-select.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/slick.min.js"></script>
-
 <script src="js/wow.min.js"></script>
 <script src="js/scripts.js"></script>
 <script>

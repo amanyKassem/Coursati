@@ -322,150 +322,62 @@
 <!--end categories-->
 
 <!--start light gray bg-->
-<div class="lightGrayBg">
+<div class="lightGrayBg pb-5 userDash">
     <div class="container">
-        <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="home.html"><i class='fas fa-chevron-left'></i>My Dashboard</a></li>
-                <li class="breadcrumb-item active" aria-current="page">hopping cart</li>
-            </ol>
-        </nav>
 
-        <h2 class="title">Shopping Cart</h2>
-        <p class="desc">You can view and change your account details here</p>
+        <h2 class="title">My Dashboard</h2>
+        <p class="desc">Details and quick navigation to control your account</p>
 
-        <div class="cartContainer d-flex justify-content-between">
-            <div class="payment">
-                <h3 class="title">Payment details</h3>
-                <form>
-                    <div class="form-group">
-                        <label for="fullName">Full name</label>
-                        <input type="text" class="form-control" id="fullName" placeholder="Full name">
-                    </div>
-                    <div class="form-group">
-                        <label for="emailAdd">Email address</label>
-                        <input type="email" class="form-control" id="emailAdd" placeholder="Email address">
-                    </div>
-                    <div class="form-group">
-                        <label for="country">Country</label>
-                        <select class="selectpicker" id="country" title="Select country">
-                            <option>Egypt</option>
-                            <option>USA</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="category">Vat Number</label>
-                        <select class="selectpicker" id="category" title="Select category">
-                            <option>cat1</option>
-                            <option>cat2</option>
-                        </select>
-                    </div>
+        <div class="coursesContainer mt-4">
 
-                    <h3 class="title">Payment options</h3>
+            <a href="myCourses.html" class="item">
+                <img src="img/black_learn.png" alt="book">
+                <img src="img/orange_learn.png" alt="book">
+                Courses & Certificates
+            </a>
 
-                    <div class="PayOptions">
-                        <img src="img/visa.png" alt="visa">
-                        <img src="img/master.png" alt="master">
-                        <img src="img/discover.png" alt="discover">
-                    </div>
+            <a href="profile.html" class="item">
+                <img src="img/black_user.png" alt="book">
+                <img src="img/orange_user.png" alt="book">
+                My profile
+            </a>
 
-                    <div class="form-group">
-                        <label for="cardNum">Card number</label>
-                        <input type="password" class="form-control" id="cardNum" placeholder="xxxx - xxxx - xxx - xxxx - xxxx">
-                    </div>
+            <a href="#" class="item">
+                <img src="img/black_message.png" alt="book">
+                <img src="img/orange_message.png" alt="book">
+                Messages
+            </a>
 
-                    <div class="form-group">
-                        <label for="cvcNum">CVC number</label>
-                        <input type="password" class="form-control" id="cvcNum" placeholder="XXX">
-                    </div>
+            <a href="#" class="item">
+                <img src="img/black_notification.png" alt="book">
+                <img src="img/orange_notification.png" alt="book">
+                Notifications
+            </a>
 
-                    <div class="form-group">
-                        <label for="monthYear">Expires</label>
-                        <div id="monthYear" class="monthYear d-flex justify-content-between align-items-center">
-                            <select class="selectpicker" id="month" title="Chose month">
-                                <option>jan</option>
-                                <option>feb</option>
-                            </select>
-                            <select class="selectpicker" id="year" title="Year">
-                                <option>2000</option>
-                                <option>2001</option>
-                            </select>
-                        </div>
-                    </div>
+            <a href="#" class="item">
+                <img src="img/black_bill.png" alt="book">
+                <img src="img/orange_bill.png" alt="book">
+                My Billing info
+            </a>
 
-                    <button type="submit" class="orangeBtn">Complete Purchase</button>
-                </form>
-            </div>
-            <div class="cartItems">
-                <h3 class="title">Cart items</h3>
+            <a href="#" class="item">
+                <img src="img/black_contact.png" alt="book">
+                <img src="img/orange_contact.png" alt="book">
+                My Contact info
+            </a>
 
-                <div class="itemsCont">
+            <a href="myCourses.html" class="item">
+                <img src="img/black_security.png" alt="book">
+                <img src="img/orange_security.png" alt="book">
+                Account security
+            </a>
 
-                    <div class="item d-flex">
-                        <img src="img/girl.jpg" alt="course">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="courseText">
-                                <h5>The Web Developer Bootcamp</h5>
-                                <p>Amany Kassem</p>
-                                <div class="price"><sup>$</sup>10.00<span><sup>$</sup>25.00</span></div>
-                            </div>
-                            <a class="deleteItem">
-                                <img src="img/close.png" alt="delete">
-                            </a>
-                        </div>
-                    </div>
+            <a href="myCourses.html" class="item">
+                <img src="img/black_setting.png" alt="book">
+                <img src="img/orange_setting.png" alt="book">
+                Settings
+            </a>
 
-                    <div class="item d-flex">
-                        <img src="img/girl.jpg" alt="course">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="courseText">
-                                <h5>The Web Developer Bootcamp</h5>
-                                <p>Amany Kassem</p>
-                                <div class="price"><sup>$</sup>10.00<span><sup>$</sup>25.00</span></div>
-                            </div>
-                            <a class="deleteItem">
-                                <img src="img/close.png" alt="delete">
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="item d-flex">
-                        <img src="img/girl.jpg" alt="course">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="courseText">
-                                <h5>The Web Developer Bootcamp</h5>
-                                <p>Amany Kassem</p>
-                                <div class="price"><sup>$</sup>10.00<span><sup>$</sup>25.00</span></div>
-                            </div>
-                            <a class="deleteItem">
-                                <img src="img/close.png" alt="delete">
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="item d-flex">
-                        <img src="img/girl.jpg" alt="course">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="courseText">
-                                <h5>The Web Developer Bootcamp</h5>
-                                <p>Amany Kassem</p>
-                                <div class="price"><sup>$</sup>10.00<span><sup>$</sup>25.00</span></div>
-                            </div>
-                            <a class="deleteItem">
-                                <img src="img/close.png" alt="delete">
-                            </a>
-                        </div>
-                    </div>
-
-                    <hr class="customHr">
-
-                    <div class="total d-flex justify-content-between align-items-center">
-                        <span>Total</span>
-                        <span>40$</span>
-                    </div>
-
-                </div>
-            </div>
         </div>
 
     </div>

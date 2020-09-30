@@ -232,8 +232,8 @@
                 <span>My courses</span>
             </a>
 
-            <div class="searchDiv activeSearch d-none d-md-block mr-27">
-                <input type="text" placeholder="What do you want to learn?" value="css">
+            <div class="searchDiv d-none d-md-block mr-18">
+                <input type="text" placeholder="What do you want to learn?">
                 <a href="searchResults.html">
                     <i class="fas fa-search"></i>
                 </a>
@@ -276,14 +276,242 @@
 </header>
 <!--end header-->
 
-
-
-<!--start lightGrayBg-->
-<div class="lightGrayBg pb-5">
+<!--start categories-->
+<div class="bgGray d-none d-md-flex">
     <div class="container">
+        <ul class="categoriesLinks catPage">
+            <li class="active">
+                <a href="category.html">Development</a>
+            </li>
+            <li>
+                <a href="category.html">Business</a>
+            </li>
+            <li>
+                <a href="category.html"> IT & Software</a>
+            </li>
+            <li>
+                <a href="category.html"> Office Productivity</a>
+            </li>
+            <li>
+                <a href="category.html"> Personal Development</a>
+            </li>
+            <li>
+                <a href="category.html">Design</a>
+            </li>
+            <li>
+                <a href="category.html">Marketing</a>
+            </li>
+            <li>
+                <a href="category.html"> Health & Fitness</a>
+            </li>
+            <li>
+                <a href="category.html">Music</a>
+            </li>
+            <li>
+                <a href="category.html"> Motion Graphic</a>
+            </li>
+            <li>
+                <a href="category.html">General</a>
+            </li>
+            <li>
+                <a href="category.html">other</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--end categories-->
+
+<!--start light gray bg-->
+<div class="lightGrayBg categoryCont subCatContainer pb-2">
+    <div class="container">
+
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="subCategory.html"><i class='fas fa-chevron-left'></i>Development</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Web Development</li>
+            </ol>
+        </nav>
+        <div class="development mt-0">
+            <img src="img/purple_learn.png" alt="book">
+            <div class="d-flex flex-column justify-content-center">
+                <h2 class="title">
+                    Css 3
+                </h2>
+                <p class="desc">
+                    Description about section
+                </p>
+            </div>
+        </div>
+
+        <!--start recommended courses-->
+        <div class="recommended learnNext subCat p-0">
+            <h2 class="title">Courses to get you started</h2>
+            <p class="desc">Based on audience interest and rating</p>
+
+            <div class="d-flex align-items-center justify-content-between">
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link active" id="pills-Popular-tab" data-toggle="pill" href="#pills-Popular" role="tab" aria-controls="pills-Popular" aria-selected="true">Popular</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="pills-New-tab" data-toggle="pill" href="#pills-New" role="tab" aria-controls="pills-New" aria-selected="false">New</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="pills-Beginner-tab" data-toggle="pill" href="#pills-Beginner" role="tab" aria-controls="pills-Beginner" aria-selected="false">Beginner</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="pills-Advanced-tab" data-toggle="pill" href="#pills-Advanced" role="tab" aria-controls="pills-Advanced" aria-selected="false">Advanced</a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-Popular" role="tabpanel" aria-labelledby="pills-Popular-tab">
+                    <div id="owl-demo6" class="owl-carousel purpleDemo">
+                        <a href="course.html" class="course item">
+                            <div class="imgBlock">
+                                <img src="img/girl.jpg" alt="course image">
+                            </div>
+                            <div class="p-3">
+                                <p class="courseName">The Complete Foundation Stock Trading Course</p>
+                                <p class="instructor">Amany kassem</p>
+                                <div class=" startsBlock d-flex flex-row align-items-center">
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <span><span>5</span>(12,460)</span>
+                                </div>
+                                <div class="price"><sup>$</sup>10.00<span><sup>$</sup>25.00</span></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-New" role="tabpanel" aria-labelledby="pills-New-tab">
+                    <div id="owl-demo6" class="owl-carousel purpleDemo">
+                        <a href="course.html" class="course item">
+                            <div class="imgBlock">
+                                <img src="img/girl.jpg" alt="course image">
+                            </div>
+                            <div class="p-3">
+                                <p class="courseName">The Complete Foundation Stock Trading Course</p>
+                                <p class="instructor">Amany kassem</p>
+                                <div class=" startsBlock d-flex flex-row align-items-center">
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <span><span>5</span>(12,460)</span>
+                                </div>
+                                <div class="price"><sup>$</sup>10.00<span><sup>$</sup>25.00</span></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-Beginner" role="tabpanel" aria-labelledby="pills-Beginner-tab">
+                    <div id="owl-demo6" class="owl-carousel purpleDemo">
+                        <a href="course.html" class="course item">
+                            <div class="imgBlock">
+                                <img src="img/girl.jpg" alt="course image">
+                            </div>
+                            <div class="p-3">
+                                <p class="courseName">The Complete Foundation Stock Trading Course</p>
+                                <p class="instructor">Amany kassem</p>
+                                <div class=" startsBlock d-flex flex-row align-items-center">
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <span><span>5</span>(12,460)</span>
+                                </div>
+                                <div class="price"><sup>$</sup>10.00<span><sup>$</sup>25.00</span></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-Advanced" role="tabpanel" aria-labelledby="pills-Advanced-tab">
+                    <div id="owl-demo6" class="owl-carousel purpleDemo">
+                        <a href="course.html" class="course item">
+                            <div class="imgBlock">
+                                <img src="img/girl.jpg" alt="course image">
+                            </div>
+                            <div class="p-3">
+                                <p class="courseName">The Complete Foundation Stock Trading Course</p>
+                                <p class="instructor">Amany kassem</p>
+                                <div class=" startsBlock d-flex flex-row align-items-center">
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <span><span>5</span>(12,460)</span>
+                                </div>
+                                <div class="price"><sup>$</sup>10.00<span><sup>$</sup>25.00</span></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!--end recommended courses-->
+
+        <!--start Featured course-->
+        <div class="institutesContainer featuredCourse">
+            <h2 class="title">Featured course</h2>
+            <p class="desc">We recommend getting this Course if you’re interested in web devlopment</p>
+
+            <div class="institutes">
+                <div class="courserBlock d-flex flex-row align-items-center w-100">
+                    <div class="courseImg">
+                        <img src="img/girl.jpg" alt="course image">
+                    </div>
+                    <div class="courseText">
+                        <p>The Web Developer Bootcamp</p>
+                        <p>Amany kassem</p>
+                        <div class="d-flex align-items-center">
+                            <div class="info d-flex flex-row align-items-center mr-4">
+                                <div><img src="img/book.png" alt="calender"> 40 Lecture</div>
+                                <div><img src="img/time.png" alt="calender"> 370 hours</div>
+                                <div><img src="img/goal.png" alt="calender"> All levels</div>
+                            </div>
+                            <div class=" startsBlock d-flex flex-row align-items-center">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span><span>5</span>(12,460)</span>
+                            </div>
+                        </div>
+                        <p class="desc">The only course you need to learn web development - HTML, CSS, JS, Node, and More!</p>
+                        <div class="price"><sup>$</sup>10.00<span><sup>$</sup>25.00</span></div>
+                        <a href="course.html" class="orangeBtn purbleBg" >Explore course</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!--end Featured course-->
+
+
         <div class="topResult d-flex justify-content-between align-items-center mt-20">
             <div class="resultsNum">
-                <h4><span>4,858</span> results for “<span>css</span>”</h4>
+                <h4>All courses in Development Courses</h4>
                 <p>All course available, 1500 courses</p>
             </div>
 
@@ -292,297 +520,23 @@
                     <img src="img/filter.png" alt="filter">
                     Filter
                 </a>
-                <select class="selectpicker" id="selectFilter" title="Sort by">
-                    <option>max</option>
-                    <option>min</option>
+                <select class="selectpicker" id="rating" title="Rating">
+                    <option>3</option>
+                    <option>5</option>
+                </select>
+                <select class="selectpicker" id="videoDuration" title="Video duration">
+                    <option>3</option>
+                    <option>5</option>
                 </select>
             </div>
         </div>
-        <div class="resultsContainer d-flex justify-content-between">
-            <div class="topics">
-                <div id="accordion" class="myaccordion">
-                    <div class="card">
-                        <div class="card-header" id="headingOne">
-                            <h2 class="mb-0">
-                                <button class="w-100 d-flex align-items-center justify-content-between btn btn-link "
-                                        data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
-                                        aria-controls="collapseOne">
-                                   Topic
-                                    <span >
-                                        <i class="fas fa-minus"></i>
-                                    </span>
-                                </button>
-                            </h2>
-                        </div>
-                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
-                             data-parent="#accordion">
-                            <div class="card-body">
-                                <ul>
-                                    <li>
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="HTML5">
-                                            <label class="custom-control-label" for="HTML5">HTML5 <span>(504)</span></label>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="CSS3">
-                                            <label class="custom-control-label" for="CSS3">CSS3 <span>(1,443)</span></label>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="Bootstrap">
-                                            <label class="custom-control-label" for="Bootstrap">Bootstrap <span>(454)</span></label>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="jQuery">
-                                            <label class="custom-control-label" for="jQuery">jQuery <span>(120)</span></label>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header" id="headingTwo">
-                            <h2 class="mb-0">
-                                <button class="w-100 d-flex align-items-center justify-content-between btn btn-link collapsed"
-                                        data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
-                                        aria-controls="collapseTwo">
-                                    Level
-                                    <span >
-                                        <i class="fas fa-minus"></i>
-                                    </span>
-                                </button>
-                            </h2>
-                        </div>
-                        <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordion">
-                            <div class="card-body">
-                                <ul>
-                                    <li>
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="Beginner">
-                                            <label class="custom-control-label" for="Beginner">Beginner <span>(504)</span></label>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="Medium">
-                                            <label class="custom-control-label" for="Medium">Medium <span>(1,443)</span></label>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="Advanced">
-                                            <label class="custom-control-label" for="Advanced">Advanced <span>(454)</span></label>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="Guru">
-                                            <label class="custom-control-label" for="Guru">Guru <span>(120)</span></label>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header" id="headingThree">
-                            <h2 class="mb-0">
-                                <button class="w-100 d-flex align-items-center justify-content-between btn btn-link collapsed"
-                                        data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
-                                        aria-controls="collapseThree">
-                                    Language
-                                    <span >
-                                        <i class="fas fa-minus"></i>
-                                    </span>
-                                </button>
-                            </h2>
-                        </div>
-                        <div id="collapseThree" class="collapse show" aria-labelledby="headingThree"
-                             data-parent="#accordion">
-                            <div class="card-body">
-                                <ul>
-                                    <li>
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="Arabic">
-                                            <label class="custom-control-label" for="Arabic">Arabic</label>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="English">
-                                            <label class="custom-control-label" for="English">English</label>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header" id="headingFour">
-                            <h2 class="mb-0">
-                                <button class="w-100 d-flex align-items-center justify-content-between btn btn-link collapsed"
-                                        data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
-                                        aria-controls="collapseFour">
-                                    Price
-                                    <span >
-                                        <i class="fas fa-plus"></i>
-                                    </span>
-                                </button>
-                            </h2>
-                        </div>
-                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
-                             data-parent="#accordion">
-                            <div class="card-body">
-                                <ul>
-                                    <li>
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="p120">
-                                            <label class="custom-control-label" for="p120">120</label>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="p130">
-                                            <label class="custom-control-label" for="p130">130</label>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header" id="headingFive">
-                            <h2 class="mb-0">
-                                <button class="w-100 d-flex align-items-center justify-content-between btn btn-link collapsed"
-                                        data-toggle="collapse" data-target="#collapseFive" aria-expanded="false"
-                                        aria-controls="collapseFive">
-                                    Features
-                                    <span >
-                                        <i class="fas fa-plus"></i>
-                                    </span>
-                                </button>
-                            </h2>
-                        </div>
-                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
-                             data-parent="#accordion">
-                            <div class="card-body">
-                                <ul>
-                                    <li>
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="f1">
-                                            <label class="custom-control-label" for="f1">Features 1</label>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="f2">
-                                            <label class="custom-control-label" for="f2">Features 2</label>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header" id="headingSix">
-                            <h2 class="mb-0">
-                                <button class="w-100 d-flex align-items-center justify-content-between btn btn-link collapsed"
-                                        data-toggle="collapse" data-target="#collapseSix" aria-expanded="false"
-                                        aria-controls="collapseSix">
-                                    Duration
-                                    <span >
-                                        <i class="fas fa-plus"></i>
-                                    </span>
-                                </button>
-                            </h2>
-                        </div>
-                        <div id="collapseSix" class="collapse" aria-labelledby="headingSix"
-                             data-parent="#accordion">
-                            <div class="card-body">
-                                <ul>
-                                    <li>
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="twenty">
-                                            <label class="custom-control-label" for="twenty">20 m</label>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="thirty">
-                                            <label class="custom-control-label" for="thirty">30 m</label>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header" id="headingSeven">
-                            <h2 class="mb-0">
-                                <button class="w-100 d-flex align-items-center justify-content-between btn btn-link collapsed"
-                                        data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false"
-                                        aria-controls="collapseSeven">
-                                    Rating
-                                    <span >
-                                        <i class="fas fa-plus"></i>
-                                    </span>
-                                </button>
-                            </h2>
-                        </div>
-                        <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven"
-                             data-parent="#accordion">
-                            <div class="card-body">
-                                <ul>
-                                    <li>
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="threeStars">
-                                            <label class="custom-control-label" for="threeStars">3 starts</label>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="fiveStars">
-                                            <label class="custom-control-label" for="fiveStars">5 stars</label>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="results">
-                <div class="titles">
-                    <div>
-                        Html5
-                        <a class="deleteTitle">
-                            <i class="fas fa-times"></i>
-                        </a>
-                    </div>
-                    <div>
-                        Bootstrap
-                        <a class="deleteTitle">
-                            <i class="fas fa-times"></i>
-                        </a>
-                    </div>
-                    <div>
-                        jQuery
-                        <a class="deleteTitle">
-                            <i class="fas fa-times"></i>
-                        </a>
-                    </div>
-                </div>
 
-                <div class="institutesContainer">
+        <div class="resultsContainer d-flex justify-content-between mt-0">
+            <div class="results ml-0">
+                <div class="institutesContainer pt-0">
                     <div class="institutes">
 
-                        <a href="course.html" class=" courserBlock d-flex flex-row align-items-center">
+                        <a href="course.html" class="courserBlock d-flex flex-row align-items-center">
                             <div class="courseImg">
                                 <img src="img/girl.jpg" alt="course image">
                             </div>
@@ -615,7 +569,8 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="course.html" class=" courserBlock d-flex flex-row align-items-center">
+
+                        <a href="course.html" class="courserBlock d-flex flex-row align-items-center">
                             <div class="courseImg">
                                 <img src="img/girl.jpg" alt="course image">
                             </div>
@@ -648,7 +603,8 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="course.html" class=" courserBlock d-flex flex-row align-items-center">
+
+                        <a href="course.html" class="courserBlock d-flex flex-row align-items-center">
                             <div class="courseImg">
                                 <img src="img/girl.jpg" alt="course image">
                             </div>
@@ -681,7 +637,8 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="course.html" class=" courserBlock d-flex flex-row align-items-center">
+
+                        <a href="course.html" class="courserBlock d-flex flex-row align-items-center">
                             <div class="courseImg">
                                 <img src="img/girl.jpg" alt="course image">
                             </div>
@@ -714,40 +671,8 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="course.html" class=" courserBlock d-flex flex-row align-items-center">
-                            <div class="courseImg">
-                                <img src="img/girl.jpg" alt="course image">
-                            </div>
-                            <div class="d-flex justify-content-between courseText">
-                                <div class="leftDiv">
-                                    <p>The Web Developer Bootcamp</p>
-                                    <p>Amany kassem</p>
-                                    <div class="info d-flex flex-row align-items-center">
-                                        <div><img src="img/book.png" alt="calender"> 40 Lecture</div>
-                                        <div><img src="img/time.png" alt="calender"> 370 hours</div>
-                                        <div><img src="img/goal.png" alt="calender"> All levels</div>
-                                    </div>
-                                    <p class="desc">The only course you need to learn web development - HTML, CSS, JS, Node, and More!</p>
-                                </div>
-                                <div class="rightDiv">
-                                    <div class="price">
-                                        <div><sup>$</sup>10.00</div>
-                                        <span><sup>$</sup>25.00</span>
-                                    </div>
-                                    <div class=" startsBlock d-flex flex-row align-items-center">
-                                        <div class="stars">
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                        </div>
-                                        <span><span>5</span>(12,460)</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="course.html" class=" courserBlock d-flex flex-row align-items-center">
+
+                        <a href="course.html" class="courserBlock d-flex flex-row align-items-center">
                             <div class="courseImg">
                                 <img src="img/girl.jpg" alt="course image">
                             </div>
@@ -799,15 +724,38 @@
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
 </div>
-<!--end lightGrayBg-->
+<!--end light gray bg-->
+
+<!--start Popular Instructors-->
+<div class="container">
+    <div class="popularInstructors learnNext">
+        <div class="">
+            <h2 class="title">Popular Instructors</h2>
+            <p class="desc">Popular Instructors in Development</a></p>
+        </div>
+        <div id="owl-demo5" class="owl-carousel purpleDemo">
+            <div class="item">
+                <a href="#" class="instructor">
+                    <img src="img/girl.jpg" alt="course image">
+                    <p class="instructorName">Amany kassem</p>
+                    <p class="courseName">React, JavaScript</p>
+                    <div><span>1,349</span> courses</div>
+                </a>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!--end Popular Instructors-->
 
 <!--start white bg-->
 <div class="whiteBg">
 
-    <hr class="customHr"/>
+    <hr class="customHr" />
 
     <!--start links-->
     <div class="container">
@@ -827,14 +775,14 @@
             <div>
                 <select class="selectpicker" data-width="fit">
                     <option data-content='<img src="img/uk.png" class="" alt="lang"> English'>English</option>
-                    <option data-content='<img src="img/uk.png" class="" alt="lang"> Español'>Español</option>
+                    <option  data-content='<img src="img/uk.png" class="" alt="lang"> Español'>Español</option>
                 </select>
             </div>
         </div>
     </div>
     <!--end links-->
 
-    <hr class="customHr"/>
+    <hr class="customHr" />
 
     <!--start footer-->
     <div class="container">
@@ -872,26 +820,13 @@
 
 <script src="js/wow.min.js"></script>
 <script src="js/scripts.js"></script>
-
+<script>
+    new WOW().init();
+</script>
 <!--start select-->
 <script>
     $('.selectpicker').selectpicker();
 </script>
 <!--end select-->
-
-<!--start accordion-->
-<script>
-    $("#accordion").on("hide.bs.collapse show.bs.collapse", e => {
-        $(e.target)
-            .prev()
-            .find("i:last-child")
-            .toggleClass("fa-minus fa-plus");
-    });
-</script>
-<!--end accordion-->
-
-<script>
-    new WOW().init();
-</script>
 </body>
 </html>

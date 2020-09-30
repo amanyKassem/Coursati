@@ -322,150 +322,125 @@
 <!--end categories-->
 
 <!--start light gray bg-->
-<div class="lightGrayBg">
+<div class="lightGrayBg pb-5">
     <div class="container">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="home.html"><i class='fas fa-chevron-left'></i>My Dashboard</a></li>
-                <li class="breadcrumb-item active" aria-current="page">hopping cart</li>
+                <li class="breadcrumb-item"><a href="home.html"><i class='fas fa-chevron-left'></i>Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Teach with us</li>
             </ol>
         </nav>
 
-        <h2 class="title">Shopping Cart</h2>
-        <p class="desc">You can view and change your account details here</p>
-
-        <div class="cartContainer d-flex justify-content-between">
-            <div class="payment">
-                <h3 class="title">Payment details</h3>
-                <form>
-                    <div class="form-group">
-                        <label for="fullName">Full name</label>
-                        <input type="text" class="form-control" id="fullName" placeholder="Full name">
-                    </div>
-                    <div class="form-group">
-                        <label for="emailAdd">Email address</label>
-                        <input type="email" class="form-control" id="emailAdd" placeholder="Email address">
-                    </div>
-                    <div class="form-group">
-                        <label for="country">Country</label>
-                        <select class="selectpicker" id="country" title="Select country">
-                            <option>Egypt</option>
-                            <option>USA</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="category">Vat Number</label>
-                        <select class="selectpicker" id="category" title="Select category">
-                            <option>cat1</option>
-                            <option>cat2</option>
-                        </select>
-                    </div>
-
-                    <h3 class="title">Payment options</h3>
-
-                    <div class="PayOptions">
-                        <img src="img/visa.png" alt="visa">
-                        <img src="img/master.png" alt="master">
-                        <img src="img/discover.png" alt="discover">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="cardNum">Card number</label>
-                        <input type="password" class="form-control" id="cardNum" placeholder="xxxx - xxxx - xxx - xxxx - xxxx">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="cvcNum">CVC number</label>
-                        <input type="password" class="form-control" id="cvcNum" placeholder="XXX">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="monthYear">Expires</label>
-                        <div id="monthYear" class="monthYear d-flex justify-content-between align-items-center">
-                            <select class="selectpicker" id="month" title="Chose month">
-                                <option>jan</option>
-                                <option>feb</option>
-                            </select>
-                            <select class="selectpicker" id="year" title="Year">
-                                <option>2000</option>
-                                <option>2001</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <button type="submit" class="orangeBtn">Complete Purchase</button>
-                </form>
+        <div class="d-flex justify-content-between align-items-center">
+            <div>
+                <h2 class="title">Teach with us</h2>
+                <p class="desc">Please complete the form so you can upload courses and trainings</p>
             </div>
-            <div class="cartItems">
-                <h3 class="title">Cart items</h3>
 
-                <div class="itemsCont">
+            <div class="steps d-none d-md-flex">
+                <div class="circleBlock qual">
+                    <span>Account details</span>
+                    <div class="orangeCircle">1</div>
+                </div>
+                <div class="circleBlock">
+                    <span>Qualifications</span>
+                    <div class="orangeCircle">2</div>
+                </div>
+            </div>
+        </div>
 
-                    <div class="item d-flex">
-                        <img src="img/girl.jpg" alt="course">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="courseText">
-                                <h5>The Web Developer Bootcamp</h5>
-                                <p>Amany Kassem</p>
-                                <div class="price"><sup>$</sup>10.00<span><sup>$</sup>25.00</span></div>
-                            </div>
-                            <a class="deleteItem">
-                                <img src="img/close.png" alt="delete">
-                            </a>
-                        </div>
+        <div class="accDetails">
+
+            <form action="teacherDashboard.html">
+
+                <h3 class="title">
+                    ACADEMIC & PROFESSIONAL DETAILS
+                </h3>
+
+                <div class="form-group">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <label for="title">Select title</label>
+                        <a class="deleteField">Delete this field</a>
+                    </div>
+                    <input type="text" class="form-control" id="title" placeholder="Add title">
+                </div>
+
+                <div class="rowSpace">
+                    <div class="form-group">
+                        <label for="details">About the qualification skill</label>
+                        <input type="text" class="form-control" id="details" placeholder="Add details">
                     </div>
 
-                    <div class="item d-flex">
-                        <img src="img/girl.jpg" alt="course">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="courseText">
-                                <h5>The Web Developer Bootcamp</h5>
-                                <p>Amany Kassem</p>
-                                <div class="price"><sup>$</sup>10.00<span><sup>$</sup>25.00</span></div>
-                            </div>
-                            <a class="deleteItem">
-                                <img src="img/close.png" alt="delete">
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="item d-flex">
-                        <img src="img/girl.jpg" alt="course">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="courseText">
-                                <h5>The Web Developer Bootcamp</h5>
-                                <p>Amany Kassem</p>
-                                <div class="price"><sup>$</sup>10.00<span><sup>$</sup>25.00</span></div>
-                            </div>
-                            <a class="deleteItem">
-                                <img src="img/close.png" alt="delete">
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="item d-flex">
-                        <img src="img/girl.jpg" alt="course">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="courseText">
-                                <h5>The Web Developer Bootcamp</h5>
-                                <p>Amany Kassem</p>
-                                <div class="price"><sup>$</sup>10.00<span><sup>$</sup>25.00</span></div>
-                            </div>
-                            <a class="deleteItem">
-                                <img src="img/close.png" alt="delete">
-                            </a>
-                        </div>
-                    </div>
-
-                    <hr class="customHr">
-
-                    <div class="total d-flex justify-content-between align-items-center">
-                        <span>Total</span>
-                        <span>40$</span>
+                    <div class="form-group">
+                        <label for="photo-upload" class="custom-file-upload">Qualification proof ( optional )</label>
+                        <input type="text" class="form-control plusInput" id="docPhoto" placeholder="Browse" disabled>
+                        <input id="photo-upload" class="uploadFile" name='upload_cont_file' type="file">
+                        <a class="add"><img src="img/white_plus.png" alt="add"></a>
                     </div>
 
                 </div>
-            </div>
+
+                <h3 class="title">
+                    Teaching categories
+                </h3>
+
+                <div class="form-group">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <label for="category">Select category</label>
+                        <a class="deleteField">Delete this field</a>
+                    </div>
+                    <select class="selectpicker" id="category" title="Select">
+                        <option>cat 1</option>
+                        <option>cat </option>
+                    </select>
+                </div>
+
+                <div class="rowSpace">
+                    <div class="form-group">
+                        <label for="experience">Experience years</label>
+                        <input type="text" class="form-control" id="experience" placeholder="Add years">
+                    </div>
+                    <div class="form-group">
+                        <label for="level">Level of Experience</label>
+                        <input type="text" class="form-control" id="level" placeholder="Level">
+                    </div>
+                    <div class="form-group textAreaDiv">
+                        <label for="desc">Short Description</label>
+                        <textarea class="form-control" id="desc" rows="5" placeholder="Add Short Description"></textarea>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <label for="category2">Select category</label>
+                        <a class="deleteField">Delete this field</a>
+                    </div>
+                    <select class="selectpicker" id="category2" title="Select">
+                        <option>cat 1</option>
+                        <option>cat </option>
+                    </select>
+                </div>
+
+                <div class="rowSpace">
+                    <div class="form-group">
+                        <label for="experience2">Experience years</label>
+                        <input type="text" class="form-control" id="experience2" placeholder="Add years">
+                    </div>
+                    <div class="form-group">
+                        <label for="level2">Level of Experience</label>
+                        <input type="text" class="form-control" id="level2" placeholder="Level">
+                    </div>
+                    <div class="form-group textAreaDiv">
+                        <label for="desc2">Short Description</label>
+                        <textarea class="form-control" id="desc2" rows="5" placeholder="Add Short Description"></textarea>
+                    </div>
+                </div>
+
+                <div class="d-flex align-items-center flex-wrap mt-3">
+                    <a class="orangeBtn purbleClr mr-3 mb-3 mb-md-0" >Add more</a>
+                    <button type="submit" class="orangeBtn" onclick="location.href='teacherDashboard.html'">Save changes</button>
+                </div>
+            </form>
         </div>
 
     </div>
