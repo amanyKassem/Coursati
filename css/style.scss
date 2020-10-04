@@ -67,12 +67,17 @@ $purple: #9e348a;
   width: 49% !important;
 }
 
+.container-md-none {
+  max-width: unset;
+}
+
 a, button {
   transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
   -webkit-transition: all 0.5s ease-in-out;
 }
+
 
 form {
   label {
@@ -312,7 +317,7 @@ p {
     &:checked {
       ~ .custom-control-label {
         &::after {
-          background-image: url(../img/tick.png);
+          background-image: url(../img/tick.svg);
         }
 
         &::before {
@@ -569,7 +574,7 @@ ul {
 }
 
 .course {
-  max-width: 250px;
+  max-width: 260px;
   background-color: #fff;
   border-radius: 10px;
   -webkit-transition: all 0.5s ease-in-out;
@@ -719,6 +724,10 @@ header {
   -webkit-box-shadow: 0 4px 11px 0 rgba(0, 0, 0, 0.05);
   -moz-box-shadow: 0 4px 11px 0 rgba(0, 0, 0, 0.05);
   -o-box-shadow: 0 4px 11px 0 rgba(0, 0, 0, 0.05);
+
+  &.teacherHeader{
+    height:70px
+  }
 
   .mobileSearch {
     display: none;
@@ -875,7 +884,7 @@ header {
       .sub-menu {
         visibility: visible;
         opacity: 1;
-        transform: translate(0, 12px);
+        transform: translate(0, 3px);
       }
     }
 
@@ -928,27 +937,26 @@ header {
       height: 30px;
     }
 
-    img.cartImg {
-      width: 17px;
-    }
+
 
     a {
+      i{
+        color: $black;
+        font-size: 16px;
+        -webkit-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+      }
 
       &.twitter {
-        &:hover {
-          box-shadow: 0px 1px 12px #1da1f2;
-          -webkit-box-shadow: 0px 1px 12px #1da1f2;
-          -moz-box-shadow: 0px 1px 12px #1da1f2;
-          -o-box-shadow: 0px 1px 12px #1da1f2;
+        &:hover i {
+         color:#1da1f2
         }
       }
 
       &.cart {
-        &:hover {
-          box-shadow: 0px 1px 12px $orange;
-          -webkit-box-shadow: 0px 1px 12px $orange;
-          -moz-box-shadow: 0px 1px 12px $orange;
-          -o-box-shadow: 0px 1px 12px $orange;
+        &:hover i{
+          color: $orange;
         }
       }
 
@@ -963,7 +971,7 @@ header {
       }
 
       .bell {
-        width: 14px;
+        width: 15px;
       }
 
       &.profilePic {
@@ -1417,7 +1425,7 @@ header {
     font-size: 14px;
 
     &:hover {
-      color: $pink;
+      color: $orange;
     }
 
     i {
@@ -2340,11 +2348,20 @@ header {
               margin-right: 0;
             }
 
+            i{
+              color: $gray;
+              font-size: 20px;
+              transition: all 0.5s ease-in-out;
+              -o-transition: all 0.5s ease-in-out;
+              -moz-transition: all 0.5s ease-in-out;
+              -webkit-transition: all 0.5s ease-in-out;
+
+            }
+
             &:hover {
-              box-shadow: 0px 1px 12px #ff7600;
-              -webkit-box-shadow: 0px 1px 12px #ff7600;
-              -moz-box-shadow: 0px 1px 12px #ff7600;
-              -o-box-shadow: 0px 1px 12px #ff7600;
+              i{
+                color: $orange;
+              }
             }
           }
         }
@@ -2383,18 +2400,19 @@ header {
 
     li {
       &.active a {
-
+        color: $purple;
         &:before {
           background: $purple;
         }
       }
 
       a {
-
         &:before {
           background: $purple;
         }
-
+        &:hover{
+          color: $purple;
+        }
       }
 
     }
@@ -2547,6 +2565,11 @@ header {
     left: 0;
     right: 0;
     margin: auto;
+  }
+  &.orangeLine{
+    &:before {
+      background-color: $orange;
+    }
   }
 }
 
@@ -3099,18 +3122,18 @@ header {
 
     .desc {
       font-size: 14px;
-      margin-bottom: 10px;
+      margin-bottom: 25px;
     }
 
     .price {
-      font-size: 25px;
+      font-size: 35px;
       color: $orange;
       align-items: center;
       display: flex;
 
       span {
         color: $medGray;
-        font-size: 15px;
+        font-size: 18px;
       }
     }
 
@@ -3711,7 +3734,7 @@ header {
 
     .vedioCont {
       width: 49%;
-
+      height: 340px;
       iframe {
         width: 100%;
         height: 100%;
@@ -3721,6 +3744,7 @@ header {
     .courseContent {
       width: 49%;
       margin: 0;
+      height: 340px;
 
       #accordion {
         .card {
@@ -3897,7 +3921,7 @@ header {
                   .courseText {
                     .leftDiv {
                       .desc {
-                        height: 20px;
+                        height: 40px;
                       }
                     }
 
@@ -4057,7 +4081,7 @@ header {
 /* start teacher dashboard */
 .teacherHeader {
   .container {
-    padding: 0 50px;
+    padding: 0 30px;
     max-width: 100%;
 
     .leftDiv {
@@ -4081,7 +4105,7 @@ header {
   justify-content: flex-end;
 
   .sideMenu {
-    width: 22%;
+    width: 320px;
     box-shadow: 4px 0 15px 0 rgba(0, 0, 0, 0.03);
     -webkit-box-shadow: 4px 0 15px 0 rgba(0, 0, 0, 0.03);
     -o-box-shadow: 4px 0 15px 0 rgba(0, 0, 0, 0.03);
@@ -4089,7 +4113,7 @@ header {
     background-color: #ffffff;
     position: fixed;
     height: 100%;
-    padding: 50px 0 50px 50px;
+    padding: 60px 0 60px 30px;
     transition: all 0.5s ease-in-out;
     -o-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
@@ -4198,10 +4222,25 @@ header {
       min-height: calc(100vh - 127px);
 
       .myCourses {
+        .hiImg {
+          width: 40px;
+          height: 40px;
+        }
+        .welcome {
+          p{
+            &:first-child {
+              font-size: 19px;
+            }
+            &:last-child {
+              font-size: 15px;
+            }
+          }
+        }
         .gradientBg {
-          height: 33px;
-          font-size: 12px;
-          padding: 0 15px;
+          height: 40px;
+          font-size: 14px;
+          padding: 0px 24px;
+          margin-left: 20px;
 
           &:hover {
             color: $black;
@@ -4294,7 +4333,13 @@ header {
             &:nth-child(2) {
               &:before {
                 width: 87px;
-                left: 72px;
+                left: 75px !important;
+                background-color: #e8e8e8 !important;
+              }
+              &.orangeLine{
+                &:before {
+                  background-color: $orange !important;
+                }
               }
             }
 
@@ -4497,12 +4542,13 @@ header {
     }
 
     &.w-78 {
-      width: 78%;
+      width: calc( 100% - 320px);
 
       .topCat {
         .categories {
           .cat {
-            width: 16%;
+            width: 15%;
+            height: 200px;
 
             img {
               width: 40px;
@@ -4571,6 +4617,17 @@ header {
               }
             }
           }
+        }
+      }
+
+
+      .myCourses {
+        .courserBlock {
+          max-width: 400px;
+          overflow: hidden;
+          max-height: 90px;
+          height: 90px;
+          width: auto;
         }
       }
     }
@@ -5248,7 +5305,7 @@ header {
             flex-wrap: wrap;
 
             .orangeBtn {
-              width: 125px;
+              width: 48%;
               font-size: 12px;
 
               img {
@@ -5927,6 +5984,7 @@ header {
         flex-wrap: wrap;
         .vedioCont , .courseContent {
           width: 100%;
+          min-height: auto;
         }
 
         .courseContent{
@@ -6096,6 +6154,11 @@ header {
 
               .courserBlock {
                 height: 300px;
+                .leftDiv {
+                  .desc {
+                    height: 30px !important;
+                  }
+                }
               }
 
               .btns {
@@ -6215,7 +6278,7 @@ header {
 
     .lightGrayBg {
       padding: 25px 0;
-      min-height: calc(100vh - 372px);
+      //min-height: calc(100vh - 372px);
     }
 
     .startsBlock {
@@ -6251,7 +6314,7 @@ header {
     }
 
     header {
-      height: 100px;
+      height: 100px !important;
 
       .mr-18 {
         margin-right: 25px;
@@ -6554,6 +6617,12 @@ header {
             p:nth-child(2) {
               font-size: 13px;
             }
+
+            .leftDiv{
+              .desc {
+                height: 30px !important;
+              }
+            }
           }
 
           .info {
@@ -6565,7 +6634,7 @@ header {
               margin-bottom: 3px;
 
               &:nth-child(2) {
-                margin: 0 15px 3px;
+                margin: 0 0 3px 10px
               }
 
               img {
@@ -6808,13 +6877,15 @@ header {
             .gradientBg {
               width: 200px;
               justify-content: center;
+              padding: 0px 15px;
+              font-size: 12px;
             }
           }
 
           .topCat {
             .categories {
               .cat {
-                width: 157px ;
+                width: 145px ;
               }
             }
           }
@@ -6868,7 +6939,7 @@ header {
 
 @media(min-width: 992px) and (max-width: 1199px) {
   .lightGrayBg {
-    min-height: calc(100vh - 334px);
+    //min-height: calc(100vh - 334px);
   }
 
   .mr-18 {
@@ -6993,7 +7064,9 @@ header {
             > div{
               &:nth-child(2) {
                 margin-top: 15px;
-
+                .courserBlock {
+                  margin-bottom: 15px;
+                }
               }
             }
           }
@@ -7011,6 +7084,14 @@ header {
   }
 
 }
+
+@media(min-width: 1200px){
+  .pr-120{
+    padding-right: 120px !important;
+  }
+}
+
+
 
 /*Larger Screen*/
 
