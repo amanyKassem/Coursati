@@ -4,6 +4,19 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px; }
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+  border: 1px solid #a4a4a4; }
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #a4a4a4; }
+
 .purbleClr {
   background-color: #e23a7e !important; }
   .purbleClr:hover {
@@ -212,7 +225,9 @@ p {
   background-color: #efefef !important; }
 
 .custom-checkbox {
-  min-height: auto; }
+  min-height: auto;
+  padding: 0;
+  height: 1.25rem; }
   .custom-checkbox .custom-control-input:checked ~ .custom-control-label::after {
     background-image: url(../img/tick.svg); }
   .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
@@ -1895,6 +1910,41 @@ header {
   flex: none; }
 
 /* end categoryCont */
+/* start favourites */
+.favouriteCont .institutesContainer .institutes .courserBlock.w-49 {
+  max-height: none;
+  height: 235px; }
+  .favouriteCont .institutesContainer .institutes .courserBlock.w-49 .courseText {
+    display: block !important; }
+  .favouriteCont .institutesContainer .institutes .courserBlock.w-49 .rightCont {
+    justify-content: space-between !important; }
+    .favouriteCont .institutesContainer .institutes .courserBlock.w-49 .rightCont .rightDiv {
+      padding: 0;
+      margin-right: 0;
+      flex-direction: row;
+      justify-content: space-between; }
+      .favouriteCont .institutesContainer .institutes .courserBlock.w-49 .rightCont .rightDiv .price, .favouriteCont .institutesContainer .institutes .courserBlock.w-49 .rightCont .rightDiv .startsBlock {
+        margin-top: 0; }
+      .favouriteCont .institutesContainer .institutes .courserBlock.w-49 .rightCont .rightDiv .price {
+        margin-right: 20px; }
+.favouriteCont .institutesContainer .institutes .courserBlock .courseText .leftDiv p:nth-child(2) {
+  font-size: 14px; }
+  .favouriteCont .institutesContainer .institutes .courserBlock .courseText .leftDiv p:nth-child(2) span {
+    color: #e23a7e;
+    margin-right: 5px; }
+.favouriteCont .institutesContainer .institutes .courserBlock .courseText .leftDiv .info {
+  color: #100f10; }
+.favouriteCont .institutesContainer .institutes .courserBlock .courseText .rightCont .rightDiv {
+  width: auto;
+  padding: 0;
+  margin-right: 25px; }
+.favouriteCont .institutesContainer .institutes .courserBlock .courseText .rightCont .orangeBtn {
+  min-width: 75px;
+  height: 40px !important; }
+  .favouriteCont .institutesContainer .institutes .courserBlock .courseText .rightCont .orangeBtn i {
+    font-size: 20px; }
+
+/* end favourites */
 /* start  popularInstructors */
 .popularInstructors {
   display: flex;
@@ -2069,7 +2119,8 @@ header {
   padding: 17px;
   border-radius: 10px;
   width: 66%;
-  height: 300px; }
+  height: 300px;
+  overflow-y: auto; }
   .courseLearn .learnUl ul li {
     display: flex;
     font-size: 13px;
@@ -2091,7 +2142,8 @@ header {
 
 .courseContent {
   width: 66%;
-  margin-top: 30px; }
+  margin-top: 30px;
+  overflow-y: auto; }
   .courseContent .title {
     font-size: 20px;
     margin-bottom: 15px; }
@@ -2317,6 +2369,233 @@ header {
       margin-bottom: 0; }
 
 /* end courseLearn */
+/* start  Q & A */
+.chatContainer {
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  min-height: 120px; }
+  .chatContainer .chatHead {
+    background: #ededed;
+    padding: 15px;
+    -webkit-box-shadow: 0 6px 14px 0 rgba(0, 0, 0, 0.14);
+    -moz-box-shadow: 0 6px 14px 0 rgba(0, 0, 0, 0.14);
+    box-shadow: 0 6px 14px 0 rgba(0, 0, 0, 0.14);
+    z-index: 1;
+    position: absolute;
+    width: 100%; }
+    .chatContainer .chatHead img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%; }
+    .chatContainer .chatHead span {
+      font-size: 15px; }
+  .chatContainer .chatBox {
+    background: #fff;
+    padding: 15px 15px 100px;
+    margin-top: 70px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto; }
+    .chatContainer .chatBox .mainDate {
+      position: relative;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      margin-top: 10px; }
+      .chatContainer .chatBox .mainDate .line {
+        width: 100%;
+        height: 2px;
+        border: 1px solid #f0f0f0; }
+      .chatContainer .chatBox .mainDate .date {
+        margin: auto;
+        background: #ededed;
+        color: #8e8e8e;
+        font-size: 14px;
+        width: 125px;
+        text-align: center;
+        position: absolute;
+        left: 0;
+        right: 0;
+        border-radius: 10px;
+        padding: 5px 0; }
+    .chatContainer .chatBox .time {
+      font-size: 11px;
+      margin-top: 10px;
+      color: #8e8e8e; }
+      .chatContainer .chatBox .time i {
+        margin-right: 5px; }
+        .chatContainer .chatBox .time i.fas.fa-check-double {
+          color: #5cca5c; }
+        .chatContainer .chatBox .time i.fas.fa-check {
+          color: #8e8e8e; }
+    .chatContainer .chatBox .rightCont {
+      align-self: flex-end; }
+      .chatContainer .chatBox .rightCont .rightText {
+        color: #fff;
+        background: #524E50;
+        padding: 7px 20px;
+        border-radius: 7px;
+        border-top-right-radius: 0;
+        margin-top: 35px;
+        font-size: 14px; }
+      .chatContainer .chatBox .rightCont .time {
+        text-align: right; }
+    .chatContainer .chatBox .leftCont {
+      align-self: flex-start; }
+      .chatContainer .chatBox .leftCont .leftText {
+        color: #524e50;
+        background: #f0f0f0;
+        padding: 7px 20px;
+        border-radius: 7px;
+        border-top-left-radius: 0;
+        margin-top: 35px;
+        font-size: 14px; }
+      .chatContainer .chatBox .leftCont .time {
+        text-align: left; }
+  .chatContainer .chatFooter {
+    background: #fff;
+    padding: 15px;
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    -webkit-box-shadow: 0px -5px 14px 0px rgba(0, 0, 0, 0.14);
+    -moz-box-shadow: 0px -5px 14px 0px rgba(0, 0, 0, 0.14);
+    box-shadow: 0px -5px 14px 0px rgba(0, 0, 0, 0.14); }
+    .chatContainer .chatFooter form {
+      position: relative; }
+      .chatContainer .chatFooter form .form-group {
+        margin-bottom: 0; }
+        .chatContainer .chatFooter form .form-group input#msg {
+          background: #f0f0f0;
+          border: 0;
+          border-radius: 25px;
+          font-size: 14px;
+          padding: 10px 130px 10px 20px; }
+        .chatContainer .chatFooter form .form-group ::placeholder {
+          /* Chrome, Firefox, Opera, Safari 10.1+ */
+          color: #a4a4a4;
+          opacity: 1;
+          /* Firefox */ }
+        .chatContainer .chatFooter form .form-group :-ms-input-placeholder {
+          /* Internet Explorer 10-11 */
+          color: #a4a4a4; }
+        .chatContainer .chatFooter form .form-group ::-ms-input-placeholder {
+          /* Microsoft Edge */
+          color: #a4a4a4; }
+      .chatContainer .chatFooter form .paperClip {
+        position: absolute;
+        right: 100px;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer; }
+        .chatContainer .chatFooter form .paperClip i {
+          color: #8e8e8e;
+          font-size: 20px; }
+      .chatContainer .chatFooter form #photo-upload {
+        opacity: 0;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 50px; }
+      .chatContainer .chatFooter form .orangeBtn {
+        background: #524e50;
+        min-width: 70px;
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        border-radius: 25px;
+        transform: translateY(-50%); }
+        .chatContainer .chatFooter form .orangeBtn:hover {
+          border-color: #524e50;
+          background-color: #fff;
+          color: #524e50; }
+
+/* end  Q & A */
+/* start my inbox */
+.myInboxCont .blackText {
+  color: #100f10;
+  font-size: 14px; }
+.myInboxCont .chatList {
+  background: #fff;
+  width: 35%;
+  padding: 15px;
+  border-radius: 10px;
+  overflow-y: auto;
+  max-height: 592px; }
+  .myInboxCont .chatList .media {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px; }
+    .myInboxCont .chatList .media > img {
+      width: 50px;
+      height: 50px; }
+    .myInboxCont .chatList .media .media-body h5 {
+      font-size: 17px;
+      color: black;
+      margin-bottom: 0; }
+    .myInboxCont .chatList .media .media-body span {
+      color: #524e50;
+      font-size: 13px; }
+    .myInboxCont .chatList .media .media-body .msgNum {
+      color: #fff;
+      background: #e23a7e;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 14px; }
+    .myInboxCont .chatList .media .media-body .desc {
+      white-space: nowrap;
+      width: 330px;
+      overflow: hidden;
+      text-overflow: ellipsis; }
+    .myInboxCont .chatList .media:last-child {
+      border-bottom: 0; }
+.myInboxCont .chatContainer {
+  flex: 1;
+  margin-left: 20px; }
+.myInboxCont .chatBlocks .course {
+  margin-bottom: 20px; }
+  .myInboxCont .chatBlocks .course .chatNum {
+    color: #524e50;
+    font-size: 12px;
+    margin: 5px 0 0; }
+    .myInboxCont .chatBlocks .course .chatNum span {
+      color: #e23a7e; }
+  .myInboxCont .chatBlocks .course .chatUsers img {
+    margin-left: -8px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%; }
+    .myInboxCont .chatBlocks .course .chatUsers img:first-child {
+      margin-left: 0; }
+.myInboxCont .bottomNav {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 15px; }
+  .myInboxCont .bottomNav a {
+    background: #fff;
+    color: #100f10;
+    margin-right: 5px;
+    width: 35px;
+    height: 35px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-size: 16px; }
+    .myInboxCont .bottomNav a.nextNav, .myInboxCont .bottomNav a.prevNav {
+      width: 80px; }
+    .myInboxCont .bottomNav a:last-child {
+      margin-right: 0; }
+    .myInboxCont .bottomNav a:hover {
+      background-color: #ededed; }
+
+/* end my inbox */
 /* start myCourse */
 .myCourse .courseText .leftDiv {
   width: 55%; }
@@ -2541,6 +2820,26 @@ header {
       opacity: 1; }
 
 /* end userDash */
+/* start notifications */
+.notiUl {
+  background-color: #fff;
+  padding: 5px 20px;
+  border-radius: 10px;
+  height: 410px;
+  overflow-y: auto; }
+  .notiUl li {
+    color: #100f10;
+    font-size: 15px;
+    border-bottom: 1px solid #f0f0f0;
+    padding: 13px 5px; }
+    .notiUl li p span {
+      color: #e23a7e; }
+    .notiUl li > span {
+      font-size: 14px; }
+    .notiUl li:last-child {
+      border-bottom: 0; }
+
+/* end notifications */
 /* start teacher dashboard */
 .teacherHeader .container {
   padding: 0 30px;
@@ -2803,6 +3102,20 @@ header {
           color: #ff7600;
           font-weight: bold;
           font-size: 22px; }
+      .teacherCotent .content .lightGrayBg .performance.resources .item {
+        width: 32%;
+        height: 190px; }
+        .teacherCotent .content .lightGrayBg .performance.resources .item img {
+          width: 45px;
+          height: 45px;
+          margin-right: 25px; }
+        .teacherCotent .content .lightGrayBg .performance.resources .item h4 {
+          color: #ff7600;
+          font-size: 20px;
+          margin-bottom: 10px; }
+        .teacherCotent .content .lightGrayBg .performance.resources .item span {
+          color: #a4a4a4;
+          font-size: 14px; }
     .teacherCotent .content.w-78 {
       width: calc( 100% - 320px); }
       .teacherCotent .content.w-78 .topCat .categories .cat {
@@ -2837,6 +3150,46 @@ header {
         max-height: 90px;
         height: 90px;
         width: auto; }
+
+.borderTop {
+  border-top: 1px solid #ddd; }
+
+.settingsCont .title {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 15px; }
+.settingsCont .generalSettings {
+  margin-right: 20px;
+  flex: 1; }
+  .settingsCont .generalSettings .subTitle {
+    color: #100f10;
+    font-size: 14px; }
+  .settingsCont .generalSettings .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn), .settingsCont .generalSettings .bootstrap-select > .dropdown-toggle {
+    width: 150px !important; }
+  .settingsCont .generalSettings .custom-checkbox .custom-control-label::before {
+    width: 20px;
+    height: 20px;
+    background-color: #ff7600;
+    border: 0;
+    top: 0; }
+  .settingsCont .generalSettings .custom-control-input:checked ~ .custom-control-label::after {
+    background-image: url(../img/tickWhite.svg); }
+  .settingsCont .generalSettings .custom-control-input:checked ~ .custom-control-label::before {
+    color: #ff7600;
+    border-color: #ff7600;
+    background-color: #ff7600; }
+  .settingsCont .generalSettings .custom-control-input:focus ~ .custom-control-label::before {
+    box-shadow: none; }
+.settingsCont .payment {
+  flex: 1; }
+.settingsCont .whiteBg {
+  border-radius: 10px; }
+.settingsCont .orangeBtn {
+  height: 40px !important;
+  min-width: 165px;
+  margin-top: 10px; }
+  .settingsCont .orangeBtn.closeAcc {
+    background: #F5E0E0;
+    color: #FF3A3A; }
 
 /* end teacher dashboard */
 /*start scroll top */
@@ -3290,6 +3643,8 @@ header {
         body .resultsContainer .results .bottomNav a {
           font-size: 13px;
           margin-bottom: 5px; }
+  body .favouriteCont .institutesContainer .institutes .courserBlock {
+    height: 330px !important; }
   body .aboutBg {
     min-height: 200px; }
     body .aboutBg .orangeBg {
@@ -3636,6 +3991,15 @@ header {
       max-height: 35px; }
     body .teacherCotent .content .lightGrayBg .performance .item span {
       font-size: 16px; }
+  body .teacherCotent .content .lightGrayBg .performance.resources .item {
+    width: 100%; }
+    body .teacherCotent .content .lightGrayBg .performance.resources .item img {
+      width: 40px;
+      height: 40px; }
+    body .teacherCotent .content .lightGrayBg .performance.resources .item h4 {
+      font-size: 16px; }
+    body .teacherCotent .content .lightGrayBg .performance.resources .item span {
+      font-size: 11px; }
   body .teacherCotent .content .lightGrayBg .haveQues {
     padding: 10px;
     justify-content: center;
@@ -3644,7 +4008,87 @@ header {
       font-size: 14px;
       text-align: center; }
     body .teacherCotent .content .lightGrayBg .haveQues a {
-      height: 35px !important; } }
+      height: 35px !important; }
+  body .notiUl li {
+    font-size: 12px;
+    padding: 13px 0; }
+    body .notiUl li p {
+      margin-bottom: 10px; }
+    body .notiUl li > span {
+      font-size: 12px; }
+  body .chatContainer .chatHead {
+    padding: 10px; }
+    body .chatContainer .chatHead img {
+      width: 30px;
+      height: 30px; }
+    body .chatContainer .chatHead span {
+      font-size: 13px; }
+  body .chatContainer .chatBox {
+    margin-top: 50px; }
+    body .chatContainer .chatBox .mainDate .date {
+      font-size: 12px;
+      width: 110px;
+      padding: 4px 0; }
+    body .chatContainer .chatBox .time {
+      font-size: 9px; }
+    body .chatContainer .chatBox .rightCont .rightText {
+      padding: 5px 15px;
+      font-size: 12px; }
+    body .chatContainer .chatBox .leftCont .leftText {
+      padding: 5px 15px;
+      font-size: 12px; }
+  body .chatContainer .chatFooter {
+    padding: 10px; }
+    body .chatContainer .chatFooter form .form-group input#msg {
+      font-size: 12px;
+      padding: 10px 90px 10px 20px; }
+    body .chatContainer .chatFooter form .paperClip {
+      right: 70px; }
+      body .chatContainer .chatFooter form .paperClip i {
+        font-size: 15px; }
+    body .chatContainer .chatFooter form .orangeBtn {
+      right: 10px;
+      font-size: 12px;
+      min-width: 50px; }
+  body .myInboxCont .chatBlocks {
+    justify-content: center !important; }
+  body .myInboxCont .filterBtns {
+    margin-top: 20px;
+    justify-content: center;
+    width: 100%; }
+  body .myInboxCont .blackText {
+    font-size: 14px; }
+  body .myInboxCont .chatList {
+    width: 100%;
+    padding: 15px;
+    max-height: 592px; }
+    body .myInboxCont .chatList .media {
+      padding-bottom: 15px; }
+      body .myInboxCont .chatList .media > img {
+        width: 30px;
+        height: 30px; }
+      body .myInboxCont .chatList .media .media-body h5 {
+        font-size: 13px; }
+      body .myInboxCont .chatList .media .media-body span {
+        font-size: 11px; }
+      body .myInboxCont .chatList .media .media-body .msgNum {
+        width: 30px;
+        height: 30px;
+        font-size: 14px; }
+      body .myInboxCont .chatList .media .media-body .desc {
+        white-space: normal;
+        width: 85%;
+        overflow: auto;
+        text-overflow: unset; }
+  body .myInboxCont .chatContainer {
+    margin-left: 0;
+    margin-top: 20px; }
+  body .myInboxCont .bottomNav {
+    flex-wrap: wrap;
+    justify-content: center; }
+    body .myInboxCont .bottomNav a {
+      font-size: 13px;
+      margin-bottom: 5px; } }
 /*Small Screen*/
 @media (min-width: 768px) and (max-width: 991px) {
   body {
@@ -3921,7 +4365,41 @@ header {
     body .teacherCotent .content .lightGrayBg.myFeedBack form .rowGroup .form-group {
       width: 100% !important; }
     body .teacherCotent .content .lightGrayBg .performance .item span {
-      font-size: 18px; } }
+      font-size: 18px; }
+    body .notiUl li {
+      font-size: 13px; }
+      body .notiUl li p {
+        margin-bottom: 10px; }
+      body .notiUl li > span {
+        font-size: 12px; }
+    body .myInboxCont .filterBtns {
+      margin-top: 20px;
+      justify-content: center;
+      width: 100%; }
+    body .myInboxCont.mainInbox .filterBtns {
+      width: auto; }
+    body .myInboxCont.mainInbox .course {
+      max-width: 225px; }
+    body .myInboxCont .chatList {
+      width: 100%;
+      padding: 15px;
+      max-height: 592px; }
+      body .myInboxCont .chatList .media {
+        padding-bottom: 15px; }
+        body .myInboxCont .chatList .media .media-body .desc {
+          white-space: normal;
+          width: 85%;
+          overflow: auto;
+          text-overflow: unset; }
+    body .myInboxCont .chatContainer {
+      margin-left: 0;
+      margin-top: 20px; }
+    body .myInboxCont .bottomNav {
+      justify-content: center; }
+      body .myInboxCont .bottomNav a {
+        margin-bottom: 5px; }
+    body .performance.resources .item {
+      width: 100% !important; } }
 /*Medium Screen*/
 @media (min-width: 992px) and (max-width: 1199px) {
   .mr-18 {
@@ -3947,6 +4425,10 @@ header {
 
   .courserBlock {
     max-width: 255px; }
+
+  .favouriteCont .institutesContainer .institutes .courserBlock.w-49 {
+    max-height: none;
+    height: 270px; }
 
   .recommended .course {
     max-width: 220px; }
@@ -3977,7 +4459,31 @@ header {
     .teacherCotent .content .lightGrayBg .myCourses div > div:nth-child(2) .courserBlock {
       margin-bottom: 15px; }
   .teacherCotent .content .lightGrayBg .topCat .categories .cat {
-    width: 175px; } }
+    width: 175px; }
+
+  .myInboxCont .filterBtns {
+    margin-top: 20px;
+    justify-content: center;
+    width: 100%; }
+  .myInboxCont.mainInbox .filterBtns {
+    width: auto; }
+  .myInboxCont .chatList {
+    width: 100%;
+    padding: 15px;
+    max-height: 592px; }
+    .myInboxCont .chatList .media {
+      padding-bottom: 15px; }
+      .myInboxCont .chatList .media .media-body .desc {
+        white-space: normal;
+        width: 85%;
+        overflow: auto;
+        text-overflow: unset; }
+  .myInboxCont .chatContainer {
+    margin-left: 0;
+    margin-top: 20px; }
+
+  .performance.resources .item {
+    width: 100% !important; } }
 @media (min-width: 1200px) {
   .pr-120 {
     padding-right: 120px !important; } }

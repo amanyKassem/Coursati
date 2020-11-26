@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Corsati</title>
+    <link rel="shortcut icon" href="img/c.png">
+
+    <link href="css/all.min.css" rel="stylesheet"/>
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="css/bootstrap-select.min.css" rel="stylesheet"/>
+    <link href="css/slick.css" rel="stylesheet"/>
+    <link href="css/owl.carousel.css" rel="stylesheet"/>
+    <link href="css/hover.css" rel="stylesheet"/>
+    <link href="css/animate.css" rel="stylesheet"/>
+    <link href="css/style.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <!--<link href="css/styleRTL.css" rel="stylesheet" />-->
+
+</head>
+<body>
+
+<!-- Start Loading Page -->
+
+<div class="layer-preloader">
+    <!--<div class="lds-dual-ring"></div>-->
+    <img src="img/logoo.svg" alt="Coursati logo">
+</div>
+
+<!-- End Loading Page -->
+
+<!--  Start Header  -->
+
+<header class="teacherHeader">
+    <div class="container">
+
+        <div class="menuBar d-flex d-md-none justify-content-between align-items-center">
+            <a href="home.html">
+                <img src="img/logoo.svg" class="logo" alt="logo">
+            </a>
+            <div class="toggle">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </div>
+        </div>
+
+
+        <div class="overlay"></div>
+
+        <div class="menu d-flex justify-content-between align-items-center">
+
+            <div class="leftDiv">
+                <a class="toggleSideMenu d-none d-md-block mr-18">
+                    <img src="img/menu.png" class="logo" alt="menu bars">
+                </a>
+                <a href="home.html" class="d-none d-md-block mr-18">
+                    <img src="img/logoo.svg" class="logo" alt="logo">
+                </a>
+            </div>
+
+            <a href="teacherDashboard.html" class="user d-md-none">
+                <img src="img/pic.jpg" class="img-fluid" alt="profile">
+                <p>
+                    hi, Amany kassem
+                </p>
+                <!--<a href="#">-->
+                <!--<i class="fas fa-chevron-right"></i>-->
+                <!--</a>-->
+            </a>
+
+            <a href="notifications.html" class="catLink mr-18 d-md-none">
+                <i class="fas fa-bell mr-1"></i>
+                <span>Notifications</span>
+            </a>
+
+            <a href="courses.html" class="catLink d-md-none">
+                <i class="fas fa-book-reader"></i>
+                <span>My courses</span>
+            </a>
+
+            <a href="myInbox.html" class="catLink d-md-none">
+                <i class="fas fa-book-reader"></i>
+                <span>My inbox</span>
+            </a>
+
+            <a href="teacherDashboard.html" class="catLink d-md-none">
+                <i class="fas fa-book-reader"></i>
+                <span>Communication</span>
+            </a>
+
+            <a href="performance.html" class="catLink d-md-none">
+                <i class="fas fa-book-reader"></i>
+                <span>Performance</span>
+            </a>
+
+            <a href="tools.html" class="catLink d-md-none">
+                <i class="fas fa-book-reader"></i>
+                <span>Tools</span>
+            </a>
+
+            <a href="resources.html" class="catLink d-md-none">
+                <i class="fas fa-book-reader"></i>
+                <span>Resources</span>
+            </a>
+
+            <a href="settings.html" class="catLink d-md-none">
+                <i class="fas fa-book-reader"></i>
+                <span>Settings</span>
+            </a>
+
+            <div class="d-flex align-items-center">
+                <div class="cartDiv align-items-center mr-18 d-none d-md-flex">
+
+                    <a href="notifications.html" class="mr-18">
+                        <img src="img/notification.svg" class="bell" alt="notification">
+                    </a>
+                    <a href="teacherDashboard.html" class="profilePic">
+                        <img src="img/pic.jpg" class="img-fluid" alt="profile">
+                    </a>
+                </div>
+                <a href="#" class="flagImg d-none d-md-flex">
+                    <img src="img/uk.svg" class="" alt="lang">
+                </a>
+            </div>
+        </div>
+
+    </div>
+</header>
+<!--end header-->
+
+<div class=" teacherCotent d-flex">
+    <div class="sideMenu d-none d-md-block">
+        <ul>
+            <li>
+                <a href="courses.html">
+                    <img src="img/gray_book.svg" alt="book">
+                    <img src="img/black_learn.svg" alt="book">
+                    Courses
+                </a>
+            </li>
+            <li class="active">
+                <a href="myInbox.html">
+                    <img src="img/gray_book.svg" alt="book">
+                    <img src="img/black_learn.svg" alt="book">
+                    My inbox
+                </a>
+            </li>
+            <li>
+                <a href="teacherDashboard.html">
+                    <img src="img/gray_book.svg" alt="book">
+                    <img src="img/black_learn.svg" alt="book">
+                    Communication
+                </a>
+            </li>
+            <li>
+                <a href="performance.html">
+                    <img src="img/gray_book.svg" alt="book">
+                    <img src="img/black_learn.svg" alt="book">
+                    Performance
+                </a>
+            </li>
+            <li>
+                <a href="tools.html">
+                    <img src="img/gray_book.svg" alt="book">
+                    <img src="img/black_learn.svg" alt="book">
+                    Tools
+                </a>
+            </li>
+            <li>
+                <a href="resources.html">
+                    <img src="img/gray_book.svg" alt="book">
+                    <img src="img/black_learn.svg" alt="book">
+                    Resources
+                </a>
+            </li>
+            <li>
+                <a href="settings.html">
+                    <img src="img/gray_book.svg" alt="book">
+                    <img src="img/black_learn.svg" alt="book">
+                    Settings
+                </a>
+            </li>
+        </ul>
+
+        <a href="createCourse.html" class="gradientBg mt-5">
+            Create new course
+        </a>
+    </div>
+    <div class="content w-78">
+        <!--start light gray bg-->
+        <div class="lightGrayBg myInboxCont mainInbox pb-4">
+            <div class="container-sm container-md-none px-md-5 py-md-2 pr-120">
+
+                <div class="d-flex flex-row justify-content-between align-items-center mt-20 mb-3 flex-wrap">
+                    <div class="">
+                        <h2 class="title">My inbox</h2>
+                        <p class="desc">Select chat to start communicating</p>
+                    </div>
+                    <div class="filterBtns d-flex justify-content-center align-items-center">
+                        <a class="filter" href="">
+                            <img src="img/filter.svg" alt="filter">
+                            Filter
+                        </a>
+                        <select class="selectpicker" id="sortBy" title="Sort by">
+                            <option>price</option>
+                            <option>rate</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="chatBlocks d-flex justify-content-between align-items-center flex-wrap">
+
+                    <a href="chatDetails.html" class="course">
+                        <div class="imgBlock">
+                            <img src="img/girl.jpg" alt="course image">
+                        </div>
+                        <div class="px-3 pt-3">
+                            <p class="courseName">The Complete Foundation Stock Trading Course</p>
+                            <p class="chatNum">14 chat ( <span>3 new</span> )</p>
+                        </div>
+                        <div class="chatUsers p-3">
+                            <img src="img/girl.jpg" alt="user">
+                            <img src="img/pic.jpg" alt="user">
+                            <img src="img/girl.jpg" alt="user">
+                            <img src="img/pic.jpg" alt="user">
+                            <img src="img/girl.jpg" alt="user">
+                            <img src="img/pic.jpg" alt="user">
+                            <img src="img/girl.jpg" alt="user">
+                            <img src="img/pic.jpg" alt="user">
+                            <img src="img/girl.jpg" alt="user">
+                        </div>
+                    </a>
+
+                    <a href="chatDetails.html" class="course">
+                        <div class="imgBlock">
+                            <img src="img/girl.jpg" alt="course image">
+                        </div>
+                        <div class="px-3 pt-3">
+                            <p class="courseName">The Complete Foundation Stock Trading Course</p>
+                            <p class="chatNum">14 chat ( <span>3 new</span> )</p>
+                        </div>
+                        <div class="chatUsers p-3">
+                            <img src="img/girl.jpg" alt="user">
+                            <img src="img/pic.jpg" alt="user">
+                            <img src="img/girl.jpg" alt="user">
+                            <img src="img/pic.jpg" alt="user">
+                            <img src="img/girl.jpg" alt="user">
+                            <img src="img/pic.jpg" alt="user">
+                            <img src="img/girl.jpg" alt="user">
+                            <img src="img/pic.jpg" alt="user">
+                            <img src="img/girl.jpg" alt="user">
+                        </div>
+                    </a>
+
+                    <a href="chatDetails.html" class="course">
+                        <div class="imgBlock">
+                            <img src="img/girl.jpg" alt="course image">
+                        </div>
+                        <div class="px-3 pt-3">
+                            <p class="courseName">The Complete Foundation Stock Trading Course</p>
+                            <p class="chatNum">14 chat ( <span>3 new</span> )</p>
+                        </div>
+                        <div class="chatUsers p-3">
+                            <img src="img/girl.jpg" alt="user">
+                            <img src="img/pic.jpg" alt="user">
+                            <img src="img/girl.jpg" alt="user">
+                            <img src="img/pic.jpg" alt="user">
+                            <img src="img/girl.jpg" alt="user">
+                            <img src="img/pic.jpg" alt="user">
+                            <img src="img/girl.jpg" alt="user">
+                            <img src="img/pic.jpg" alt="user">
+                            <img src="img/girl.jpg" alt="user">
+                        </div>
+                    </a>
+
+                    <a href="chatDetails.html" class="course">
+                        <div class="imgBlock">
+                            <img src="img/girl.jpg" alt="course image">
+                        </div>
+                        <div class="px-3 pt-3">
+                            <p class="courseName">The Complete Foundation Stock Trading Course</p>
+                            <p class="chatNum">14 chat ( <span>3 new</span> )</p>
+                        </div>
+                        <div class="chatUsers p-3">
+                            <img src="img/girl.jpg" alt="user">
+                            <img src="img/pic.jpg" alt="user">
+                            <img src="img/girl.jpg" alt="user">
+                            <img src="img/pic.jpg" alt="user">
+                            <img src="img/girl.jpg" alt="user">
+                            <img src="img/pic.jpg" alt="user">
+                            <img src="img/girl.jpg" alt="user">
+                            <img src="img/pic.jpg" alt="user">
+                            <img src="img/girl.jpg" alt="user">
+                        </div>
+                    </a>
+
+                    <a href="chatDetails.html" class="course">
+                        <div class="imgBlock">
+                            <img src="img/girl.jpg" alt="course image">
+                        </div>
+                        <div class="px-3 pt-3">
+                            <p class="courseName">The Complete Foundation Stock Trading Course</p>
+                            <p class="chatNum">14 chat ( <span>3 new</span> )</p>
+                        </div>
+                        <div class="chatUsers p-3">
+                            <img src="img/girl.jpg" alt="user">
+                            <img src="img/pic.jpg" alt="user">
+                            <img src="img/girl.jpg" alt="user">
+                            <img src="img/pic.jpg" alt="user">
+                            <img src="img/girl.jpg" alt="user">
+                            <img src="img/pic.jpg" alt="user">
+                            <img src="img/girl.jpg" alt="user">
+                            <img src="img/pic.jpg" alt="user">
+                            <img src="img/girl.jpg" alt="user">
+                        </div>
+                    </a>
+
+                    <a href="chatDetails.html" class="course">
+                        <div class="imgBlock">
+                            <img src="img/girl.jpg" alt="course image">
+                        </div>
+                        <div class="px-3 pt-3">
+                            <p class="courseName">The Complete Foundation Stock Trading Course</p>
+                            <p class="chatNum">14 chat ( <span>3 new</span> )</p>
+                        </div>
+                        <div class="chatUsers p-3">
+                            <img src="img/girl.jpg" alt="user">
+                            <img src="img/pic.jpg" alt="user">
+                            <img src="img/girl.jpg" alt="user">
+                            <img src="img/pic.jpg" alt="user">
+                            <img src="img/girl.jpg" alt="user">
+                            <img src="img/pic.jpg" alt="user">
+                            <img src="img/girl.jpg" alt="user">
+                            <img src="img/pic.jpg" alt="user">
+                            <img src="img/girl.jpg" alt="user">
+                        </div>
+                    </a>
+
+                    <a href="chatDetails.html" class="course">
+                        <div class="imgBlock">
+                            <img src="img/girl.jpg" alt="course image">
+                        </div>
+                        <div class="px-3 pt-3">
+                            <p class="courseName">The Complete Foundation Stock Trading Course</p>
+                            <p class="chatNum">14 chat ( <span>3 new</span> )</p>
+                        </div>
+                        <div class="chatUsers p-3">
+                            <img src="img/girl.jpg" alt="user">
+                            <img src="img/pic.jpg" alt="user">
+                            <img src="img/girl.jpg" alt="user">
+                            <img src="img/pic.jpg" alt="user">
+                            <img src="img/girl.jpg" alt="user">
+                            <img src="img/pic.jpg" alt="user">
+                            <img src="img/girl.jpg" alt="user">
+                            <img src="img/pic.jpg" alt="user">
+                            <img src="img/girl.jpg" alt="user">
+                        </div>
+                    </a>
+
+                    <a href="chatDetails.html" class="course">
+                        <div class="imgBlock">
+                            <img src="img/girl.jpg" alt="course image">
+                        </div>
+                        <div class="px-3 pt-3">
+                            <p class="courseName">The Complete Foundation Stock Trading Course</p>
+                            <p class="chatNum">14 chat ( <span>3 new</span> )</p>
+                        </div>
+                        <div class="chatUsers p-3">
+                            <img src="img/girl.jpg" alt="user">
+                            <img src="img/pic.jpg" alt="user">
+                            <img src="img/girl.jpg" alt="user">
+                            <img src="img/pic.jpg" alt="user">
+                            <img src="img/girl.jpg" alt="user">
+                            <img src="img/pic.jpg" alt="user">
+                            <img src="img/girl.jpg" alt="user">
+                            <img src="img/pic.jpg" alt="user">
+                            <img src="img/girl.jpg" alt="user">
+                        </div>
+                    </a>
+
+                    <a href="chatDetails.html" class="course">
+                        <div class="imgBlock">
+                            <img src="img/girl.jpg" alt="course image">
+                        </div>
+                        <div class="px-3 pt-3">
+                            <p class="courseName">The Complete Foundation Stock Trading Course</p>
+                            <p class="chatNum">14 chat ( <span>3 new</span> )</p>
+                        </div>
+                        <div class="chatUsers p-3">
+                            <img src="img/girl.jpg" alt="user">
+                            <img src="img/pic.jpg" alt="user">
+                            <img src="img/girl.jpg" alt="user">
+                            <img src="img/pic.jpg" alt="user">
+                            <img src="img/girl.jpg" alt="user">
+                            <img src="img/pic.jpg" alt="user">
+                            <img src="img/girl.jpg" alt="user">
+                            <img src="img/pic.jpg" alt="user">
+                            <img src="img/girl.jpg" alt="user">
+                        </div>
+                    </a>
+
+                    <a href="chatDetails.html" class="course">
+                        <div class="imgBlock">
+                            <img src="img/girl.jpg" alt="course image">
+                        </div>
+                        <div class="px-3 pt-3">
+                            <p class="courseName">The Complete Foundation Stock Trading Course</p>
+                            <p class="chatNum">14 chat ( <span>3 new</span> )</p>
+                        </div>
+                        <div class="chatUsers p-3">
+                            <img src="img/girl.jpg" alt="user">
+                            <img src="img/pic.jpg" alt="user">
+                            <img src="img/girl.jpg" alt="user">
+                            <img src="img/pic.jpg" alt="user">
+                            <img src="img/girl.jpg" alt="user">
+                            <img src="img/pic.jpg" alt="user">
+                            <img src="img/girl.jpg" alt="user">
+                            <img src="img/pic.jpg" alt="user">
+                            <img src="img/girl.jpg" alt="user">
+                        </div>
+                    </a>
+
+                </div>
+                <div class="bottomNav">
+                    <a href="#" class="prevNav">Prev</a>
+                    <a href="#">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#">..</a>
+                    <a href="#">10</a>
+                    <a href="#">11</a>
+                    <a href="#">12</a>
+                    <a href="#">13</a>
+                    <a href="#">14</a>
+                    <a href="#" class="nextNav">Next</a>
+                </div>
+            </div>
+        </div>
+        <!--end light gray bg-->
+
+
+        <!--start white bg-->
+        <div class="whiteBg">
+
+            <hr class="customHr" />
+
+            <!--start footer-->
+            <div class="container">
+                <footer class="footer d-flex justify-content-between align-items-center">
+                    <div class="d-flex flex-row align-items-center">
+                        <img src="img/logoo.svg" class="logo" alt="logo">
+                        <p class="desc">Copyright © 2020 Corsati, Inc.</p>
+                    </div>
+
+                    <ul class="d-flex flex-row align-items-center">
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </footer>
+            </div>
+            <!--end footer-->
+
+        </div>
+        <!--end white bg-->
+    </div>
+</div>
+
+<!-- start scroll-top-->
+<div id="scroll-top" class="text-center">
+    <i class="fas fa-angle-up"></i>
+</div>
+<!-- end scroll-top-->
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-select.min.js"></script>
+<script src="js/jquery.nicescroll.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/scripts.js"></script>
+<script>
+    new WOW().init();
+</script>
+<!--start select-->
+<script>
+    $('.selectpicker').selectpicker();
+</script>
+<!--end select-->
+
+</body>
+</html>

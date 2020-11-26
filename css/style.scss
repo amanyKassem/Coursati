@@ -16,6 +16,20 @@ $yellow: #efce4a;
 $medGray: #524e50;
 $purple: #9e348a;
 
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+  border: 1px solid $gray
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $gray;
+}
+
 .purbleClr {
   background-color: #e23a7e !important;
 
@@ -312,6 +326,8 @@ p {
 
 .custom-checkbox {
   min-height: auto;
+  padding: 0;
+  height: 1.25rem;
 
   .custom-control-input {
     &:checked {
@@ -2909,6 +2925,81 @@ header {
 
 /* end categoryCont */
 
+/* start favourites */
+.favouriteCont{
+
+  .institutesContainer {
+    .institutes {
+      .courserBlock {
+
+        &.w-49 {
+          max-height: none;
+          height: 235px;
+
+          .courseText{
+            display: block !important;
+          }
+
+          .rightCont{
+            justify-content: space-between !important;
+
+            .rightDiv {
+              padding: 0;
+              margin-right: 0;
+              flex-direction: row;
+              justify-content: space-between;
+
+              .price, .startsBlock {
+                margin-top: 0;
+              }
+
+              .price{
+                margin-right: 20px;
+              }
+            }
+          }
+        }
+
+        .courseText {
+          .leftDiv {
+            p{
+              &:nth-child(2) {
+                font-size: 14px;
+                span{
+                  color: $pink;
+                  margin-right: 5px;
+                }
+              }
+            }
+            .info {
+              color: $black;
+            }
+          }
+
+          .rightCont{
+            .rightDiv{
+              width: auto;
+              padding: 0;
+              margin-right: 25px;
+            }
+            .orangeBtn {
+              min-width: 75px;
+              height: 40px !important;
+
+              i{
+                font-size: 20px;
+              }
+            }
+          }
+
+        }
+
+      }
+    }
+  }
+}
+/* end favourites */
+
 /* start  popularInstructors */
 .popularInstructors {
   display: flex;
@@ -3219,13 +3310,13 @@ header {
     font-size: 20px;
     margin-bottom: 15px;
   }
-
   .learnUl {
     background-color: #efefef;
     padding: 17px;
     border-radius: 10px;
     width: 66%;
     height: 300px;
+    overflow-y: auto;
 
     ul {
       li {
@@ -3262,6 +3353,7 @@ header {
 .courseContent {
   width: 66%;
   margin-top: 30px;
+  overflow-y: auto;
 
   .title {
     font-size: 20px;
@@ -3659,6 +3751,320 @@ header {
 }
 
 /* end courseLearn */
+
+/* start  Q & A */
+.chatContainer{
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  min-height: 120px;
+
+  .chatHead{
+    background: #ededed;
+    padding: 15px;
+    -webkit-box-shadow: 0 6px 14px 0 rgba(0, 0, 0, 0.14);
+    -moz-box-shadow: 0 6px 14px 0 rgba(0, 0, 0, 0.14);
+    box-shadow: 0 6px 14px 0 rgba(0, 0, 0, 0.14);
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    img{
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+    span{
+      font-size: 15px;
+    }
+  }
+
+  .chatBox{
+    background: #fff;
+    padding: 15px 15px 100px;
+    margin-top: 70px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+
+    .mainDate{
+      position: relative;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      margin-top: 10px;
+
+      .line{
+        width: 100%;
+        height:2px;
+        border: 1px solid $lightGray;
+      }
+
+      .date {
+        margin: auto;
+        background: #ededed;
+        color: $darkGray;
+        font-size: 14px;
+        width: 125px;
+        text-align: center;
+        position: absolute;
+        left: 0;
+        right: 0;
+        border-radius: 10px;
+        padding: 5px 0;
+      }
+    }
+
+    .time {
+      font-size: 11px;
+      margin-top: 10px;
+      color: $darkGray;
+
+      i{
+        margin-right: 5px;
+        &.fas.fa-check-double {
+          color: #5cca5c;
+        }
+        &.fas.fa-check {
+          color: $darkGray;
+        }
+      }
+    }
+
+    .rightCont {
+      align-self: flex-end;
+      .rightText{
+        color: #fff;
+        background: #524E50;
+        padding: 7px 20px;
+        border-radius: 7px;
+        border-top-right-radius: 0;
+        margin-top: 35px;
+        font-size: 14px;
+
+      }
+      .time {
+        text-align: right;
+      }
+    }
+
+
+    .leftCont {
+      align-self: flex-start;
+      .leftText {
+        color: $medGray;
+        background: $lightGray;
+        padding: 7px 20px;
+        border-radius: 7px;
+        border-top-left-radius: 0;
+        margin-top: 35px;
+        font-size: 14px;
+      }
+      .time {
+        text-align: left;
+      }
+    }
+
+
+
+  }
+
+  .chatFooter{
+    background: #fff;
+    padding: 15px;
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    bottom:0;
+    -webkit-box-shadow: 0px -5px 14px 0px rgba(0, 0, 0, 0.14);
+    -moz-box-shadow:    0px -5px 14px 0px rgba(0, 0, 0, 0.14);
+    box-shadow:         0px -5px 14px 0px rgba(0, 0, 0, 0.14);
+
+    form{
+      position: relative;
+      .form-group{
+        margin-bottom: 0;
+        input#msg {
+          background: $lightGray;
+          border: 0;
+          border-radius: 25px;
+          font-size: 14px;
+          padding: 10px 130px 10px 20px;
+        }
+        ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+          color: $gray;
+          opacity: 1; /* Firefox */
+        }
+
+        :-ms-input-placeholder { /* Internet Explorer 10-11 */
+          color: $gray;
+        }
+
+        ::-ms-input-placeholder { /* Microsoft Edge */
+          color: $gray;
+        }
+      }
+
+      .paperClip{
+        position: absolute;
+        right: 100px;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        i{
+          color: $darkGray;
+          font-size: 20px;
+        }
+      }
+
+      #photo-upload {
+        opacity: 0;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 50px;
+      }
+
+      .orangeBtn {
+        background: #524e50;
+        min-width: 70px;
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        border-radius: 25px;
+        transform: translateY(-50%);
+        &:hover {
+          border-color: #524e50;
+          background-color: #fff;
+          color: #524e50;
+        }
+      }
+    }
+
+  }
+}
+/* end  Q & A */
+
+
+/* start my inbox */
+
+.myInboxCont {
+
+  .blackText{
+    color: $black;
+    font-size: 14px;
+  }
+
+  .chatList {
+    background: #fff;
+    width: 35%;
+    padding: 15px;
+    border-radius: 10px;
+    overflow-y: auto;
+    max-height: 592px;
+    .media{
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 15px;
+      > img {
+        width: 50px;
+        height: 50px;
+      }
+      .media-body{
+        h5{
+          font-size: 17px;
+          color: black;
+          margin-bottom: 0;
+        }
+        span{
+          color: $medGray;
+          font-size: 13px;
+        }
+        .msgNum{
+          color: #fff;
+          background: #e23a7e;
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 14px;
+        }
+        .desc{
+          white-space: nowrap;
+          width: 330px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+      &:last-child{
+        border-bottom:0;
+      }
+    }
+  }
+
+  .chatContainer{
+    flex: 1;
+    margin-left: 20px;
+  }
+
+  .chatBlocks{
+    .course{
+       margin-bottom: 20px;
+      .chatNum{
+        color: $medGray;
+        font-size: 12px;
+        margin: 5px 0 0;
+        span{
+          color: $pink;
+        }
+      }
+      .chatUsers{
+        img{
+          margin-left: -8px;
+          width: 25px;
+          height: 25px;
+          border-radius: 50%;
+          &:first-child{
+            margin-left: 0;
+          }
+        }
+      }
+
+    }
+  }
+  .bottomNav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 15px;
+
+    a {
+      background: #fff;
+      color: $black;
+      margin-right: 5px;
+      width: 35px;
+      height: 35px;
+      justify-content: center;
+      align-items: center;
+      border-radius: 5px;
+      font-size: 16px;
+
+      &.nextNav, &.prevNav {
+        width: 80px;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &:hover {
+        background-color: #ededed;
+      }
+    }
+  }
+}
+/* end my inbox */
 
 /* start myCourse */
 .myCourse {
@@ -4076,6 +4482,37 @@ header {
 }
 
 /* end userDash */
+
+
+/* start notifications */
+.notiUl {
+  background-color: #fff;
+  padding: 5px 20px;
+  border-radius: 10px;
+  height: 410px;
+  overflow-y: auto;
+
+  li{
+    color:$black;
+    font-size: 15px;
+    border-bottom: 1px solid $lightGray;
+    padding: 13px 5px;
+    p{
+      span{
+        color: $pink;
+      }
+    }
+
+    > span{
+      font-size: 14px;
+    }
+
+    &:last-child{
+      border-bottom: 0;
+    }
+  }
+}
+/* end notifications */
 
 
 /* start teacher dashboard */
@@ -4538,6 +4975,28 @@ header {
             font-size: 22px;
           }
         }
+
+        &.resources{
+          .item {
+            width: 32%;
+            height: 190px;
+            img {
+              width: 45px;
+              height: 45px;
+              margin-right: 25px;
+            }
+            h4 {
+              color: #ff7600;
+              font-size: 20px;
+              margin-bottom: 10px;
+            }
+
+            span {
+              color: $gray;
+              font-size: 14px;
+            }
+          }
+        }
       }
     }
 
@@ -4630,6 +5089,88 @@ header {
           width: auto;
         }
       }
+    }
+  }
+}
+
+.borderTop{
+  border-top: 1px solid #ddd;
+}
+
+.settingsCont {
+  .title {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+  }
+  .generalSettings{
+    margin-right: 20px;
+    flex: 1;
+
+    .subTitle{
+      color: $black;
+      font-size: 14px;
+    }
+
+    .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn), .bootstrap-select > .dropdown-toggle {
+      width: 150px !important;
+      img{
+
+      }
+    }
+
+    .custom-checkbox {
+      .custom-control-label{
+        &::before {
+          width: 20px;
+          height: 20px;
+          background-color: $orange;
+          border: 0;
+          top: 0;
+        }
+      }
+    }
+
+    .custom-control-input {
+      &:checked {
+        ~ .custom-control-label {
+          &::after {
+            background-image: url(../img/tickWhite.svg);
+          }
+
+          &::before {
+            color: $orange;
+            border-color: $orange;
+            background-color: $orange;
+          }
+        }
+      }
+
+      &:focus {
+        ~ .custom-control-label {
+          &::before {
+            box-shadow: none;
+          }
+        }
+      }
+    }
+
+  }
+
+  .payment{
+    flex: 1;
+  }
+
+  .whiteBg {
+    border-radius: 10px;
+  }
+
+  .orangeBtn {
+    height: 40px !important;
+    min-width: 165px;
+    margin-top: 10px;
+    &.closeAcc{
+      background: #F5E0E0;
+      color: #FF3A3A;
     }
   }
 }
@@ -5463,6 +6004,16 @@ header {
       }
     }
 
+    .favouriteCont{
+      .institutesContainer {
+        .institutes {
+          .courserBlock {
+            height: 330px !important;
+          }
+        }
+      }
+    }
+
     .aboutBg {
       min-height: 200px;
 
@@ -6245,6 +6796,23 @@ header {
                 font-size: 16px;
               }
             }
+
+            &.resources{
+              .item {
+                width: 100%;
+                img {
+                  width: 40px;
+                  height: 40px;
+                }
+                h4 {
+                  font-size: 16px;
+                }
+
+                span {
+                  font-size: 11px;
+                }
+              }
+            }
           }
 
           .haveQues {
@@ -6260,6 +6828,158 @@ header {
             }
           }
 
+        }
+      }
+    }
+
+    .notiUl {
+      li{
+        font-size: 12px;
+        padding: 13px 0;
+
+        p{
+          margin-bottom: 10px;
+        }
+
+        > span {
+          font-size: 12px;
+        }
+      }
+    }
+
+    .chatContainer{
+
+      .chatHead{
+        padding: 10px;
+        img{
+          width: 30px;
+          height: 30px;
+        }
+        span{
+          font-size: 13px;
+        }
+      }
+
+      .chatBox{
+        margin-top: 50px;
+        .mainDate{
+
+          .date {
+            font-size: 12px;
+            width: 110px;
+            padding: 4px 0;
+          }
+        }
+
+        .time {
+          font-size: 9px;
+        }
+
+        .rightCont {
+          .rightText{
+            padding: 5px 15px;
+            font-size: 12px;
+
+          }
+        }
+
+
+        .leftCont {
+          .leftText {
+            padding: 5px 15px;
+            font-size: 12px;
+          }
+        }
+
+      }
+
+      .chatFooter{
+        padding: 10px;
+
+        form{
+          .form-group{
+            input#msg {
+              font-size: 12px;
+              padding: 10px 90px 10px 20px;
+            }
+          }
+
+          .paperClip{
+            right: 70px;
+            i{
+              font-size: 15px;
+            }
+          }
+
+          .orangeBtn {
+            right: 10px;
+            font-size: 12px;
+            min-width: 50px;
+          }
+        }
+
+      }
+    }
+
+    .myInboxCont {
+
+      .chatBlocks{
+        justify-content: center !important;
+      }
+      .filterBtns {
+        margin-top: 20px;
+        justify-content: center;
+        width: 100%;
+      }
+
+      .blackText{
+        font-size: 14px;
+      }
+
+      .chatList {
+        width: 100%;
+        padding: 15px;
+        max-height: 592px;
+        .media{
+          padding-bottom: 15px;
+          > img {
+            width: 30px;
+            height: 30px;
+          }
+          .media-body{
+            h5{
+              font-size: 13px;
+            }
+            span{
+              font-size: 11px;
+            }
+            .msgNum{
+              width: 30px;
+              height: 30px;
+              font-size: 14px;
+            }
+            .desc{
+              white-space: normal;
+              width: 85%;
+              overflow: auto;
+              text-overflow: unset;
+            }
+          }
+        }
+      }
+
+      .chatContainer{
+        margin-left: 0;
+        margin-top: 20px;
+      }
+
+      .bottomNav {
+        flex-wrap: wrap;
+        justify-content: center;
+
+        a {
+          font-size: 13px;
+          margin-bottom: 5px;
         }
       }
     }
@@ -6931,6 +7651,77 @@ header {
       }
     }
 
+    .notiUl {
+      li{
+        font-size: 13px;
+
+        p{
+          margin-bottom: 10px;
+        }
+
+        > span {
+          font-size: 12px;
+        }
+      }
+    }
+
+    .myInboxCont {
+
+      .filterBtns {
+        margin-top: 20px;
+        justify-content: center;
+        width: 100%;
+      }
+
+      &.mainInbox{
+        .filterBtns {
+          width: auto;
+        }
+
+        .course {
+          max-width: 225px;
+        }
+      }
+
+      .chatList {
+        width: 100%;
+        padding: 15px;
+        max-height: 592px;
+        .media{
+          padding-bottom: 15px;
+          .media-body{
+            .desc{
+              white-space: normal;
+              width: 85%;
+              overflow: auto;
+              text-overflow: unset;
+            }
+          }
+        }
+      }
+
+      .chatContainer{
+        margin-left: 0;
+        margin-top: 20px;
+      }
+
+      .bottomNav {
+        justify-content: center;
+
+        a {
+          margin-bottom: 5px;
+        }
+      }
+    }
+    .performance {
+
+      &.resources{
+        .item {
+          width: 100% !important;
+        }
+      }
+    }
+
   }
 
 }
@@ -6989,6 +7780,19 @@ header {
 
   .courserBlock {
     max-width: 255px;
+  }
+
+  .favouriteCont{
+    .institutesContainer {
+      .institutes {
+        .courserBlock {
+          &.w-49 {
+            max-height: none;
+            height: 270px;
+          }
+        }
+      }
+    }
   }
 
   .recommended {
@@ -7079,6 +7883,51 @@ header {
             }
           }
         }
+      }
+    }
+  }
+
+  .myInboxCont {
+
+    .filterBtns {
+      margin-top: 20px;
+      justify-content: center;
+      width: 100%;
+    }
+    &.mainInbox{
+      .filterBtns {
+        width: auto;
+      }
+
+    }
+    .chatList {
+      width: 100%;
+      padding: 15px;
+      max-height: 592px;
+      .media{
+        padding-bottom: 15px;
+        .media-body{
+          .desc{
+            white-space: normal;
+            width: 85%;
+            overflow: auto;
+            text-overflow: unset;
+          }
+        }
+      }
+    }
+
+    .chatContainer{
+      margin-left: 0;
+      margin-top: 20px;
+    }
+  }
+
+  .performance {
+
+    &.resources{
+      .item {
+        width: 100% !important;
       }
     }
   }
