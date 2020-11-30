@@ -11,7 +11,7 @@
 /* Track */
 ::-webkit-scrollbar-track {
   background: transparent;
-  border: 1px solid #a4a4a4; }
+  border: 1px solid transparent; }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
@@ -226,7 +226,6 @@ p {
 
 .custom-checkbox {
   min-height: auto;
-  padding: 0;
   height: 1.25rem; }
   .custom-checkbox .custom-control-input:checked ~ .custom-control-label::after {
     background-image: url(../img/tick.svg); }
@@ -1137,13 +1136,13 @@ header {
           display: block; }
       .learnNext #owl-demo1 .owl-nav .owl-next, .learnNext #owl-demo2 .owl-nav .owl-next, .learnNext #owl-demo3 .owl-nav .owl-next, .learnNext #owl-demo5 .owl-nav .owl-next, .learnNext #owl-demo4 .owl-nav .owl-next, .learnNext #owl-demo6 .owl-nav .owl-next, .learnNext #owl-demo7 .owl-nav .owl-next {
         right: 0;
-        border-top-left-radius: 10px;
-        border-bottom-left-radius: 10px; }
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px; }
       .learnNext #owl-demo1 .owl-nav .owl-prev, .learnNext #owl-demo2 .owl-nav .owl-prev, .learnNext #owl-demo3 .owl-nav .owl-prev, .learnNext #owl-demo5 .owl-nav .owl-prev, .learnNext #owl-demo4 .owl-nav .owl-prev, .learnNext #owl-demo6 .owl-nav .owl-prev, .learnNext #owl-demo7 .owl-nav .owl-prev {
         left: 0;
-        border-top-right-radius: 10px;
-        border-bottom-right-radius: 10px;
-        display: none; }
+        display: none;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px; }
 
 /* end learn next */
 /* start register */
@@ -1457,8 +1456,8 @@ header {
     margin-left: 30px; }
     .resultsContainer .results .institutesContainer .institutes .courserBlock {
       width: 100%;
-      max-height: 160px;
-      height: 160px; }
+      max-height: 170px;
+      height: 170px; }
       .resultsContainer .results .institutesContainer .institutes .courserBlock .courseText .rightDiv {
         display: flex;
         align-items: flex-end;
@@ -2741,8 +2740,8 @@ header {
       font-size: 12px;
       margin-bottom: 5px; }
     .myCoursesTabs .courseContent .courseTabs .tab-content .resultsContainer .results .institutesContainer .institutes .courserBlock.w-49 {
-      max-height: 165px;
-      height: 165px; }
+      max-height: 175px;
+      height: 175px; }
     .myCoursesTabs .courseContent .courseTabs .tab-content .resultsContainer .results .institutesContainer .institutes .media {
       background: #fff;
       width: 100%;
@@ -3165,12 +3164,14 @@ header {
     font-size: 14px; }
   .settingsCont .generalSettings .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn), .settingsCont .generalSettings .bootstrap-select > .dropdown-toggle {
     width: 150px !important; }
-  .settingsCont .generalSettings .custom-checkbox .custom-control-label::before {
-    width: 20px;
-    height: 20px;
-    background-color: #ff7600;
-    border: 0;
-    top: 0; }
+  .settingsCont .generalSettings .custom-checkbox {
+    padding: 0; }
+    .settingsCont .generalSettings .custom-checkbox .custom-control-label::before {
+      width: 20px;
+      height: 20px;
+      background-color: #ff7600;
+      border: 0;
+      top: 0; }
   .settingsCont .generalSettings .custom-control-input:checked ~ .custom-control-label::after {
     background-image: url(../img/tickWhite.svg); }
   .settingsCont .generalSettings .custom-control-input:checked ~ .custom-control-label::before {
@@ -3435,7 +3436,7 @@ header {
         width: 40px;
         font-size: 12px; }
   body #owl-demo1 .item, body #owl-demo2 .item, body #owl-demo3 .item {
-    width: 85% !important;
+    width: 100% !important;
     margin: auto; }
   body #owl-demo1 .owl-nav .owl-prev, body #owl-demo1 .owl-nav .owl-next, body #owl-demo2 .owl-nav .owl-prev, body #owl-demo2 .owl-nav .owl-next, body #owl-demo3 .owl-nav .owl-prev, body #owl-demo3 .owl-nav .owl-next {
     height: 40px !important;
@@ -3616,7 +3617,7 @@ header {
           margin-top: 0; }
           body .resultsContainer .results .institutesContainer .institutes .courserBlock {
             max-height: unset;
-            height: 300px;
+            height: 335px;
             flex-direction: column !important;
             overflow: hidden; }
             body .resultsContainer .results .institutesContainer .institutes .courserBlock .courseImg {
@@ -3742,8 +3743,10 @@ header {
   body .categoryCont .topResult .filterBtns {
     flex-wrap: wrap;
     margin: 10px 0 15px; }
-    body .categoryCont .topResult .filterBtns .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn):last-child {
-      margin: 10px 0 0; }
+    body .categoryCont .topResult .filterBtns .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+      min-width: 120px !important; }
+      body .categoryCont .topResult .filterBtns .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn):last-child {
+        margin: 10px 0 0; }
   body .categoryCont.subCatContainer #owl-demo4 .item, body .categoryCont.subCatContainer #owl-demo6 .item {
     width: 100%; }
   body .categoryCont.subCatContainer .featuredCourse.institutesContainer .institutes .courserBlock {
@@ -4088,7 +4091,17 @@ header {
     justify-content: center; }
     body .myInboxCont .bottomNav a {
       font-size: 13px;
-      margin-bottom: 5px; } }
+      margin-bottom: 5px; }
+  body .settingsCont .generalSettings {
+    margin-right: 0; }
+    body .settingsCont .generalSettings .subTitle {
+      font-size: 14px; }
+    body .settingsCont .generalSettings .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn), body .settingsCont .generalSettings .bootstrap-select > .dropdown-toggle {
+      width: 130px !important; }
+  body .settingsCont .orangeBtn {
+    height: 35px !important;
+    min-width: 125px;
+    font-size: 12px; } }
 /*Small Screen*/
 @media (min-width: 768px) and (max-width: 991px) {
   body {
@@ -4483,7 +4496,10 @@ header {
     margin-top: 20px; }
 
   .performance.resources .item {
-    width: 100% !important; } }
+    width: 100% !important; }
+
+  .categoryCont .institutesContainer .institutes .courserBlock .courseImg {
+    width: 120px; } }
 @media (min-width: 1200px) {
   .pr-120 {
     padding-right: 120px !important; } }

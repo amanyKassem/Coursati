@@ -23,7 +23,7 @@ $purple: #9e348a;
 /* Track */
 ::-webkit-scrollbar-track {
   background: transparent;
-  border: 1px solid $gray
+  border: 1px solid transparent;
 }
 /* Handle */
 ::-webkit-scrollbar-thumb {
@@ -326,7 +326,6 @@ p {
 
 .custom-checkbox {
   min-height: auto;
-  padding: 0;
   height: 1.25rem;
 
   .custom-control-input {
@@ -1688,15 +1687,15 @@ header {
 
       .owl-next {
         right: 0;
-        border-top-left-radius: 10px;
-        border-bottom-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
       }
 
       .owl-prev {
         left: 0;
-        border-top-right-radius: 10px;
-        border-bottom-right-radius: 10px;
         display: none;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
       }
     }
   }
@@ -2183,8 +2182,8 @@ header {
       .institutes {
         .courserBlock {
           width: 100%;
-          max-height: 160px;
-          height: 160px;
+          max-height: 170px;
+          height: 170px;
 
           .courseText {
 
@@ -4338,8 +4337,8 @@ header {
                   }
 
                   &.w-49 {
-                    max-height: 165px;
-                    height: 165px;
+                    max-height: 175px;
+                    height: 175px;
                   }
                 }
 
@@ -5119,6 +5118,7 @@ header {
     }
 
     .custom-checkbox {
+      padding: 0;
       .custom-control-label{
         &::before {
           width: 20px;
@@ -5600,7 +5600,7 @@ header {
 
     #owl-demo1, #owl-demo2, #owl-demo3 {
       .item {
-        width: 85% !important;
+        width: 100% !important;
         margin: auto;
       }
 
@@ -5951,7 +5951,7 @@ header {
 
             .courserBlock {
               max-height: unset;
-              height: 300px;
+              height: 335px;
               flex-direction: column !important;
               overflow: hidden;
 
@@ -6213,6 +6213,7 @@ header {
           flex-wrap: wrap;
           margin: 10px 0 15px;
           .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+            min-width: 120px !important;
            &:last-child{
              margin: 10px 0 0;
            }
@@ -6981,6 +6982,28 @@ header {
           font-size: 13px;
           margin-bottom: 5px;
         }
+      }
+    }
+
+
+    .settingsCont {
+      .generalSettings{
+        margin-right: 0;
+
+        .subTitle{
+          font-size: 14px;
+        }
+
+        .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn), .bootstrap-select > .dropdown-toggle {
+          width: 130px !important;
+        }
+
+      }
+
+      .orangeBtn {
+        height: 35px !important;
+        min-width: 125px;
+        font-size: 12px;
       }
     }
 
@@ -7928,6 +7951,18 @@ header {
     &.resources{
       .item {
         width: 100% !important;
+      }
+    }
+  }
+
+  .categoryCont {
+    .institutesContainer {
+      .institutes {
+        .courserBlock {
+          .courseImg {
+            width: 120px;
+          }
+        }
       }
     }
   }
