@@ -375,6 +375,39 @@
         <div class="courseVedio">
             <div class="vedioCont">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/YP2f-ErXG_M" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="controllers">
+                    <a class="togglePlay">
+                        <i class="fas fa-play"></i>
+                    </a>
+
+                    <div class="duration">1:00 / 2:00</div>
+
+                    <div class="volumeCont">
+                        <a class="setVolume">
+                            <i class="fas fa-volume-up"></i>
+                        </a>
+
+                        <input class="range-slider__range" type="range" value="0" min="0" max="100">
+                        <span class="volumeVal">0</span>
+                    </div>
+
+                    <div class="dropCont">
+                        <span>speed</span>
+                        <select class="selectpicker" id="speed" >
+                            <option>1</option>
+                            <option>2</option>
+                        </select>
+                    </div>
+
+                    <div class="dropCont">
+                        <span>quality</span>
+                        <select class="selectpicker" id="quality" >
+                            <option>360</option>
+                            <option>hd</option>
+                        </select>
+                    </div>
+
+                </div>
             </div>
             <div class="courseContent">
                 <div id="accordion" class="myaccordion">
@@ -1228,6 +1261,23 @@
         var rate = $(this).val();
         $('.myRateText').text(rate)
     });
+</script>
+
+<!--controllers-->
+<script>
+
+    $(".togglePlay").click(function(){
+        $(this).find('i').toggleClass('fa-play fa-pause')
+    });
+
+    $(".setVolume").click(function(){
+        $(this).find('i').toggleClass('fa-volume-up fa-volume-mute')
+    });
+
+    $(document).on('input', '.range-slider__range', function() {
+        $('.volumeVal').html( $(this).val() );
+    });
+
 </script>
 
 </body>
