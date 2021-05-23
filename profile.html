@@ -334,95 +334,158 @@
         <h2 class="title">My profile</h2>
         <p class="desc">You can view and change your account details here</p>
 
-        <div class="accDetails">
+        <div class="accDetails recommended mt-0">
 
-            <div class="d-flex justify-content-center flex-column">
-                <div class="changeImg">
-                    <img src="img/girl.jpg" alt="profile">
-                    <a class="change">
-                        Change image
-                        <input class="file-upload" type="file" accept="image/*"/>
-                    </a>
+
+            <ul class="nav nav-pills mb-5" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link active" id="pills-settings-tab" data-toggle="pill" href="#pills-settings" role="tab" aria-controls="pills-settings" aria-selected="true">public settings</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="pills-password-tab" data-toggle="pill" href="#pills-password" role="tab" aria-controls="pills-password" aria-selected="false">update password</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="pills-payment-tab" data-toggle="pill" href="#pills-payment" role="tab" aria-controls="pills-payment" aria-selected="false">payment information</a>
+                </li>
+            </ul>
+
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-settings" role="tabpanel" aria-labelledby="pills-settings-tab">
+
+                    <form action="">
+
+                        <div class="d-flex justify-content-center flex-column">
+                            <div class="changeImg">
+                                <img src="img/girl.jpg" alt="profile">
+                                <a class="change">
+                                    Change image
+                                    <input class="file-upload" type="file" accept="image/*"/>
+                                </a>
+                            </div>
+                            <div class="accId">Account ID : 12411547</div>
+                        </div>
+
+                        <div class="rowSpace">
+
+                            <div class="form-group">
+                                <label for="firstName">First Name</label>
+                                <input type="text" class="form-control" id="firstName" placeholder="First Name">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="lastName">Last Name</label>
+                                <input type="text" class="form-control" id="lastName" placeholder="Last Name">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="emailAdd">Email address</label>
+                                <input type="email" class="form-control" id="emailAdd" placeholder="Email address">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Phone number</label>
+                                <input type="tel" class="form-control" id="phone" placeholder="Phone number">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="country">Country</label>
+                                <select class="selectpicker" id="country" title="Select country">
+                                    <option>Egypt</option>
+                                    <option>USA</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="city">City</label>
+                                <select class="selectpicker" id="city" title="Select city">
+                                    <option>Alex</option>
+                                    <option>Mansoura</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="fields">Interested fields</label>
+                                <select class="selectpicker" id="fields" title="Select category">
+                                    <option>Design</option>
+                                    <option>Web Design</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="about">About</label>
+                                <input type="text" class="form-control" id="about" placeholder="About me">
+                            </div>
+
+                            <div class="titles">
+                                <div>
+                                    Html5
+                                    <a class="deleteTitle">
+                                        <i class="fas fa-times"></i>
+                                    </a>
+                                </div>
+                                <div>
+                                    Bootstrap
+                                    <a class="deleteTitle">
+                                        <i class="fas fa-times"></i>
+                                    </a>
+                                </div>
+                                <div>
+                                    jQuery
+                                    <a class="deleteTitle">
+                                        <i class="fas fa-times"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <button type="submit" class="orangeBtn" >Save changes</button>
+                    </form>
+
                 </div>
-                <div class="accId">Account ID : 12411547</div>
-            </div>
+                <div class="tab-pane fade" id="pills-password" role="tabpanel" aria-labelledby="pills-password-tab">
 
-            <form action="userDashboard.html">
-                <div class="rowSpace">
+                    <form action="">
 
-                    <div class="form-group">
-                        <label for="firstName">First Name</label>
-                        <input type="text" class="form-control" id="firstName" placeholder="First Name">
-                    </div>
+                        <div class="rowSpace">
 
-                    <div class="form-group">
-                        <label for="lastName">Last Name</label>
-                        <input type="text" class="form-control" id="lastName" placeholder="Last Name">
-                    </div>
+                            <div class="form-group">
+                                <label for="oldPass">Old password</label>
+                                <input type="password" class="form-control" id="oldPass" placeholder="Old password">
+                            </div>
 
-                    <div class="form-group">
-                        <label for="emailAdd">Email address</label>
-                        <input type="email" class="form-control" id="emailAdd" placeholder="Email address">
-                    </div>
+                            <div class="form-group">
+                                <label for="newPass">New password</label>
+                                <input type="password" class="form-control" id="newPass" placeholder="New password">
+                            </div>
 
-                    <div class="form-group">
-                        <label for="phone">Phone number</label>
-                        <input type="tel" class="form-control" id="phone" placeholder="Phone number">
-                    </div>
+                            <div class="form-group">
+                                <label for="confNewPass">Confirm new password</label>
+                                <input type="password" class="form-control" id="confNewPass" placeholder="Confirm new password">
+                            </div>
 
-                    <div class="form-group">
-                        <label for="country">Country</label>
-                        <select class="selectpicker" id="country" title="Select country">
-                            <option>Egypt</option>
-                            <option>USA</option>
-                        </select>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="city">City</label>
-                        <select class="selectpicker" id="city" title="Select city">
-                            <option>Alex</option>
-                            <option>Mansoura</option>
-                        </select>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="fields">Interested fields</label>
-                        <select class="selectpicker" id="fields" title="Select category">
-                            <option>Design</option>
-                            <option>Web Design</option>
-                        </select>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="about">About</label>
-                        <input type="text" class="form-control" id="about" placeholder="About me">
-                    </div>
-
-                    <div class="titles">
-                        <div>
-                            Html5
-                            <a class="deleteTitle">
-                                <i class="fas fa-times"></i>
-                            </a>
                         </div>
-                        <div>
-                            Bootstrap
-                            <a class="deleteTitle">
-                                <i class="fas fa-times"></i>
-                            </a>
-                        </div>
-                        <div>
-                            jQuery
-                            <a class="deleteTitle">
-                                <i class="fas fa-times"></i>
-                            </a>
-                        </div>
-                    </div>
+                        <button type="submit" class="orangeBtn">Save changes</button>
+                    </form>
 
                 </div>
-                <button type="submit" class="orangeBtn" onclick="location.href='userDashboard.html'">Save changes</button>
-            </form>
+                <div class="tab-pane fade" id="pills-payment" role="tabpanel" aria-labelledby="pills-payment-tab">
+                    <form action="">
+
+                        <div class="rowSpace">
+
+                            <div class="form-group">
+                                <label for="payment">Payment</label>
+                                <input type="text" class="form-control" id="payment" placeholder="Payment">
+                            </div>
+
+
+                        </div>
+                        <button type="submit" class="orangeBtn">Save changes</button>
+                    </form>
+                </div>
+             </div>
+
+
         </div>
 
     </div>
