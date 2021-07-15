@@ -3,35 +3,45 @@
   <component name="WebServers">
     <option name="servers">
       <webServer id="d209c502-a0cb-42bb-934d-0f7c649f3b69" name="camel" url="http://camel.aait-sa.com">
-        <fileTransfer host="camel.aait-sa.com" port="21" rootFolder="/public_html">
+        <fileTransfer rootFolder="/public_html" host="camel.aait-sa.com" port="21">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
           </advancedOptions>
-          <option name="port" value="21" />
         </fileTransfer>
       </webServer>
       <webServer id="772252ed-cdc0-47ec-987c-47d81260be3d" name="press" url="http://press.aait-sa.com">
-        <fileTransfer host="press.aait-sa.com" port="21" rootFolder="/public_html">
+        <fileTransfer rootFolder="/public_html" host="press.aait-sa.com" port="21">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
           </advancedOptions>
-          <option name="port" value="21" />
         </fileTransfer>
       </webServer>
       <webServer id="3025c3fb-06c8-4195-a866-1cb5d1ec56b6" name="ship" url="http://shahn.aait-sa.com">
-        <fileTransfer host="shahn.aait-sa.com" port="21" rootFolder="/public_html">
+        <fileTransfer rootFolder="/public_html" host="shahn.aait-sa.com" port="21">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
           </advancedOptions>
-          <option name="port" value="21" />
         </fileTransfer>
       </webServer>
       <webServer id="718c9626-f0ef-4615-9952-c7229e5110ff" name="b7ranya" url="http://bic-tc.com">
-        <fileTransfer host="bic-tc.com" port="21" rootFolder="/public_html">
+        <fileTransfer rootFolder="/public_html" host="bic-tc.com" port="21">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
           </advancedOptions>
-          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="2e497d75-20f6-4cf6-9485-a4b77b302a17" name="coursati" url="https://corsati.online/">
+        <fileTransfer rootFolder="/public_html" host="corsati.online" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+      <webServer id="27ec96e2-1c67-4340-97d9-3280375a2ed0" name="jayappaa" url="http://jayapp.aait-sa.com">
+        <fileTransfer rootFolder="/public_html" host="jayapp.aait-sa.com" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
         </fileTransfer>
       </webServer>
     </option>
